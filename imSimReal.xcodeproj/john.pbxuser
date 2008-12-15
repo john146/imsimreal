@@ -1,0 +1,102 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = 8DC2EF4F0486A6940098B216 /* imSimReal */;
+		codeSenseManager = 528FB1580EF5D7DC00AFC4A0 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					407,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 250992600;
+			PBXWorkspaceStateSaveDate = 250992600;
+		};
+		perUserProjectItems = {
+			528FB1650EF5DA6B00AFC4A0 /* PlistBookmark */ = 528FB1650EF5DA6B00AFC4A0 /* PlistBookmark */;
+			528FB1660EF5DA6B00AFC4A0 /* PBXBookmark */ = 528FB1660EF5DA6B00AFC4A0 /* PBXBookmark */;
+			528FB1670EF5DA6B00AFC4A0 /* PlistBookmark */ = 528FB1670EF5DA6B00AFC4A0 /* PlistBookmark */;
+			528FB1680EF5DA6B00AFC4A0 /* PBXTextBookmark */ = 528FB1680EF5DA6B00AFC4A0 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 528FB1570EF5D7DC00AFC4A0 /* Source Control */;
+		userBuildSettings = {
+			OBJROOT = "$(SYMROOT)";
+			SYMROOT = /Users/john/Documents/Projects/BuildProducts/imSimReal;
+		};
+	};
+	32DBCF5E0370ADEE00C91783 /* imSimReal_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {585, 539}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 150}";
+		};
+	};
+	528FB1570EF5D7DC00AFC4A0 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	528FB1580EF5D7DC00AFC4A0 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	528FB1650EF5DA6B00AFC4A0 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8DC2EF5A0486A6940098B216 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/john/Documents/Projects/imSimReal/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	528FB1660EF5DA6B00AFC4A0 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 32DBCF5E0370ADEE00C91783 /* imSimReal_Prefix.pch */;
+	};
+	528FB1670EF5DA6B00AFC4A0 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8DC2EF5A0486A6940098B216 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/john/Documents/Projects/imSimReal/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	528FB1680EF5DA6B00AFC4A0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32DBCF5E0370ADEE00C91783 /* imSimReal_Prefix.pch */;
+		name = "imSimReal_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 150;
+		vrLoc = 0;
+	};
+	8DC2EF4F0486A6940098B216 /* imSimReal */ = {
+		activeExec = 0;
+	};
+}
