@@ -178,7 +178,7 @@
 	<key>FavBarConfig</key>
 	<dict>
 		<key>PBXProjectModuleGUID</key>
-		<string>528FB1560EF5D7DC00AFC4A0</string>
+		<string>52CDF9B00EFF07D100D89741</string>
 		<key>XCBarModuleItemNames</key>
 		<dict/>
 		<key>XCBarModuleItems</key>
@@ -268,19 +268,19 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
-								<string>0867D691FE84028FC02AAC07</string>
-								<string>08FB77AEFE84172EC02AAC07</string>
+								<string>29B97314FDCFA39411CA2CEA</string>
+								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>1</integer>
-									<integer>0</integer>
+									<integer>9</integer>
+									<integer>7</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {186, 731}}</string>
+							<string>{{0, 0}, {186, 558}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -292,14 +292,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {203, 749}}</string>
+						<string>{{0, 0}, {203, 576}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>485 88 854 790 0 0 1440 878 </string>
+						<string>479 261 922 617 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -315,7 +315,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>imSimReal_Prefix.pch</string>
+								<string>MyNewFile14.java</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,20 +323,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>imSimReal_Prefix.pch</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>528FB1680EF5DA6B00AFC4A0</string>
-										<key>history</key>
-										<array>
-											<string>528FB1650EF5DA6B00AFC4A0</string>
-											<string>528FB1660EF5DA6B00AFC4A0</string>
-										</array>
-										<key>prevStack</key>
-										<array>
-											<string>528FB1670EF5DA6B00AFC4A0</string>
-										</array>
+										<string>MyNewFile14.java</string>
 									</dict>
 									<key>SplitCount</key>
 									<string>1</string>
@@ -347,14 +334,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {646, 571}}</string>
+								<string>{{0, 0}, {714, 398}}</string>
 								<key>RubberWindowFrame</key>
-								<string>485 88 854 790 0 0 1440 878 </string>
+								<string>479 261 922 617 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>571pt</string>
+							<string>398pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -367,9 +354,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 576}, {646, 173}}</string>
+								<string>{{0, 403}, {714, 173}}</string>
 								<key>RubberWindowFrame</key>
-								<string>485 88 854 790 0 0 1440 878 </string>
+								<string>479 261 922 617 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -378,7 +365,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>646pt</string>
+					<string>714pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -393,9 +380,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>528FB1540EF5D7DC00AFC4A0</string>
+				<string>52CDF9AE0EFF07D100D89741</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>528FB1550EF5D7DC00AFC4A0</string>
+				<string>52CDF9AF0EFF07D100D89741</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -532,7 +519,7 @@
 		<string>/Users/john/Documents/Projects/imSimReal/imSimReal.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>485 88 854 790 0 0 1440 878 </string>
+	<string>479 261 922 617 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
