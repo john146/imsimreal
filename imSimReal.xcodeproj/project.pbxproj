@@ -295,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/imSimReal.app/Contents/MacOS/imSimReal";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -314,6 +315,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "Unit Tests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imSimReal.app/Contents/MacOS/imSimReal";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;

@@ -8,7 +8,26 @@
 
 #import "IMSRGravity.h"
 
-
 @implementation IMSRGravity
 
+@synthesize bodyGravity;
+
+- (id)init
+{
+	if (![super init])
+	{
+		return nil;
+	}
+	
+	bodyGravity = [[NSDictionary alloc] initWithContentsOfFile: @"Gravity.plist"];
+	
+	return self;
+}
+
+- (void)dealloc
+{
+	[bodyGravity release];
+	
+	[super dealloc];
+}
 @end

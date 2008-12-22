@@ -6,12 +6,14 @@
 //  Copyright 2008 John Ahrens, LLC. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <SenTestingKit/SenTestingKit.h>
 
 
-@interface IMSRGravityTestCases : NSObject 
+@interface IMSRGravityTestCases : SenTestCase 
 {
 
 }
+
+- (void)testCreateIMSRGravity;
 
 @end

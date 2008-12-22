@@ -11,7 +11,9 @@
 
 @interface IMSRGravity : NSObject 
 {
-	
+	NSDictionary	*bodyGravity;
 }
+
+@property (nonatomic, retain)NSDictionary	*bodyGravity;
 
 @end
