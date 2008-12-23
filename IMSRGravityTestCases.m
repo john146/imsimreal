@@ -20,11 +20,18 @@
 	STAssertTrue(gravity.bodyGravity.count == 3, @"Incorrect number of elements in bodyGravity");
 	
 	NSNumber *result			= [gravity.bodyGravity valueForKey: @"Earth"];
-	NSNumber *expectedResult	= [[NSNumber alloc] initWithDouble: -9.81];
-	STAssertTrue([result isEqualToNumber: expectedResult], @"Incorrect gravity value for Earth: %@", result);
+	NSNumber *expectedResultE	= [NSNumber numberWithDouble: -9.81];
+	STAssertTrue([result isEqualToNumber: expectedResultE], @"Incorrect gravity value for Earth: %@", result);
+	
+	result						= [gravity.bodyGravity valueForKey: @"Moon"];
+	NSNumber *expectedResultM	= [NSNumber numberWithDouble: -1.624];
+	STAssertTrue([result isEqualToNumber: expectedResultM], @"Incorrect gravity value for Moon: %@", result);
+	
+	result						= [gravity.bodyGravity valueForKey: @"Jupiter"];
+	NSNumber *expectedResultJ	= [NSNumber numberWithDouble: -24.8];
+	STAssertTrue([result isEqualToNumber: expectedResultJ], @"Incorrect gravity value for Jupiter: %@", result);
 	
 	[gravity release];
-	[expectedResult release];
 }
 
 @end

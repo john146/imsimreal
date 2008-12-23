@@ -216,10 +216,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>52CDFA450EFF38EC00D89741</string>
+						<string>529B87D90F0093E500565A8D</string>
 						<key>history</key>
 						<array>
-							<string>52CDFA240EFF321400D89741</string>
+							<string>52CDFA450EFF38EC00D89741</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -370,25 +370,18 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>52CDFA440EFF38EC00D89741</string>
+										<string>529B87D80F0093E500565A8D</string>
 										<key>history</key>
 										<array>
 											<string>52CDF9E20EFF2A6800D89741</string>
 											<string>52CDFA3A0EFF38EC00D89741</string>
 											<string>52CDFA3C0EFF38EC00D89741</string>
-											<string>52CDFA3E0EFF38EC00D89741</string>
+											<string>52CDFA440EFF38EC00D89741</string>
 										</array>
 										<key>prevStack</key>
 										<array>
 											<string>52CDF9E80EFF2A6800D89741</string>
-											<string>52CDF9EB0EFF2A6800D89741</string>
-											<string>52CDF9F10EFF2A6800D89741</string>
 											<string>52CDF9F20EFF2A6800D89741</string>
-											<string>52CDF9F40EFF2A6800D89741</string>
-											<string>52CDFA180EFF2ED900D89741</string>
-											<string>52CDFA1A0EFF2ED900D89741</string>
-											<string>52CDFA210EFF31AC00D89741</string>
-											<string>52CDFA3F0EFF38EC00D89741</string>
 											<string>52CDFA400EFF38EC00D89741</string>
 											<string>52CDFA420EFF38EC00D89741</string>
 										</array>
@@ -448,9 +441,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>52CDF9AE0EFF07D100D89741</string>
+				<string>529B87D50F0093CE00565A8D</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>52CDF9AF0EFF07D100D89741</string>
+				<string>529B87D60F0093CE00565A8D</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -584,9 +577,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>52CDFA2F0EFF342C00D89741</string>
-		<string>52CDF9D50EFF25A100D89741</string>
 		<string>/Users/john/Documents/Projects/imSimReal/imSimReal.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
