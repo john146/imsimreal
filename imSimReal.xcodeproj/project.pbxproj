@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		523920D30F06FA9D00CD05CD /* IMSRPointObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 523920D20F06FA9D00CD05CD /* IMSRPointObject.m */; };
+		523920D60F06FAB500CD05CD /* IMSRPointObjectTestCases.m in Sources */ = {isa = PBXBuildFile; fileRef = 523920D50F06FAB500CD05CD /* IMSRPointObjectTestCases.m */; };
 		52CDF9B60EFF07F200D89741 /* IMSRGravity.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CDF9B50EFF07F200D89741 /* IMSRGravity.m */; };
 		52CDF9B90EFF081300D89741 /* Gravity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52CDF9B70EFF081300D89741 /* Gravity.plist */; };
 		52CDF9BA0EFF081300D89741 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 52CDF9B80EFF081300D89741 /* LICENSE */; };
@@ -36,6 +38,10 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* imSimReal_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imSimReal_Prefix.pch; sourceTree = "<group>"; };
+		523920D10F06FA9D00CD05CD /* IMSRPointObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSRPointObject.h; sourceTree = "<group>"; };
+		523920D20F06FA9D00CD05CD /* IMSRPointObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSRPointObject.m; sourceTree = "<group>"; };
+		523920D40F06FAB500CD05CD /* IMSRPointObjectTestCases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSRPointObjectTestCases.h; sourceTree = "<group>"; };
+		523920D50F06FAB500CD05CD /* IMSRPointObjectTestCases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSRPointObjectTestCases.m; sourceTree = "<group>"; };
 		52CDF9B40EFF07F200D89741 /* IMSRGravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSRGravity.h; sourceTree = "<group>"; };
 		52CDF9B50EFF07F200D89741 /* IMSRGravity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSRGravity.m; sourceTree = "<group>"; };
 		52CDF9B70EFF081300D89741 /* Gravity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Gravity.plist; sourceTree = "<group>"; };
@@ -74,6 +80,10 @@
 				52CDF9B50EFF07F200D89741 /* IMSRGravity.m */,
 				52CDF9CB0EFF0BAF00D89741 /* IMSRGravityTestCases.h */,
 				52CDF9CC0EFF0BAF00D89741 /* IMSRGravityTestCases.m */,
+				523920D10F06FA9D00CD05CD /* IMSRPointObject.h */,
+				523920D20F06FA9D00CD05CD /* IMSRPointObject.m */,
+				523920D40F06FAB500CD05CD /* IMSRPointObjectTestCases.h */,
+				523920D50F06FAB500CD05CD /* IMSRPointObjectTestCases.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -249,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52CDF9CD0EFF0BAF00D89741 /* IMSRGravityTestCases.m in Sources */,
+				523920D60F06FAB500CD05CD /* IMSRPointObjectTestCases.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +269,7 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				52CDF9B60EFF07F200D89741 /* IMSRGravity.m in Sources */,
+				523920D30F06FA9D00CD05CD /* IMSRPointObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
