@@ -30,22 +30,16 @@
 	NSNumber *count		= [NSNumber numberWithInt: [state1 count]];
 	NSNumber *expCount	= [NSNumber numberWithInt: 9];
 	STAssertTrue([count isEqualToNumber: expCount], 
-				 @"Incorrect number of values. Have %d, should be %d", count, expCount); 
+				 @"Incorrect number of values. Have %@, should be %@", count, expCount); 
 	
-	[count release];
-	[expCount release]; 
-	
-	NSNumber *expectedValue	= [NSNumber numberWithDouble: 0.0];
+	NSNumber *expValue	= [NSNumber numberWithDouble: 0.0];
 	for (id key in state1)
 	{
 		NSNumber *value	= [state1 objectForKey: key];
-//		STAssertTrue([value isEqualToNumber: expectedValue], 
-//					 @"Number for %@ is %@. Should be %d", key, value, expectedValue);
-		[value release];
+		STAssertTrue([value isEqualToNumber: expValue], 
+					 @"Number for %@ is %@. Should be %d", key, value, expValue);
 	}
 
-	[expectedValue release];
-	[state1 release];
 	[point1 release];
 }
 

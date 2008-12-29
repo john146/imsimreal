@@ -34,10 +34,6 @@
 	STAssertTrue([result isEqualToNumber: expectedResultJ], @"Incorrect gravity value for Jupiter: %@", result);
 	
 	[body release];
-	[result release];
-	[expectedResultE release];
-	[expectedResultM release];
-	[expectedResultJ release];
 	[gravity release];
 }
 
