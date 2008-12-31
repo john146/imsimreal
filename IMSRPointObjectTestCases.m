@@ -73,7 +73,8 @@
 	{
 		NSNumber *value		= [state2 objectForKey: key];
 		expValue			= [expValues objectForKey: key];
-		STAssertTrue([value isEqualToNumber: expValue], @"Number for %@ is %@. Should be %@", key, value, expValue);
+		STAssertTrue([value isEqualToNumber: expValue], 
+					 @"Number for %@ is %@. Should be %@", key, value, expValue);
 	}
 	
 	[keys release];
@@ -108,7 +109,8 @@
 	
 	NSNumber *expCount	= [NSNumber numberWithInt: 9];
 	NSNumber *count		= [NSNumber numberWithInt: [state count]];
-	STAssertTrue([count isEqualToNumber: expCount], @"Body state contains %@ elements. Should be %@", count, expCount);
+	STAssertTrue([count isEqualToNumber: expCount], 
+				 @"Body state contains %@ elements. Should be %@", count, expCount);
 	NSNumber *defaultValue = [NSNumber numberWithDouble: 0.0];
 	int i = 0;
 	
@@ -118,17 +120,70 @@
 		NSNumber *expValue	= [expectedValues objectForKey: key];
 		STAssertNotNil(value, @"Value for key %@ is nil", key);
 		
-		if ([key isEqualToString: @"accelerationZ"] || [key isEqualToString: @"accelerationX"] || [key isEqualToString: @"accelerationY"])
+		if ([key isEqualToString: @"accelerationZ"] ||
+			[key isEqualToString: @"accelerationX"] || 
+			[key isEqualToString: @"accelerationY"])
 		{
-			STAssertTrue([value isEqualToNumber: defaultValue], @"%@ value is %@. Should be %@. Count: %d", key, value, defaultValue, i);
+			STAssertTrue([value isEqualToNumber: defaultValue], 
+						 @"%@ value is %@. Should be %@. Count: %d", key, value, defaultValue, i);
 		}
 		else
 		{
-			STAssertTrue([value isEqualToNumber: expValue], @"%@ value is %@. Should be %@. Count: %d", key, value, expValue, i);
+			STAssertTrue([value isEqualToNumber: expValue],
+						 @"%@ value is %@. Should be %@. Count: %d", key, value, expValue, i);
 		}
 		++i;
 	}
 					 
+	[keys release];
+	[values release];
+	[point release];
+}
+
+- (void)testInitPointObjectWithPosition
+{
+	NSArray		*keys	= [[NSArray alloc] initWithObjects: @"positionX",
+						   @"positionY", @"positionZ", nil];
+
+	NSArray		*values	= [[NSArray alloc] initWithObjects: [NSNumber numberWithDouble: 1.0],
+						   [NSNumber numberWithDouble: -1.5], [NSNumber numberWithDouble: 0.7], nil];	
+
+	NSDictionary	*expectedValues	= [NSDictionary dictionaryWithObjects: values forKeys: keys];
+
+	IMSRPointObject *point	= [[IMSRPointObject alloc] initWithPositionX: [[expectedValues objectForKey: @"positionX"] doubleValue]
+															  positionY: [[expectedValues objectForKey: @"positionY"] doubleValue]
+															  positionZ: [[expectedValues objectForKey: @"positionZ"] doubleValue]];
+	STAssertNotNil(point, @"Could not construct IMSRPointObject with position only initializer");
+	
+	NSMutableDictionary *state	= [point pointObject];
+	STAssertNotNil(state, @"Could not get state from point");
+	
+	NSNumber *count		= [NSNumber numberWithInt: [state count]];
+	NSNumber *expCount	= [NSNumber numberWithInt: 9];
+	STAssertTrue([count isEqualToNumber: expCount],
+				 @"Dictionary has %@ elements. Should have %@", count, expCount);
+	
+	NSNumber *defaultValue	= [NSNumber numberWithDouble: 0.0];
+	
+	for (id key in state)
+	{
+		NSNumber *value		= [state objectForKey: key];
+		NSNumber *expValue	= [expectedValues objectForKey: key];
+		
+		if ([key isEqualToString: @"positionX"] ||
+			[key isEqualToString: @"positionY"] ||
+			[key isEqualToString: @"positionZ"])
+		{
+			STAssertTrue([value isEqualToNumber: expValue],
+						 @"Value for %@ is %@. Should be %@", key, value, expValue);
+		}
+		else
+		{
+			STAssertTrue([value isEqualToNumber: defaultValue],
+						 @"Value for %@ is %@. Should be %@", key, value, defaultValue);
+		}
+	}
+	
 	[keys release];
 	[values release];
 	[point release];

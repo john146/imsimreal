@@ -15,11 +15,23 @@
 
 @property (nonatomic, retain) NSMutableDictionary *pointObject;
 
-- (id)initWithPositionX: (double)positionX positionY: (double)positionY positionZ: (double)positionZ
-			  velocityX: (double)velocityX velocityY: (double)velocityY velocityZ: (double)velocityZ
-		  accelerationX: (double)accelerationX accelerationY: (double)accelerationY accelerationZ: (double)accelerationZ;
+- (id)initWithPositionX: (double)positionX 
+			  positionY: (double)positionY 
+			  positionZ: (double)positionZ
+			  velocityX: (double)velocityX 
+			  velocityY: (double)velocityY 
+			  velocityZ: (double)velocityZ
+		  accelerationX: (double)accelerationX 
+		  accelerationY: (double)accelerationY 
+		  accelerationZ: (double)accelerationZ;
 
-- (id)initWithPositionX: (double)positionX positionY: (double)positionY positionZ: (double)positionZ
-			  velocityX: (double)velocityX velocityY: (double)velocityY velocityZ: (double)velocityZ;
+- (id)initWithPositionX: (double)positionX 
+			  positionY: (double)positionY 
+			  positionZ: (double)positionZ
+			  velocityX: (double)velocityX 
+			  velocityY: (double)velocityY 
+			  velocityZ: (double)velocityZ;
+
+- (id)initWithPositionX: (double)positionX positionY: (double)positionY positionZ: (double)positionZ;
 
 @end

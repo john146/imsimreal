@@ -12,10 +12,14 @@
 
 @synthesize pointObject;
 
-- (NSMutableDictionary *)setPointObjectWithPositionX: (double)positionX positionY: (double)positionY 
-										   positionZ: (double)positionZ velocityX: (double)velocityX 
-										   velocityY: (double)velocityY velocityZ: (double)velocityZ
-									   accelerationX: (double)accelerationX accelerationY: (double)accelerationY
+- (NSMutableDictionary *)setPointObjectWithPositionX: (double)positionX 
+										   positionY: (double)positionY 
+										   positionZ: (double)positionZ 
+										   velocityX: (double)velocityX 
+										   velocityY: (double)velocityY 
+										   velocityZ: (double)velocityZ
+									   accelerationX: (double)accelerationX 
+									   accelerationY: (double)accelerationY
 									   accelerationZ: (double)accelerationZ
 {
 	NSArray *keys = [[NSArray alloc] initWithObjects: @"positionX", @"positionY", @"positionZ",
@@ -30,36 +34,75 @@
 	return [NSMutableDictionary dictionaryWithObjects: values forKeys: keys];
 }
 
-- (id)initWithPositionX: (double)positionX positionY: (double)positionY positionZ: (double)positionZ
-			  velocityX: (double)velocityX velocityY: (double)velocityY velocityZ: (double)velocityZ
-		  accelerationX: (double)accelerationX accelerationY: (double)accelerationY accelerationZ: (double)accelerationZ
+- (id)initWithPositionX: (double)positionX 
+			  positionY: (double)positionY 
+			  positionZ: (double)positionZ
+			  velocityX: (double)velocityX
+			  velocityY: (double)velocityY
+			  velocityZ: (double)velocityZ
+		  accelerationX: (double)accelerationX
+		  accelerationY: (double)accelerationY 
+		  accelerationZ: (double)accelerationZ
 {
 	if (![super init])
 	{
 		return nil;
 	}
 	
-	pointObject = [self setPointObjectWithPositionX: positionX positionY: positionY 
-										  positionZ: positionZ velocityX: velocityX
-										  velocityY: velocityY velocityZ: velocityZ
-									  accelerationX: accelerationX accelerationY: accelerationY
+	pointObject = [self setPointObjectWithPositionX: positionX 
+										  positionY: positionY 
+										  positionZ: positionZ
+										  velocityX: velocityX
+										  velocityY: velocityY 
+										  velocityZ: velocityZ
+									  accelerationX: accelerationX
+									  accelerationY: accelerationY
 									  accelerationZ: accelerationZ];
 	
 	return self;
 }
 
-- (id)initWithPositionX: (double)positionX positionY: (double)positionY positionZ: (double)positionZ
-			  velocityX: (double)velocityX velocityY: (double)velocityY velocityZ: (double)velocityZ
+- (id)initWithPositionX: (double)positionX
+			  positionY: (double)positionY
+			  positionZ: (double)positionZ
+			  velocityX: (double)velocityX
+			  velocityY: (double)velocityY
+			  velocityZ: (double)velocityZ
 {
 	if (![super init])
 	{
 		return nil;
 	}
 	
-	pointObject = [self setPointObjectWithPositionX: positionX positionY: positionY 
-										  positionZ: positionZ velocityX: velocityX
-										  velocityY: velocityY velocityZ: velocityZ
-									  accelerationX: 0.0 accelerationY: 0.0 accelerationZ: 0.0];
+	pointObject = [self setPointObjectWithPositionX: positionX
+										  positionY: positionY 
+										  positionZ: positionZ
+										  velocityX: velocityX
+										  velocityY: velocityY
+										  velocityZ: velocityZ
+									  accelerationX: 0.0
+									  accelerationY: 0.0 
+									  accelerationZ: 0.0];
+	
+	return self;
+}
+
+- (id)initWithPositionX: (double)positionX positionY: (double)positionY positionZ: (double)positionZ
+{
+	if (![super init])
+	{
+		return nil;
+	}
+	
+	pointObject = [self setPointObjectWithPositionX: positionX
+										  positionY: positionY
+										  positionZ: positionZ
+										  velocityX: 0.0
+										  velocityY: 0.0
+										  velocityZ: 0.0
+									  accelerationX: 0.0
+									  accelerationY: 0.0
+									  accelerationZ: 0.0];
 	
 	return self;
 }
