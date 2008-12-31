@@ -257,4 +257,24 @@
 	STAssertEquals([pointObj velocityZ], velocityZ, @"VelocityZ is %f. Should be %f", [pointObj velocityZ], velocityZ);
 }
 
+- (void)testUpdateAcceleration
+{
+	double accelerationX	= 0.1;
+	double accelerationY	= -0.5;
+	double accelerationZ	= -9.81;
+	
+	STAssertNotNil(pointObj, @"Point not created");
+	STAssertEquals([pointObj accelerationX], 0.0, @"AccelerationX is %f. Should be 0.0", [pointObj accelerationX]);
+	STAssertEquals([pointObj accelerationY], 0.0, @"AccelerationY is %f. Should be 0.0", [pointObj accelerationY]);
+	STAssertEquals([pointObj accelerationZ], 0.0, @"AccelerationZ is %f. Should be 0.0", [pointObj accelerationZ]);
+	
+	[pointObj updateAccelerationX: accelerationX accelerationY: accelerationY accelerationZ: accelerationZ];
+	STAssertEquals([pointObj accelerationX], accelerationX, 
+				   @"AccelerationX is %f. Should be %f", [pointObj accelerationX], accelerationX);
+	STAssertEquals([pointObj accelerationY], accelerationY,
+				   @"AccelerationY is %f. Should be %f", [pointObj accelerationY], accelerationY);
+	STAssertEquals([pointObj accelerationZ], accelerationZ,
+				   @"AccelerationZ is %f. Should be %f", [pointObj accelerationZ], accelerationZ);
+}
+
 @end

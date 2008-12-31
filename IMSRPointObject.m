@@ -163,6 +163,24 @@
 	return [value doubleValue];
 }
 
+- (double)accelerationX
+{
+	NSNumber *value = [pointObject objectForKey: @"accelerationX"];
+	return [value doubleValue];
+}
+
+- (double)accelerationY
+{
+	NSNumber *value = [pointObject objectForKey: @"accelerationY"];
+	return [value doubleValue];
+}
+
+- (double)accelerationZ
+{
+	NSNumber *value = [pointObject objectForKey: @"accelerationZ"];
+	return [value doubleValue];
+}
+
 - (void)updatePositionX: (double)positionX 
 			  positionY: (double)positionY 
 			  positionZ: (double)positionZ
@@ -179,6 +197,14 @@
 	[pointObject setObject: [NSNumber numberWithDouble: velocityX] forKey: @"velocityX"];
 	[pointObject setObject: [NSNumber numberWithDouble: velocityY] forKey: @"velocityY"];
 	[pointObject setObject: [NSNumber numberWithDouble: velocityZ] forKey: @"velocityZ"];
+}
+- (void)updateAccelerationX: (double)accelerationX
+			  accelerationY: (double)accelerationY
+			  accelerationZ: (double)accelerationZ
+{
+	[pointObject setObject: [NSNumber numberWithDouble: accelerationX] forKey: @"accelerationX"];
+	[pointObject setObject: [NSNumber numberWithDouble: accelerationY] forKey: @"accelerationY"];
+	[pointObject setObject: [NSNumber numberWithDouble: accelerationZ] forKey: @"accelerationZ"];
 }
 
 @end

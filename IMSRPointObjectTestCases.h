@@ -23,5 +23,6 @@
 - (void)testInitPointObject;
 - (void)testUpdatePosition;
 - (void)testUpdateVelocity;
+- (void)testUpdateAcceleration;
 
 @end
