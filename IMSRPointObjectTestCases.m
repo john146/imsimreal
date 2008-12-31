@@ -189,4 +189,26 @@
 	[point release];
 }
 
+- (void)testInitPointObject
+{
+	IMSRPointObject *point	= [[IMSRPointObject alloc] init];
+	STAssertNotNil(point, @"Could not initialize point with default initializer");
+	
+	NSMutableDictionary *state = [point pointObject];
+	STAssertNotNil(state, @"Could not get state for default initialized point object");
+	
+	NSNumber *count		= [NSNumber numberWithInt: [state count]];
+	NSNumber *expCount	= [NSNumber numberWithInt: 9];
+	STAssertTrue([count isEqualToNumber: expCount],
+				 @"Count is %@. Should be %@", count, expCount);
+	
+	NSNumber *defaultValue = [NSNumber numberWithDouble: 0.0];
+	for (id key in state)
+	{
+		NSNumber *value = [state objectForKey: key];
+		STAssertTrue([value isEqualToNumber: defaultValue],
+					 @"Value for %@ is %@. Should be %@", key, value, defaultValue);
+	}
+}
+
 @end

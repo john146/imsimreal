@@ -16,5 +16,6 @@
 - (void)testInitPointObjectWithPositionVelocityAndAcceleration;
 - (void)testInitPointObjectWithPositionAndVelocity;
 - (void)testInitPointObjectWithPosition;
+- (void)testInitPointObject;
 
 @end

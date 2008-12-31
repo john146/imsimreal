@@ -107,4 +107,24 @@
 	return self;
 }
 
+- (id)init
+{
+	if (![super init])
+	{
+		return nil;
+	}
+	
+	pointObject = [self setPointObjectWithPositionX: 0.0
+										  positionY: 0.0
+										  positionZ: 0.0
+										  velocityX: 0.0
+										  velocityY: 0.0
+										  velocityZ: 0.0
+									  accelerationX: 0.0
+									  accelerationY: 0.0 
+									  accelerationZ: 0.0];
+	
+	return self;
+}
+
 @end
