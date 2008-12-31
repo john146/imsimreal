@@ -127,4 +127,31 @@
 	return self;
 }
 
+- (double)positionX
+{
+	NSNumber *x = [pointObject objectForKey: @"positionX"];
+	return [x doubleValue];
+}
+
+- (double)positionY
+{
+	NSNumber *y = [pointObject objectForKey: @"positionY"];
+	return [y doubleValue];
+}
+
+- (double)positionZ
+{
+	NSNumber *z = [pointObject objectForKey: @"positionZ"];
+	return [z doubleValue];
+}
+
+- (void)updatePositionX: (double)positionX 
+			  positionY: (double)positionY 
+			  positionZ: (double)positionZ
+{
+	[pointObject setObject: [NSNumber numberWithDouble: positionX] forKey: @"positionX"];
+	[pointObject setObject: [NSNumber numberWithDouble: positionY] forKey: @"positionY"];
+	[pointObject setObject: [NSNumber numberWithDouble: positionZ] forKey: @"positionZ"];
+}
+
 @end

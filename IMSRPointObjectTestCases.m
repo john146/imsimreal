@@ -11,6 +11,18 @@
 
 @implementation IMSRPointObjectTestCases
 
+@synthesize pointObj;
+
+- (void)setUp
+{
+	pointObj	= [[IMSRPointObject alloc] init];
+}
+
+- (void)tearDown
+{
+	[pointObj release];
+}
+
 - (void)testInitPointObjectWithPositionVelocityAndAcceleration
 {
 	NSArray	*keys			= [[NSArray alloc] initWithObjects: @"positionX",
@@ -211,4 +223,20 @@
 	}
 }
 
+- (void)testUpdatePosition
+{
+	double positionX	= 1.5;
+	double positionY	= -2.5;
+	double positionZ	= 34.7;
+	
+	STAssertNotNil(pointObj, @"Point not created");
+	STAssertEquals([pointObj positionX], 0.0, @"PositionX is %f. Should be 0.0", [pointObj positionX]);
+	STAssertEquals([pointObj positionY], 0.0, @"PositionY is %f. Should be 0.0", [pointObj positionY]);
+	STAssertEquals([pointObj positionZ], 0.0, @"PositionZ is %f. Should be 0.0", [pointObj positionZ]);
+
+	[pointObj updatePositionX: positionX positionY: positionY positionZ: positionZ];
+	STAssertEquals([pointObj positionX], positionX, @"PositionX is %f. Should be %f", [pointObj positionX], positionX);
+	STAssertEquals([pointObj positionY], positionY, @"PositionY is %f. Should be %f", [pointObj positionY], positionY);
+	STAssertEquals([pointObj positionZ], positionZ, @"PositionZ is %f. Should be %f", [pointObj positionZ], positionZ);
+}
 @end

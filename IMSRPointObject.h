@@ -32,6 +32,16 @@
 			  velocityY: (double)velocityY 
 			  velocityZ: (double)velocityZ;
 
-- (id)initWithPositionX: (double)positionX positionY: (double)positionY positionZ: (double)positionZ;
+- (id)initWithPositionX: (double)positionX 
+			  positionY: (double)positionY 
+			  positionZ: (double)positionZ;
+
+- (double)positionX;
+- (double)positionY;
+- (double)positionZ;
+
+- (void)updatePositionX: (double)positionX 
+			  positionY: (double)positionY 
+			  positionZ: (double)positionZ;
 
 @end

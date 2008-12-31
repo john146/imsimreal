@@ -8,14 +8,20 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
+@class IMSRPointObject;
+
 @interface IMSRPointObjectTestCases : SenTestCase 
 {
-
+	IMSRPointObject	*pointObj;
 }
+
+@property (nonatomic, retain) IMSRPointObject *pointObj;
 
 - (void)testInitPointObjectWithPositionVelocityAndAcceleration;
 - (void)testInitPointObjectWithPositionAndVelocity;
 - (void)testInitPointObjectWithPosition;
 - (void)testInitPointObject;
+- (void)testUpdatePosition;
+- (void testUpdateVelocity;
 
 @end
