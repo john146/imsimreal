@@ -39,9 +39,16 @@
 - (double)positionX;
 - (double)positionY;
 - (double)positionZ;
+- (double)velocityX;
+- (double)velocityY;
+- (double)velocityZ;
 
 - (void)updatePositionX: (double)positionX 
 			  positionY: (double)positionY 
 			  positionZ: (double)positionZ;
+
+- (void)updateVelocityX: (double)velocityX
+			  velocityY: (double)velocityY
+			  velocityZ: (double)velocityZ;
 
 @end

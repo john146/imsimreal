@@ -129,20 +129,38 @@
 
 - (double)positionX
 {
-	NSNumber *x = [pointObject objectForKey: @"positionX"];
-	return [x doubleValue];
+	NSNumber *value = [pointObject objectForKey: @"positionX"];
+	return [value doubleValue];
 }
 
 - (double)positionY
 {
-	NSNumber *y = [pointObject objectForKey: @"positionY"];
-	return [y doubleValue];
+	NSNumber *value = [pointObject objectForKey: @"positionY"];
+	return [value doubleValue];
 }
 
 - (double)positionZ
 {
-	NSNumber *z = [pointObject objectForKey: @"positionZ"];
-	return [z doubleValue];
+	NSNumber *value = [pointObject objectForKey: @"positionZ"];
+	return [value doubleValue];
+}
+
+- (double)velocityX
+{
+	NSNumber *value = [pointObject objectForKey: @"velocityX"];
+	return [value doubleValue];
+}
+
+- (double)velocityY
+{
+	NSNumber *value = [pointObject objectForKey: @"velocityY"];
+	return [value doubleValue];
+}
+
+- (double)velocityZ
+{
+	NSNumber *value = [pointObject objectForKey: @"velocityZ"];
+	return [value doubleValue];
 }
 
 - (void)updatePositionX: (double)positionX 
@@ -152,6 +170,15 @@
 	[pointObject setObject: [NSNumber numberWithDouble: positionX] forKey: @"positionX"];
 	[pointObject setObject: [NSNumber numberWithDouble: positionY] forKey: @"positionY"];
 	[pointObject setObject: [NSNumber numberWithDouble: positionZ] forKey: @"positionZ"];
+}
+
+- (void)updateVelocityX: (double)velocityX
+			  velocityY: (double)velocityY
+			  velocityZ: (double)velocityZ
+{
+	[pointObject setObject: [NSNumber numberWithDouble: velocityX] forKey: @"velocityX"];
+	[pointObject setObject: [NSNumber numberWithDouble: velocityY] forKey: @"velocityY"];
+	[pointObject setObject: [NSNumber numberWithDouble: velocityZ] forKey: @"velocityZ"];
 }
 
 @end
