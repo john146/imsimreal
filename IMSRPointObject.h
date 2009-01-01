@@ -58,4 +58,6 @@
 			  accelerationY: (double)accelerationY
 			  accelerationZ: (double)accelerationZ;
 
+- (void)computeStateForDeltaTime: (NSTimeInterval)deltaTime;
+
 @end

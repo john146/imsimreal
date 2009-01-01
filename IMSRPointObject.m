@@ -207,4 +207,39 @@
 	[pointObject setObject: [NSNumber numberWithDouble: accelerationZ] forKey: @"accelerationZ"];
 }
 
+- (void)updateCoordinate: (NSString *)coordinate forDeltaTime: (NSTimeInterval)deltaTime
+{
+	NSNumber	*newNumber;
+	double		position;
+	double		velocity;
+	double		acceleration;
+	
+	NSString	*pos	= [[NSString alloc] initWithFormat: @"position%@", coordinate];
+	NSString	*vel	= [[NSString alloc] initWithFormat: @"velocity%@", coordinate];
+	NSString	*accel	= [[NSString alloc] initWithFormat: @"acceleration%@", coordinate];
+	
+	newNumber		= [pointObject objectForKey: pos];
+	position		= [newNumber doubleValue];
+	newNumber		= [pointObject objectForKey: vel];
+	velocity		= [newNumber doubleValue];
+	newNumber		= [pointObject objectForKey: accel];
+	acceleration	= [newNumber doubleValue];
+
+	position		= position + (velocity * deltaTime) + ((acceleration * deltaTime * deltaTime) / 2.0);
+	[pointObject setObject: [NSNumber numberWithDouble: position] forKey: pos];
+	velocity		= velocity + (acceleration * deltaTime);
+	[pointObject setObject: [NSNumber numberWithDouble: velocity] forKey: vel];
+	
+	[pos release];
+	[vel release];
+	[accel release];
+}
+
+- (void)computeStateForDeltaTime: (NSTimeInterval)deltaTime
+{
+	[self updateCoordinate: @"X" forDeltaTime: deltaTime];
+	[self updateCoordinate: @"Y" forDeltaTime: deltaTime];
+	[self updateCoordinate: @"Z" forDeltaTime: deltaTime];
+}
+
 @end

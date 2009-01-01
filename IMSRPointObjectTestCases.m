@@ -277,4 +277,68 @@
 				   @"AccelerationZ is %f. Should be %f", [pointObj accelerationZ], accelerationZ);
 }
 
+- (void)testComputeStateForDeltaTime
+{
+	double positionX		= 10.0;
+	double positionY		= 10.0;
+	double positionZ		= 10.0;
+	double velocityX		= 0.1;
+	double velocityY		= -0.1;
+	double velocityZ		= 0.001;
+	double accelerationX	= 0.01;
+	double accelerationY	= 0.01;
+	double accelerationZ	= -9.81;
+	
+	STAssertNotNil(pointObj, @"Point not created");
+	
+	[pointObj updatePositionX: positionX positionY: positionY positionZ: positionZ];
+	STAssertEquals([pointObj positionX], positionX,
+				   @"PositionX is %f. Should be %f.", [pointObj positionX], positionX);
+	STAssertEquals([pointObj positionY], positionY,
+				   @"PositionY is %f. Should be %f.", [pointObj positionY], positionY);
+	STAssertEquals([pointObj positionZ], positionZ,
+				   @"PositionZ is %f. Should be %f.", [pointObj positionZ], positionZ);
+	
+	[pointObj updateVelocityX: velocityX velocityY: velocityY velocityZ: velocityZ];
+	STAssertEquals([pointObj velocityX], velocityX,
+				   @"VelocityX is %f. Should be %f.", [pointObj velocityX], velocityX);
+	STAssertEquals([pointObj velocityY], velocityY,
+				   @"VelocityY is %f. Should be %f.", [pointObj velocityY], velocityY);
+	STAssertEquals([pointObj velocityZ], velocityZ,
+				   @"VelocityZ is %f. Should be %f.", [pointObj velocityZ], velocityZ);
+	
+	[pointObj updateAccelerationX: accelerationX 
+					accelerationY: accelerationY
+					accelerationZ: accelerationZ];
+	STAssertEquals([pointObj accelerationX], accelerationX,
+				   @"AccelerationX is %f. Should be %f.", [pointObj accelerationX], accelerationX);
+	STAssertEquals([pointObj accelerationY], accelerationY,
+				   @"AccelerationY is %f. Should be %f.", [pointObj accelerationY], accelerationY);
+	STAssertEquals([pointObj accelerationZ], accelerationZ,
+				   @"AccelerationZ is %f. Should be %f.", [pointObj accelerationZ], accelerationZ);
+	
+	NSTimeInterval deltaTime = 0.1;
+	[pointObj computeStateForDeltaTime: deltaTime];
+	double	pos = positionX + (velocityX * deltaTime) + (accelerationX * deltaTime * deltaTime) / 2.0;
+	double	vel = velocityX + (accelerationX * deltaTime);
+	STAssertEquals([pointObj positionX], pos,
+				   @"PositionX is %f. Should be %f.", [pointObj positionX], pos);
+	STAssertEquals([pointObj velocityX], vel,
+				   @"VelocityX is %f. Should be %f.", [pointObj velocityX], vel);
+	
+	pos	= positionY + (velocityY * deltaTime) + (accelerationY * deltaTime * deltaTime) / 2.0;
+	vel	= velocityY + (accelerationY * deltaTime);
+	STAssertEquals([pointObj positionY], pos,
+				   @"PositionY is %f. Should be %f.", [pointObj positionY], pos);
+	STAssertEquals([pointObj velocityY], vel,
+				   @"VelocityY is %F. Should be %f.", [pointObj velocityY], vel);
+	
+	pos = positionZ + (velocityZ * deltaTime) + (accelerationZ * deltaTime * deltaTime) / 2.0;
+	vel = velocityZ + (accelerationZ * deltaTime);
+	STAssertEquals([pointObj positionZ], pos,
+				   @"PositionZ is %f. Should be %f.", [pointObj positionZ], pos);
+	STAssertEquals([pointObj velocityZ], vel,
+				   @"VelocityZ is %F. Should be %f.", [pointObj velocityZ], vel);
+}
+
 @end

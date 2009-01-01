@@ -24,5 +24,6 @@
 - (void)testUpdatePosition;
 - (void)testUpdateVelocity;
 - (void)testUpdateAcceleration;
+- (void)testComputeStateForDeltaTime;
 
 @end
