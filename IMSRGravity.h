@@ -8,6 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
+/**
+ * IMSRGravity is a wrapper class for an NSDictionary, which contains the 
+ * gravitational attraction at the surface of several celestial bodies, such as 
+ * Earth, Moon and Jupiter. The NSDictionary is initialized from a property 
+ * list (Gravity.plist).
+ *
+ * Gravity is always negative. The units are meters/sec<sup>2</sup>.
+ */
 
 @interface IMSRGravity : NSObject 
 {
