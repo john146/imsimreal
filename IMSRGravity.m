@@ -11,6 +11,7 @@
 @implementation IMSRGravity
 
 @synthesize bodyGravity;
+@synthesize selectedBody;
 
 - (id)init
 {
@@ -30,4 +31,16 @@
 	
 	[super dealloc];
 }
+
+- (double)getGravityForSelectedBody
+{
+	if (selectedBody == nil)
+	{
+		return 0.0;
+	}
+	
+	NSNumber *gravity = [bodyGravity valueForKey: selectedBody];
+	return [gravity doubleValue];
+}
+
 @end

@@ -20,8 +20,12 @@
 @interface IMSRGravity : NSObject 
 {
 	NSDictionary	*bodyGravity;
+	NSString		*selectedBody;
 }
 
 @property (nonatomic, retain)NSDictionary	*bodyGravity;
+@property (nonatomic, retain)NSString		*selectedBody;
+
+- (double)getGravityForSelectedBody;
 
 @end
