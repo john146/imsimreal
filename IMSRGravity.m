@@ -20,19 +20,23 @@
 		return nil;
 	}
 	
-	bodyGravity = [[NSDictionary alloc] initWithContentsOfFile: @"Gravity.plist"];
+	return [self initWithBody: @"Earth"]; // Use Earth in the absence of other values
+}
+
+- (id)initWithBody: (NSString *)body
+{
+	if (![super init])
+	{
+		return nil;
+	}
+
+	bodyGravity		= [[NSDictionary alloc] initWithContentsOfFile: @"Gravity.plist"];
+	selectedBody	= body;
 	
 	return self;
 }
 
-- (void)dealloc
-{
-	[bodyGravity release];
-	
-	[super dealloc];
-}
-
-- (double)getGravityForSelectedBody
+- (double)gravityForSelectedBody
 {
 	if (selectedBody == nil)
 	{
@@ -41,6 +45,14 @@
 	
 	NSNumber *gravity = [bodyGravity valueForKey: selectedBody];
 	return [gravity doubleValue];
+}
+
+- (void)dealloc
+{
+	[bodyGravity release];
+	[selectedBody release];
+	
+	[super dealloc];
 }
 
 @end

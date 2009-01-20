@@ -16,6 +16,10 @@
 	IMSRGravity *gravity	= [[IMSRGravity alloc] init];
 	
 	STAssertNotNil(gravity, @"IMSRGravity not created");
+	NSString *selectedBody	= [gravity selectedBody];
+	NSString *expectedBody = @"Earth";
+	STAssertEqualObjects(selectedBody, expectedBody, @"Expected %@ selected. %@ actually selected",
+						 expectedBody, selectedBody);
 	
 	NSDictionary *body			= [gravity bodyGravity];
 	STAssertNotNil(gravity.bodyGravity, @"Gravity NSDictionary not available");
@@ -35,6 +39,16 @@
 	
 	[body release];
 	[gravity release];
+}
+
+- (void)testCreateIMSRGRavityWithBody
+{
+	NSString	*expectedResult	= @"Moon";
+	IMSRGravity *gravity		= [[IMSRGravity alloc] initWithBody: expectedResult];
+	STAssertNotNil(gravity, @"IMSRGravity not created with Earth");
+	
+	NSString	*result			= [gravity selectedBody];
+	STAssertEqualObjects(result, expectedResult, @"Expected %@. Got %@", expectedResult, result);
 }
 
 @end

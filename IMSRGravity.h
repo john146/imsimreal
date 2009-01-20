@@ -26,6 +26,8 @@
 @property (nonatomic, retain)NSDictionary	*bodyGravity;
 @property (nonatomic, retain)NSString		*selectedBody;
 
-- (double)getGravityForSelectedBody;
+- (id)initWithBody: (NSString *)body;
+
+- (double)gravityForSelectedBody;
 
 @end
