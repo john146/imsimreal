@@ -15,11 +15,6 @@
 
 - (id)init
 {
-	if (![super init])
-	{
-		return nil;
-	}
-	
 	return [self initWithBody: @"Earth"]; // Use Earth in the absence of other values
 }
 

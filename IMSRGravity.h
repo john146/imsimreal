@@ -26,8 +26,21 @@
 @property (nonatomic, retain)NSDictionary	*bodyGravity;
 @property (nonatomic, retain)NSString		*selectedBody;
 
+/**
+ * An initializer for selecting the body to use when initializing. If no body is 
+ * selected, the default init: method sets body to Earth
+ *
+ * @param body	The body to set selectedBody to
+ *
+ * @return a newly initialized IMSRGravity object
+ */
 - (id)initWithBody: (NSString *)body;
 
+/**
+ * Get the gravity value for the selectedBody.
+ *
+ * @return gravity for the selectedBody variable, in meters/second.
+ */
 - (double)gravityForSelectedBody;
 
 @end

@@ -45,10 +45,24 @@
 {
 	NSString	*expectedResult	= @"Moon";
 	IMSRGravity *gravity		= [[IMSRGravity alloc] initWithBody: expectedResult];
-	STAssertNotNil(gravity, @"IMSRGravity not created with Earth");
+	STAssertNotNil(gravity, @"IMSRGravity not created with Moon");
 	
 	NSString	*result			= [gravity selectedBody];
 	STAssertEqualObjects(result, expectedResult, @"Expected %@. Got %@", expectedResult, result);
+	
+	[expectedResult release];
+	[gravity release];
+}
+
+- (void)testGetGravityForSelectedBody
+{
+	NSString	*body			= @"Jupiter";
+	IMSRGravity	*gravity		= [[IMSRGravity alloc] initWithBody: body];
+	STAssertNotNil(gravity, @"IMSRGravity not created with Jupiter");
+	
+	double		expectedResult	= -24.8;	// Gravity of Jupiter, m/s
+	double		result			= [gravity gravityForSelectedBody];
+	STAssertEquals(result, expectedResult, @"Expected %f, got %f", expectedResult, result);
 }
 
 @end
