@@ -21,10 +21,7 @@
   </div>
 </div>
 <div class="contents">
-<h1>IMSRPointObject Class Reference</h1><!-- doxytag: class="IMSRPointObject" -->IMSPointObject represents a point mass in a cartesian coordinate system.  
-<a href="#_details">More...</a>
-<p>
-<code>#import &lt;<a class="el" href="_i_m_s_r_point_object_8h-source.html">IMSRPointObject.h</a>&gt;</code>
+<h1>IMSRPointObject Class Reference</h1><!-- doxytag: class="IMSRPointObject" --><code>#import &lt;<a class="el" href="_i_m_s_r_point_object_8h-source.html">IMSRPointObject.h</a>&gt;</code>
 <p>
 
 <p>
@@ -33,13 +30,10 @@
 <tr><td colspan="2"><br><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_i_m_s_r_point_object.html#0251ecd091ae3e8a0840a6b6ab35be0b">initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:accelerationX:accelerationY:accelerationZ:</a></td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initializer allowing the user to set all values for initial state of the object.  <a href="#0251ecd091ae3e8a0840a6b6ab35be0b"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_i_m_s_r_point_object.html#4ed4386983dba714a6678023ac353199">initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:</a></td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initializer allowing the user to set all values for initial position and velocity.  <a href="#4ed4386983dba714a6678023ac353199"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_i_m_s_r_point_object.html#603d5f56f6b9344693f108efa3786d79">initWithPositionX:positionY:positionZ:</a></td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initializer allowing the user to set values for the initial position.  <a href="#603d5f56f6b9344693f108efa3786d79"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ddb88a4b481defa5b3b7729df3bb57f8"></a><!-- doxytag: member="IMSRPointObject::positionX" ref="ddb88a4b481defa5b3b7729df3bb57f8" args="()" -->
 (double)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>positionX</b></td></tr>
 
@@ -69,26 +63,22 @@
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_i_m_s_r_point_object.html#151a5fa0c67135b90a0de70b061276c3">updatePositionX:positionY:positionZ:</a></td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Update the point's position in the coordinate system.  <a href="#151a5fa0c67135b90a0de70b061276c3"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_i_m_s_r_point_object.html#55fbe7e8642006b44ebeedc850b5c728">updateVelocityX:velocityY:velocityZ:</a></td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Update the point's velocity in the coordinate system.  <a href="#55fbe7e8642006b44ebeedc850b5c728"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_i_m_s_r_point_object.html#1a32028d39d5f3e7fd976cac12040a54">updateAccelerationX:accelerationY:accelerationZ:</a></td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Update the acceleration in the coordinate system.  <a href="#1a32028d39d5f3e7fd976cac12040a54"></a><br></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_i_m_s_r_point_object.html#ae14396d83b2edd2f34b0bfb0f35a501">computeStateForDeltaTime:</a></td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Comutes a new state for the point deltaTime into the future.  <a href="#ae14396d83b2edd2f34b0bfb0f35a501"></a><br></td></tr>
 <tr><td colspan="2"><br><h2>Properties</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d480bf9c62356db805af3b924b766c84"></a><!-- doxytag: member="IMSRPointObject::pointObject" ref="d480bf9c62356db805af3b924b766c84" args="" -->
 NSMutableDictionary *&nbsp;</td><td class="memItemRight" valign="bottom"><b>pointObject</b></td></tr>
 
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
-IMSPointObject represents a point mass in a cartesian coordinate system. 
-<p>
-It has a state, consisting of a position, velocity and acceleration.<p>
-Units are: Position: meters Velocity: meters/second Acceleration: meters/second<sup>2</sup> <hr><h2>Member Function Documentation</h2>
+IMSPointObject represents a point mass in a cartesian coordinate system. It has a state, consisting of a position, velocity and acceleration.<p>
+Units are: Position: meters Velocity: meters/second Acceleration: meters/second<sup>2</sup> 
+<p>Definition at line <a class="el" href="_i_m_s_r_point_object_8h-source.html#l00021">21</a> of file <a class="el" href="_i_m_s_r_point_object_8h-source.html">IMSRPointObject.h</a>.</p>
+<hr><h2>Member Function Documentation</h2>
 <a class="anchor" name="ae14396d83b2edd2f34b0bfb0f35a501"></a><!-- doxytag: member="IMSRPointObject::computeStateForDeltaTime:" ref="ae14396d83b2edd2f34b0bfb0f35a501" args="(NSTimeInterval deltaTime)" -->
 <div class="memitem">
 <div class="memproto">
@@ -106,14 +96,14 @@ Units are: Position: meters Velocity: meters/second Acceleration: meters/second<
 <div class="memdoc">
 
 <p>
-Comutes a new state for the point deltaTime into the future. 
-<p>
-Updates position with the equation: newPosition = currentPosition + currentVelocity * deltaTime + currentAcceleration * deltaTime<sup>2</sup> / 2 and velocity becomes: newVelocity = currentVelocity + currentAcceleration * deltaTime<p>
+Comutes a new state for the point deltaTime into the future. Updates position with the equation: newPosition = currentPosition + currentVelocity * deltaTime + currentAcceleration * deltaTime<sup>2</sup> / 2 and velocity becomes: newVelocity = currentVelocity + currentAcceleration * deltaTime<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>deltaTime</em>&nbsp;</td><td>An NSTimeInterval value to look into the future. The smaller the interval the more accurate the computation, but the more computing power required. </td></tr>
   </table>
 </dl>
+
+<p>Definition at line <a class="el" href="_i_m_s_r_point_object_8m-source.html#l00238">238</a> of file <a class="el" href="_i_m_s_r_point_object_8m-source.html">IMSRPointObject.m</a>.</p>
 
 </div>
 </div><p>
@@ -149,9 +139,7 @@ Updates position with the equation: newPosition = currentPosition + currentVeloc
 <div class="memdoc">
 
 <p>
-Initializer allowing the user to set values for the initial position. 
-<p>
-The initial velocity and acceleration are set to 0.0.<p>
+Initializer allowing the user to set values for the initial position. The initial velocity and acceleration are set to 0.0.<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>positionX</em>&nbsp;</td><td>The X coordinate of the point, in meters </td></tr>
@@ -160,6 +148,8 @@ The initial velocity and acceleration are set to 0.0.<p>
   </table>
 </dl>
 <dl class="return" compact><dt><b>Returns:</b></dt><dd>self </dd></dl>
+
+<p>Definition at line <a class="el" href="_i_m_s_r_point_object_8m-source.html#l00090">90</a> of file <a class="el" href="_i_m_s_r_point_object_8m-source.html">IMSRPointObject.m</a>.</p>
 
 </div>
 </div><p>
@@ -213,9 +203,7 @@ The initial velocity and acceleration are set to 0.0.<p>
 <div class="memdoc">
 
 <p>
-Initializer allowing the user to set all values for initial position and velocity. 
-<p>
-Initial acceleration is set to 0.0.<p>
+Initializer allowing the user to set all values for initial position and velocity. Initial acceleration is set to 0.0.<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>positionX</em>&nbsp;</td><td>The X coordinate of the point, in meters </td></tr>
@@ -227,6 +215,8 @@ Initial acceleration is set to 0.0.<p>
   </table>
 </dl>
 <dl class="return" compact><dt><b>Returns:</b></dt><dd>self </dd></dl>
+
+<p>Definition at line <a class="el" href="_i_m_s_r_point_object_8m-source.html#l00065">65</a> of file <a class="el" href="_i_m_s_r_point_object_8m-source.html">IMSRPointObject.m</a>.</p>
 
 </div>
 </div><p>
@@ -298,8 +288,7 @@ Initial acceleration is set to 0.0.<p>
 <div class="memdoc">
 
 <p>
-Initializer allowing the user to set all values for initial state of the object. 
-<p>
+Initializer allowing the user to set all values for initial state of the object<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>positionX</em>&nbsp;</td><td>The X coordinate of the point, in meters </td></tr>
@@ -314,6 +303,8 @@ Initializer allowing the user to set all values for initial state of the object.
   </table>
 </dl>
 <dl class="return" compact><dt><b>Returns:</b></dt><dd>self </dd></dl>
+
+<p>Definition at line <a class="el" href="_i_m_s_r_point_object_8m-source.html#l00037">37</a> of file <a class="el" href="_i_m_s_r_point_object_8m-source.html">IMSRPointObject.m</a>.</p>
 
 </div>
 </div><p>
@@ -349,10 +340,8 @@ Initializer allowing the user to set all values for initial state of the object.
 <div class="memdoc">
 
 <p>
-Update the acceleration in the coordinate system. 
-<p>
-Acceleration does not get updated by computeStateForDeltatime: so this is the only way that acceleration changes.<p>
-<dl class="see" compact><dt><b>See also:</b></dt><dd><a class="el" href="interface_i_m_s_r_point_object.html#ae14396d83b2edd2f34b0bfb0f35a501" title="Comutes a new state for the point deltaTime into the future.">- computeStateForDeltaTime:</a></dd></dl>
+Update the acceleration in the coordinate system. Acceleration does not get updated by computeStateForDeltatime: so this is the only way that acceleration changes.<p>
+<dl class="see" compact><dt><b>See also:</b></dt><dd><a class="el" href="interface_i_m_s_r_point_object.html#ae14396d83b2edd2f34b0bfb0f35a501">- computeStateForDeltaTime:</a></dd></dl>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>accelerationX</em>&nbsp;</td><td>The acceleration along the X coordinate, in meters/second<sup>2</sup> </td></tr>
@@ -360,6 +349,8 @@ Acceleration does not get updated by computeStateForDeltatime: so this is the on
     <tr><td valign="top"></td><td valign="top"><em>accelerationZ</em>&nbsp;</td><td>The acceleration along the Z coordinate, in meters/second<sup>2</sup> </td></tr>
   </table>
 </dl>
+
+<p>Definition at line <a class="el" href="_i_m_s_r_point_object_8m-source.html#l00201">201</a> of file <a class="el" href="_i_m_s_r_point_object_8m-source.html">IMSRPointObject.m</a>.</p>
 
 </div>
 </div><p>
@@ -395,10 +386,8 @@ Acceleration does not get updated by computeStateForDeltatime: so this is the on
 <div class="memdoc">
 
 <p>
-Update the point's position in the coordinate system. 
-<p>
-Normally the position will get updated by computeStateForDeltaTime: but there may be times when this method is needed.<p>
-<dl class="see" compact><dt><b>See also:</b></dt><dd><a class="el" href="interface_i_m_s_r_point_object.html#ae14396d83b2edd2f34b0bfb0f35a501" title="Comutes a new state for the point deltaTime into the future.">- computeStateForDeltaTime:</a></dd></dl>
+Update the point's position in the coordinate system. Normally the position will get updated by computeStateForDeltaTime: but there may be times when this method is needed.<p>
+<dl class="see" compact><dt><b>See also:</b></dt><dd><a class="el" href="interface_i_m_s_r_point_object.html#ae14396d83b2edd2f34b0bfb0f35a501">- computeStateForDeltaTime:</a></dd></dl>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>positionX</em>&nbsp;</td><td>The new X coordinate, in meters. </td></tr>
@@ -406,6 +395,8 @@ Normally the position will get updated by computeStateForDeltaTime: but there ma
     <tr><td valign="top"></td><td valign="top"><em>positionZ</em>&nbsp;</td><td>The new Z coordinate, in meters. </td></tr>
   </table>
 </dl>
+
+<p>Definition at line <a class="el" href="_i_m_s_r_point_object_8m-source.html#l00184">184</a> of file <a class="el" href="_i_m_s_r_point_object_8m-source.html">IMSRPointObject.m</a>.</p>
 
 </div>
 </div><p>
@@ -441,10 +432,8 @@ Normally the position will get updated by computeStateForDeltaTime: but there ma
 <div class="memdoc">
 
 <p>
-Update the point's velocity in the coordinate system. 
-<p>
-Normally the velocity will get updated by computeStateForDeltaTime: but there may be times when this method is needed.<p>
-<dl class="see" compact><dt><b>See also:</b></dt><dd><a class="el" href="interface_i_m_s_r_point_object.html#ae14396d83b2edd2f34b0bfb0f35a501" title="Comutes a new state for the point deltaTime into the future.">- computeStateForDeltaTime:</a></dd></dl>
+Update the point's velocity in the coordinate system. Normally the velocity will get updated by computeStateForDeltaTime: but there may be times when this method is needed.<p>
+<dl class="see" compact><dt><b>See also:</b></dt><dd><a class="el" href="interface_i_m_s_r_point_object.html#ae14396d83b2edd2f34b0bfb0f35a501">- computeStateForDeltaTime:</a></dd></dl>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>velocityX</em>&nbsp;</td><td>The new velocity along the X coordinate, in meters/second. </td></tr>
@@ -453,12 +442,14 @@ Normally the velocity will get updated by computeStateForDeltaTime: but there ma
   </table>
 </dl>
 
+<p>Definition at line <a class="el" href="_i_m_s_r_point_object_8m-source.html#l00193">193</a> of file <a class="el" href="_i_m_s_r_point_object_8m-source.html">IMSRPointObject.m</a>.</p>
+
 </div>
 </div><p>
 <hr>The documentation for this class was generated from the following files:<ul>
-<li>/Users/john/Documents/Projects/imSimReal/<a class="el" href="_i_m_s_r_point_object_8h-source.html">IMSRPointObject.h</a><li>/Users/john/Documents/Projects/imSimReal/IMSRPointObject.m</ul>
+<li>/Users/john/Documents/Projects/imSimReal/<a class="el" href="_i_m_s_r_point_object_8h-source.html">IMSRPointObject.h</a><li>/Users/john/Documents/Projects/imSimReal/<a class="el" href="_i_m_s_r_point_object_8m-source.html">IMSRPointObject.m</a></ul>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Thu Jan 1 18:34:22 2009 for imSimReal by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Jan 24 11:18:32 2009 for imSimReal by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

@@ -2,11 +2,15 @@
 \section{IMSRGravity Class Reference}
 \label{interface_i_m_s_r_gravity}\index{IMSRGravity@{IMSRGravity}}
 }
-\hyperlink{interface_i_m_s_r_gravity}{IMSRGravity} is a wrapper class for an NSDictionary, which contains the gravitational attraction at the surface of several celestial bodies, such as Earth, Moon and Jupiter.  
-
-
 {\tt \#import $<$IMSRGravity.h$>$}
 
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(id) - \hyperlink{interface_i_m_s_r_gravity_8b103c80cb67a994c8bcaefe0aca3b4f}{initWithBody:}
+\item 
+(double) - \hyperlink{interface_i_m_s_r_gravity_98e01aca71f1f3c91a769b2bb8571ff5}{gravityForSelectedBody}
+\end{CompactItemize}
 \subsection*{Properties}
 \begin{CompactItemize}
 \item 
@@ -14,16 +18,56 @@
 NSDictionary $\ast$ \textbf{bodyGravity}}
 \label{interface_i_m_s_r_gravity_c80d0693a2a846db750fae929866d1a4}
 
+\item 
+\hypertarget{interface_i_m_s_r_gravity_f77d4563a9e7c7b7389391ec9043d98c}{
+NSString $\ast$ \textbf{selectedBody}}
+\label{interface_i_m_s_r_gravity_f77d4563a9e7c7b7389391ec9043d98c}
+
 \end{CompactItemize}
 
 
 \subsection{Detailed Description}
-\hyperlink{interface_i_m_s_r_gravity}{IMSRGravity} is a wrapper class for an NSDictionary, which contains the gravitational attraction at the surface of several celestial bodies, such as Earth, Moon and Jupiter. 
-
-The NSDictionary is initialized from a property list (Gravity.plist).
+\hyperlink{interface_i_m_s_r_gravity}{IMSRGravity} is a wrapper class for an NSDictionary, which contains the gravitational attraction at the surface of several celestial bodies, such as Earth, Moon and Jupiter. The NSDictionary is initialized from a property list (Gravity.plist).
 
 Gravity is always negative. The units are meters/sec$^{\mbox{2}}$ . 
 
-The documentation for this class was generated from the following file:\begin{CompactItemize}
+Definition at line 20 of file IMSRGravity.h.
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_i_m_s_r_gravity_98e01aca71f1f3c91a769b2bb8571ff5}{
+\index{IMSRGravity@{IMSRGravity}!gravityForSelectedBody@{gravityForSelectedBody}}
+\index{gravityForSelectedBody@{gravityForSelectedBody}!IMSRGravity@{IMSRGravity}}
+\subsubsection[{gravityForSelectedBody}]{\setlength{\rightskip}{0pt plus 5cm}- (double) gravityForSelectedBody }}
+\label{interface_i_m_s_r_gravity_98e01aca71f1f3c91a769b2bb8571ff5}
+
+
+Get the gravity value for the selectedBody.
+
+\begin{Desc}
+\item[Returns:]gravity for the selectedBody variable, in meters/second. \end{Desc}
+
+
+Definition at line 34 of file IMSRGravity.m.\hypertarget{interface_i_m_s_r_gravity_8b103c80cb67a994c8bcaefe0aca3b4f}{
+\index{IMSRGravity@{IMSRGravity}!initWithBody:@{initWithBody:}}
+\index{initWithBody:@{initWithBody:}!IMSRGravity@{IMSRGravity}}
+\subsubsection[{initWithBody:}]{\setlength{\rightskip}{0pt plus 5cm}- (id) initWithBody: (NSString $\ast$) {\em body}}}
+\label{interface_i_m_s_r_gravity_8b103c80cb67a994c8bcaefe0aca3b4f}
+
+
+An initializer for selecting the body to use when initializing. If no body is selected, the default init: method sets body to Earth
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em body}]The body to set selectedBody to\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]a newly initialized \hyperlink{interface_i_m_s_r_gravity}{IMSRGravity} object \end{Desc}
+
+
+Definition at line 21 of file IMSRGravity.m.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
 \item 
-/Users/john/Documents/Projects/imSimReal/IMSRGravity.h\end{CompactItemize}
+/Users/john/Documents/Projects/imSimReal/IMSRGravity.h\item 
+/Users/john/Documents/Projects/imSimReal/IMSRGravity.m\end{CompactItemize}

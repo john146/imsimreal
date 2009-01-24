@@ -28,16 +28,22 @@
 <a name="l00008"></a>00008 
 <a name="l00009"></a>00009 <span class="preprocessor">#import &lt;Cocoa/Cocoa.h&gt;</span>
 <a name="l00010"></a>00010 
-<a name="l00020"></a><a class="code" href="interface_i_m_s_r_gravity.html">00020</a> <span class="keyword">@interface </span><a class="code" href="interface_i_m_s_r_gravity.html" title="IMSRGravity is a wrapper class for an NSDictionary, which contains the gravitational...">IMSRGravity</a> : NSObject 
+<a name="l00020"></a><a class="code" href="interface_i_m_s_r_gravity.html">00020</a> <span class="keyword">@interface </span><a class="code" href="interface_i_m_s_r_gravity.html">IMSRGravity</a> : NSObject 
 <a name="l00021"></a>00021 {
 <a name="l00022"></a>00022         NSDictionary    *bodyGravity;
-<a name="l00023"></a>00023 }
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025 @property (nonatomic, retain)NSDictionary       *bodyGravity;
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027 @end
+<a name="l00023"></a>00023         NSString                *selectedBody;
+<a name="l00024"></a>00024 }
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026 @property (nonatomic, retain)NSDictionary       *bodyGravity;
+<a name="l00027"></a>00027 @property (nonatomic, retain)NSString           *selectedBody;
+<a name="l00028"></a>00028 
+<a name="l00037"></a>00037 - (<span class="keywordtype">id</span>)initWithBody: (NSString *)body;
+<a name="l00038"></a>00038 
+<a name="l00044"></a>00044 - (<span class="keywordtype">double</span>)gravityForSelectedBody;
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 @end
 </pre></div></div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Thu Jan 1 18:34:22 2009 for imSimReal by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Jan 24 11:18:32 2009 for imSimReal by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

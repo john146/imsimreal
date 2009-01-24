@@ -2,20 +2,17 @@
 \section{IMSRPointObject Class Reference}
 \label{interface_i_m_s_r_point_object}\index{IMSRPointObject@{IMSRPointObject}}
 }
-IMSPointObject represents a point mass in a cartesian coordinate system.  
-
-
 {\tt \#import $<$IMSRPointObject.h$>$}
 
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
 (id) - \hyperlink{interface_i_m_s_r_point_object_0251ecd091ae3e8a0840a6b6ab35be0b}{initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:accelerationX:accelerationY:accelerationZ:}
-\begin{CompactList}\small\item\em Initializer allowing the user to set all values for initial state of the object. \item\end{CompactList}\item 
+\item 
 (id) - \hyperlink{interface_i_m_s_r_point_object_4ed4386983dba714a6678023ac353199}{initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:}
-\begin{CompactList}\small\item\em Initializer allowing the user to set all values for initial position and velocity. \item\end{CompactList}\item 
+\item 
 (id) - \hyperlink{interface_i_m_s_r_point_object_603d5f56f6b9344693f108efa3786d79}{initWithPositionX:positionY:positionZ:}
-\begin{CompactList}\small\item\em Initializer allowing the user to set values for the initial position. \item\end{CompactList}\item 
+\item 
 \hypertarget{interface_i_m_s_r_point_object_ddb88a4b481defa5b3b7729df3bb57f8}{
 (double) - \textbf{positionX}}
 \label{interface_i_m_s_r_point_object_ddb88a4b481defa5b3b7729df3bb57f8}
@@ -62,13 +59,13 @@ IMSPointObject represents a point mass in a cartesian coordinate system.
 
 \item 
 (void) - \hyperlink{interface_i_m_s_r_point_object_151a5fa0c67135b90a0de70b061276c3}{updatePositionX:positionY:positionZ:}
-\begin{CompactList}\small\item\em Update the point's position in the coordinate system. \item\end{CompactList}\item 
+\item 
 (void) - \hyperlink{interface_i_m_s_r_point_object_55fbe7e8642006b44ebeedc850b5c728}{updateVelocityX:velocityY:velocityZ:}
-\begin{CompactList}\small\item\em Update the point's velocity in the coordinate system. \item\end{CompactList}\item 
+\item 
 (void) - \hyperlink{interface_i_m_s_r_point_object_1a32028d39d5f3e7fd976cac12040a54}{updateAccelerationX:accelerationY:accelerationZ:}
-\begin{CompactList}\small\item\em Update the acceleration in the coordinate system. \item\end{CompactList}\item 
+\item 
 (void) - \hyperlink{interface_i_m_s_r_point_object_ae14396d83b2edd2f34b0bfb0f35a501}{computeStateForDeltaTime:}
-\begin{CompactList}\small\item\em Comutes a new state for the point deltaTime into the future. \item\end{CompactList}\end{CompactItemize}
+\end{CompactItemize}
 \subsection*{Properties}
 \begin{CompactItemize}
 \item 
@@ -80,11 +77,11 @@ NSMutableDictionary $\ast$ \textbf{pointObject}}
 
 
 \subsection{Detailed Description}
-IMSPointObject represents a point mass in a cartesian coordinate system. 
-
-It has a state, consisting of a position, velocity and acceleration.
+IMSPointObject represents a point mass in a cartesian coordinate system. It has a state, consisting of a position, velocity and acceleration.
 
 Units are: Position: meters Velocity: meters/second Acceleration: meters/second$^{\mbox{2}}$  
+
+Definition at line 21 of file IMSRPointObject.h.
 
 \subsection{Member Function Documentation}
 \hypertarget{interface_i_m_s_r_point_object_ae14396d83b2edd2f34b0bfb0f35a501}{
@@ -94,25 +91,23 @@ Units are: Position: meters Velocity: meters/second Acceleration: meters/second$
 \label{interface_i_m_s_r_point_object_ae14396d83b2edd2f34b0bfb0f35a501}
 
 
-Comutes a new state for the point deltaTime into the future. 
-
-Updates position with the equation: newPosition = currentPosition + currentVelocity $\ast$ deltaTime + currentAcceleration $\ast$ deltaTime$^{\mbox{2}}$  / 2 and velocity becomes: newVelocity = currentVelocity + currentAcceleration $\ast$ deltaTime
+Comutes a new state for the point deltaTime into the future. Updates position with the equation: newPosition = currentPosition + currentVelocity $\ast$ deltaTime + currentAcceleration $\ast$ deltaTime$^{\mbox{2}}$  / 2 and velocity becomes: newVelocity = currentVelocity + currentAcceleration $\ast$ deltaTime
 
 \begin{Desc}
 \item[Parameters:]
 \begin{description}
 \item[{\em deltaTime}]An NSTimeInterval value to look into the future. The smaller the interval the more accurate the computation, but the more computing power required. \end{description}
 \end{Desc}
-\hypertarget{interface_i_m_s_r_point_object_603d5f56f6b9344693f108efa3786d79}{
+
+
+Definition at line 238 of file IMSRPointObject.m.\hypertarget{interface_i_m_s_r_point_object_603d5f56f6b9344693f108efa3786d79}{
 \index{IMSRPointObject@{IMSRPointObject}!initWithPositionX:positionY:positionZ:@{initWithPositionX:positionY:positionZ:}}
 \index{initWithPositionX:positionY:positionZ:@{initWithPositionX:positionY:positionZ:}!IMSRPointObject@{IMSRPointObject}}
 \subsubsection[{initWithPositionX:positionY:positionZ:}]{\setlength{\rightskip}{0pt plus 5cm}- (id) initWithPositionX: (double) {\em positionX}\/ positionY: (double) {\em positionY}\/ positionZ: (double) {\em positionZ}}}
 \label{interface_i_m_s_r_point_object_603d5f56f6b9344693f108efa3786d79}
 
 
-Initializer allowing the user to set values for the initial position. 
-
-The initial velocity and acceleration are set to 0.0.
+Initializer allowing the user to set values for the initial position. The initial velocity and acceleration are set to 0.0.
 
 \begin{Desc}
 \item[Parameters:]
@@ -121,16 +116,16 @@ The initial velocity and acceleration are set to 0.0.
 \end{Desc}
 \begin{Desc}
 \item[Returns:]self \end{Desc}
-\hypertarget{interface_i_m_s_r_point_object_4ed4386983dba714a6678023ac353199}{
+
+
+Definition at line 90 of file IMSRPointObject.m.\hypertarget{interface_i_m_s_r_point_object_4ed4386983dba714a6678023ac353199}{
 \index{IMSRPointObject@{IMSRPointObject}!initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:@{initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:}}
 \index{initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:@{initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:}!IMSRPointObject@{IMSRPointObject}}
 \subsubsection[{initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:}]{\setlength{\rightskip}{0pt plus 5cm}- (id) initWithPositionX: (double) {\em positionX}\/ positionY: (double) {\em positionY}\/ positionZ: (double) {\em positionZ}\/ velocityX: (double) {\em velocityX}\/ velocityY: (double) {\em velocityY}\/ velocityZ: (double) {\em velocityZ}}}
 \label{interface_i_m_s_r_point_object_4ed4386983dba714a6678023ac353199}
 
 
-Initializer allowing the user to set all values for initial position and velocity. 
-
-Initial acceleration is set to 0.0.
+Initializer allowing the user to set all values for initial position and velocity. Initial acceleration is set to 0.0.
 
 \begin{Desc}
 \item[Parameters:]
@@ -139,14 +134,16 @@ Initial acceleration is set to 0.0.
 \end{Desc}
 \begin{Desc}
 \item[Returns:]self \end{Desc}
-\hypertarget{interface_i_m_s_r_point_object_0251ecd091ae3e8a0840a6b6ab35be0b}{
+
+
+Definition at line 65 of file IMSRPointObject.m.\hypertarget{interface_i_m_s_r_point_object_0251ecd091ae3e8a0840a6b6ab35be0b}{
 \index{IMSRPointObject@{IMSRPointObject}!initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:accelerationX:accelerationY:accelerationZ:@{initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:accelerationX:accelerationY:accelerationZ:}}
 \index{initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:accelerationX:accelerationY:accelerationZ:@{initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:accelerationX:accelerationY:accelerationZ:}!IMSRPointObject@{IMSRPointObject}}
 \subsubsection[{initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:accelerationX:accelerationY:accelerationZ:}]{\setlength{\rightskip}{0pt plus 5cm}- (id) initWithPositionX: (double) {\em positionX}\/ positionY: (double) {\em positionY}\/ positionZ: (double) {\em positionZ}\/ velocityX: (double) {\em velocityX}\/ velocityY: (double) {\em velocityY}\/ velocityZ: (double) {\em velocityZ}\/ accelerationX: (double) {\em accelerationX}\/ accelerationY: (double) {\em accelerationY}\/ accelerationZ: (double) {\em accelerationZ}}}
 \label{interface_i_m_s_r_point_object_0251ecd091ae3e8a0840a6b6ab35be0b}
 
 
-Initializer allowing the user to set all values for initial state of the object. 
+Initializer allowing the user to set all values for initial state of the object
 
 \begin{Desc}
 \item[Parameters:]
@@ -155,16 +152,16 @@ Initializer allowing the user to set all values for initial state of the object.
 \end{Desc}
 \begin{Desc}
 \item[Returns:]self \end{Desc}
-\hypertarget{interface_i_m_s_r_point_object_1a32028d39d5f3e7fd976cac12040a54}{
+
+
+Definition at line 37 of file IMSRPointObject.m.\hypertarget{interface_i_m_s_r_point_object_1a32028d39d5f3e7fd976cac12040a54}{
 \index{IMSRPointObject@{IMSRPointObject}!updateAccelerationX:accelerationY:accelerationZ:@{updateAccelerationX:accelerationY:accelerationZ:}}
 \index{updateAccelerationX:accelerationY:accelerationZ:@{updateAccelerationX:accelerationY:accelerationZ:}!IMSRPointObject@{IMSRPointObject}}
 \subsubsection[{updateAccelerationX:accelerationY:accelerationZ:}]{\setlength{\rightskip}{0pt plus 5cm}- (void) updateAccelerationX: (double) {\em accelerationX}\/ accelerationY: (double) {\em accelerationY}\/ accelerationZ: (double) {\em accelerationZ}}}
 \label{interface_i_m_s_r_point_object_1a32028d39d5f3e7fd976cac12040a54}
 
 
-Update the acceleration in the coordinate system. 
-
-Acceleration does not get updated by computeStateForDeltatime: so this is the only way that acceleration changes.
+Update the acceleration in the coordinate system. Acceleration does not get updated by computeStateForDeltatime: so this is the only way that acceleration changes.
 
 \begin{Desc}
 \item[See also:]\hyperlink{interface_i_m_s_r_point_object_ae14396d83b2edd2f34b0bfb0f35a501}{- computeStateForDeltaTime:}\end{Desc}
@@ -173,16 +170,16 @@ Acceleration does not get updated by computeStateForDeltatime: so this is the on
 \begin{description}
 \item[{\em accelerationX}]The acceleration along the X coordinate, in meters/second$^{\mbox{2}}$  \item[{\em accelerationY}]The acceleration along the Y coordinate, in meters/second$^{\mbox{2}}$  \item[{\em accelerationZ}]The acceleration along the Z coordinate, in meters/second$^{\mbox{2}}$  \end{description}
 \end{Desc}
-\hypertarget{interface_i_m_s_r_point_object_151a5fa0c67135b90a0de70b061276c3}{
+
+
+Definition at line 201 of file IMSRPointObject.m.\hypertarget{interface_i_m_s_r_point_object_151a5fa0c67135b90a0de70b061276c3}{
 \index{IMSRPointObject@{IMSRPointObject}!updatePositionX:positionY:positionZ:@{updatePositionX:positionY:positionZ:}}
 \index{updatePositionX:positionY:positionZ:@{updatePositionX:positionY:positionZ:}!IMSRPointObject@{IMSRPointObject}}
 \subsubsection[{updatePositionX:positionY:positionZ:}]{\setlength{\rightskip}{0pt plus 5cm}- (void) updatePositionX: (double) {\em positionX}\/ positionY: (double) {\em positionY}\/ positionZ: (double) {\em positionZ}}}
 \label{interface_i_m_s_r_point_object_151a5fa0c67135b90a0de70b061276c3}
 
 
-Update the point's position in the coordinate system. 
-
-Normally the position will get updated by computeStateForDeltaTime: but there may be times when this method is needed.
+Update the point's position in the coordinate system. Normally the position will get updated by computeStateForDeltaTime: but there may be times when this method is needed.
 
 \begin{Desc}
 \item[See also:]\hyperlink{interface_i_m_s_r_point_object_ae14396d83b2edd2f34b0bfb0f35a501}{- computeStateForDeltaTime:}\end{Desc}
@@ -191,16 +188,16 @@ Normally the position will get updated by computeStateForDeltaTime: but there ma
 \begin{description}
 \item[{\em positionX}]The new X coordinate, in meters. \item[{\em positionY}]The new Y coordinate, in meters. \item[{\em positionZ}]The new Z coordinate, in meters. \end{description}
 \end{Desc}
-\hypertarget{interface_i_m_s_r_point_object_55fbe7e8642006b44ebeedc850b5c728}{
+
+
+Definition at line 184 of file IMSRPointObject.m.\hypertarget{interface_i_m_s_r_point_object_55fbe7e8642006b44ebeedc850b5c728}{
 \index{IMSRPointObject@{IMSRPointObject}!updateVelocityX:velocityY:velocityZ:@{updateVelocityX:velocityY:velocityZ:}}
 \index{updateVelocityX:velocityY:velocityZ:@{updateVelocityX:velocityY:velocityZ:}!IMSRPointObject@{IMSRPointObject}}
 \subsubsection[{updateVelocityX:velocityY:velocityZ:}]{\setlength{\rightskip}{0pt plus 5cm}- (void) updateVelocityX: (double) {\em velocityX}\/ velocityY: (double) {\em velocityY}\/ velocityZ: (double) {\em velocityZ}}}
 \label{interface_i_m_s_r_point_object_55fbe7e8642006b44ebeedc850b5c728}
 
 
-Update the point's velocity in the coordinate system. 
-
-Normally the velocity will get updated by computeStateForDeltaTime: but there may be times when this method is needed.
+Update the point's velocity in the coordinate system. Normally the velocity will get updated by computeStateForDeltaTime: but there may be times when this method is needed.
 
 \begin{Desc}
 \item[See also:]\hyperlink{interface_i_m_s_r_point_object_ae14396d83b2edd2f34b0bfb0f35a501}{- computeStateForDeltaTime:}\end{Desc}
@@ -210,6 +207,8 @@ Normally the velocity will get updated by computeStateForDeltaTime: but there ma
 \item[{\em velocityX}]The new velocity along the X coordinate, in meters/second. \item[{\em velocityY}]The new velocity along the Y coordinate, in meters/second. \item[{\em velocityZ}]The new velocithy along the Z coordinate, in meters/second. \end{description}
 \end{Desc}
 
+
+Definition at line 193 of file IMSRPointObject.m.
 
 The documentation for this class was generated from the following files:\begin{CompactItemize}
 \item 
