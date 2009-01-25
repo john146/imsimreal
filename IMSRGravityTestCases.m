@@ -63,6 +63,24 @@
 	double		expectedResult	= -24.8;	// Gravity of Jupiter, m/s
 	double		result			= [gravity gravityForSelectedBody];
 	STAssertEquals(result, expectedResult, @"Expected %f, got %f", expectedResult, result);
+	
+	[body release];
+	[gravity release];
+}
+
+- (void)testGetGravityForSelectedBodyWithBadBodyName
+{
+	NSString	*body			= @"test";
+	IMSRGravity	*gravity		= [[IMSRGravity alloc] init];
+	STAssertNotNil(gravity, @"IMSRGravity not created with default initializer");
+	
+	[gravity setSelectedBody: body];
+	double		expectedResult	= 0.0; // value if selectedBody is not valid (i.e., null, etc.)
+	double		result			= [gravity gravityForSelectedBody];
+	STAssertEquals(result, expectedResult, @"Expected %f, got %f", expectedResult, result);
+	
+	[body release];
+	[gravity release];
 }
 
 @end

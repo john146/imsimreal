@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>IMSRGravity.m</string>
+								<string>IMSRGravity.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>IMSRGravity.m</string>
+										<string>IMSRGravity.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>523F74F60F2B927100B77EE5</string>
+										<string>523F750B0F2C043900B77EE5</string>
 										<key>history</key>
 										<array>
 											<string>529B87F80F009AFF00565A8D</string>
@@ -341,10 +341,10 @@
 											<string>5283CEBC0F0DBEE200A57A98</string>
 											<string>526C25290F22E7C50084A956</string>
 											<string>523F74E50F2B927100B77EE5</string>
-											<string>523F74E60F2B927100B77EE5</string>
 											<string>523F74E70F2B927100B77EE5</string>
 											<string>523F74E80F2B927100B77EE5</string>
-											<string>523F74E90F2B927100B77EE5</string>
+											<string>523F75090F2C043900B77EE5</string>
+											<string>523F74E60F2B927100B77EE5</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -361,18 +361,7 @@
 											<string>523921580F07122000CD05CD</string>
 											<string>523921880F07165E00CD05CD</string>
 											<string>523921B90F07192800CD05CD</string>
-											<string>523F74EA0F2B927100B77EE5</string>
-											<string>523F74EB0F2B927100B77EE5</string>
-											<string>523F74EC0F2B927100B77EE5</string>
-											<string>523F74ED0F2B927100B77EE5</string>
-											<string>523F74EE0F2B927100B77EE5</string>
-											<string>523F74EF0F2B927100B77EE5</string>
-											<string>523F74F00F2B927100B77EE5</string>
-											<string>523F74F10F2B927100B77EE5</string>
-											<string>523F74F20F2B927100B77EE5</string>
-											<string>523F74F30F2B927100B77EE5</string>
-											<string>523F74F40F2B927100B77EE5</string>
-											<string>523F74F50F2B927100B77EE5</string>
+											<string>523F750A0F2C043900B77EE5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -430,9 +419,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>523F74DF0F2B8D8800B77EE5</string>
+				<string>523F75070F2B9B5900B77EE5</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>523F74E00F2B8D8800B77EE5</string>
+				<string>523F75080F2B9B5900B77EE5</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -566,7 +555,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>52CDF9D50EFF25A100D89741</string>
 		<string>/Users/john/Documents/Projects/imSimReal/imSimReal.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
