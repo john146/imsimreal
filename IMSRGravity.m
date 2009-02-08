@@ -25,8 +25,12 @@
 		return nil;
 	}
 
-	bodyGravity		= [[NSDictionary alloc] initWithContentsOfFile: @"Gravity.plist"];
-	selectedBody	= body;
+	NSBundle *bundle	= [NSBundle mainBundle];
+	NSString *file		= [bundle pathForResource: @"Gravity" ofType: @"plist"];
+	bodyGravity			= [[NSDictionary alloc] initWithContentsOfFile: file];
+	selectedBody		= body;
+	
+	NSLog(@"Gravity of %@: %f", [self selectedBody], [self gravityForSelectedBody]);
 	
 	return self;
 }
