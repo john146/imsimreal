@@ -6,13 +6,11 @@
 //  Copyright 2008 John Ahrens, LLC. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import "GTMSenTestCase.h"
 
-@interface IMSRGravityTestCases : SenTestCase 
+@interface IMSRGravityTestCases : GTMTestCase 
 {
 
 }
-
-- (void)testCreateIMSRGravity;
 
 @end

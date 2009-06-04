@@ -6,24 +6,15 @@
 //  Copyright 2008 John Ahrens, LLC. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import "GTMSenTestCase.h"
 
 @class IMSRPointObject;
 
-@interface IMSRPointObjectTestCases : SenTestCase 
+@interface IMSRPointObjectTestCases : GTMTestCase 
 {
 	IMSRPointObject	*pointObj;
 }
 
 @property (nonatomic, retain) IMSRPointObject *pointObj;
-
-- (void)testInitPointObjectWithPositionVelocityAndAcceleration;
-- (void)testInitPointObjectWithPositionAndVelocity;
-- (void)testInitPointObjectWithPosition;
-- (void)testInitPointObject;
-- (void)testUpdatePosition;
-- (void)testUpdateVelocity;
-- (void)testUpdateAcceleration;
-- (void)testComputeStateForDeltaTime;
 
 @end
