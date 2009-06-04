@@ -15,6 +15,4 @@
 	IMSRPointObject	*pointObj;
 }
 
-@property (nonatomic, retain) IMSRPointObject *pointObj;
-
 @end

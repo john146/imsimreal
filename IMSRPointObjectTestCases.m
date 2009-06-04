@@ -11,8 +11,6 @@
 
 @implementation IMSRPointObjectTestCases
 
-@synthesize pointObj;
-
 - (void)setUp
 {
 	pointObj	= [[IMSRPointObject alloc] init];
