@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class RootViewController;
+
 @interface imSimRealAppDelegate : NSObject <UIApplicationDelegate> 
 {
     UIWindow *window;

@@ -4,15 +4,17 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Initialize Gravity</string>
+		<key>class</key>
 		<string>Gravity</string>
-		<key>Color</key>
-		<data></data>
-		<key>action</key>
-		<string>executeTests</string>
-		<key>detailedAction</key>
-		<string>GravityTests</string>
+		<key>method</key>
+		<string>init</string>
+		<key>returnSelectedBody</key>
+		<string>Earth</string>
+		<key>returnGravity</key>
+		<real>-9.81</real>
 		<key>execute</key>
-		<false/>
+		<true/>
 	</dict>
 </array>
 </plist>

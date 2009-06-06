@@ -9,7 +9,6 @@
 #import "imSimRealAppDelegate.h"
 #import "RootViewController.h"
 
-
 @implementation imSimRealAppDelegate
 
 @synthesize window;
@@ -19,7 +18,7 @@
 - (void)applicationDidFinishLaunching:(UIApplication *)application 
 {
 	// Configure and show the window
-	[window addSubview:[navigationController view]];
+	[window addSubview: navigationController.view];
 	[window makeKeyAndVisible];
 }
 

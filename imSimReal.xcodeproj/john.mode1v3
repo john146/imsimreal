@@ -231,6 +231,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -277,12 +279,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>23</integer>
-									<integer>12</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>24</integer>
+									<integer>20</integer>
 									<integer>12</integer>
 									<integer>0</integer>
 								</array>
@@ -318,14 +315,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TestList.h</string>
+								<string>imSimRealAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -333,20 +328,25 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TestList.h</string>
+										<string>imSimRealAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>52D0EC850FDAC65800F1C8B9</string>
+										<string>52D0ECD20FDAF2BD00F1C8B9</string>
 										<key>history</key>
 										<array>
 											<string>52D0EC560FD9CA6800F1C8B9</string>
-											<string>52D0EC700FD9F70900F1C8B9</string>
-											<string>52D0EC710FD9F70900F1C8B9</string>
-											<string>52D0EC720FD9F70900F1C8B9</string>
-											<string>52D0EC730FD9F70900F1C8B9</string>
-											<string>52D0EC740FD9F70900F1C8B9</string>
-											<string>52D0EC750FD9F70900F1C8B9</string>
+											<string>52D0EC8C0FDACEA600F1C8B9</string>
+											<string>52D0EC8D0FDACEA600F1C8B9</string>
+											<string>52D0EC8E0FDACEA600F1C8B9</string>
+											<string>52D0EC8F0FDACEA600F1C8B9</string>
+											<string>52D0ECB30FDAF04600F1C8B9</string>
+											<string>52D0ECB40FDAF04600F1C8B9</string>
+											<string>52D0ECB50FDAF04600F1C8B9</string>
+											<string>52D0ECB60FDAF04600F1C8B9</string>
+											<string>52D0ECB80FDAF04600F1C8B9</string>
+											<string>52D0ECCE0FDAF2BD00F1C8B9</string>
+											<string>52D0ECCF0FDAF2BD00F1C8B9</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -369,6 +369,30 @@
 											<string>52D0EC7E0FD9F70900F1C8B9</string>
 											<string>52D0EC7F0FD9F70900F1C8B9</string>
 											<string>52D0EC800FD9F70900F1C8B9</string>
+											<string>52D0EC910FDACEA600F1C8B9</string>
+											<string>52D0EC920FDACEA600F1C8B9</string>
+											<string>52D0EC930FDACEA600F1C8B9</string>
+											<string>52D0EC940FDACEA600F1C8B9</string>
+											<string>52D0EC950FDACEA600F1C8B9</string>
+											<string>52D0EC960FDACEA600F1C8B9</string>
+											<string>52D0EC970FDACEA600F1C8B9</string>
+											<string>52D0EC980FDACEA600F1C8B9</string>
+											<string>52D0EC990FDACEA600F1C8B9</string>
+											<string>52D0EC9A0FDACEA600F1C8B9</string>
+											<string>52D0EC9B0FDACEA600F1C8B9</string>
+											<string>52D0ECBA0FDAF04600F1C8B9</string>
+											<string>52D0ECBB0FDAF04600F1C8B9</string>
+											<string>52D0ECBC0FDAF04600F1C8B9</string>
+											<string>52D0ECBD0FDAF04600F1C8B9</string>
+											<string>52D0ECBE0FDAF04600F1C8B9</string>
+											<string>52D0ECBF0FDAF04600F1C8B9</string>
+											<string>52D0ECC00FDAF04600F1C8B9</string>
+											<string>52D0ECC10FDAF04600F1C8B9</string>
+											<string>52D0ECC20FDAF04600F1C8B9</string>
+											<string>52D0ECC30FDAF04600F1C8B9</string>
+											<string>52D0ECC40FDAF04600F1C8B9</string>
+											<string>52D0ECD00FDAF2BD00F1C8B9</string>
+											<string>52D0ECD10FDAF2BD00F1C8B9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -660,7 +684,7 @@
 			<key>WindowToolGUID</key>
 			<string>52D0EB060FD889E600F1C8B9</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

@@ -9,9 +9,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TestList : NSObject 
-{
+#import "Test.h"
 
+@interface TestList : NSObject <TestDelegate>
+{
+	NSArray *testArray;
 }
+
+@property (nonatomic, retain)NSArray *testArray;
+
+- (id)initWithTest: (NSDictionary *)test;
 
 @end

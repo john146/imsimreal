@@ -8,6 +8,9 @@
 
 #import "RootViewController.h"
 #import "imSimRealAppDelegate.h"
+#import "Test.h"
+#import	"TestList.h"
+#import "SublevelViewController.h"
 
 @implementation RootViewController
 
@@ -31,15 +34,32 @@
 	self.rowImage = [UIImage imageNamed: @"disclosureButtonControllerIcon.png"];
 	NSMutableArray *testArray = [[NSMutableArray alloc] init];
 	NSMutableArray *controlArray = [[NSMutableArray alloc] init];
-	NSArray *path = [[NSBundle mainBundle] pathForResource: @"RootTests"
-														  ofType:@"plist"];
+	NSString *path = [[NSBundle mainBundle] pathForResource: @"RootTests"
+													 ofType:@"plist"];
 	NSArray *plistTests = [NSArray arrayWithContentsOfFile: path];
 	NSEnumerator *enumerator = [plistTests objectEnumerator];
 	NSDictionary *testDictionary;
 	while (testDictionary = [enumerator nextObject])
 	{
-//		TestList *listTest = [[TestList alloc] initWithTest: testDictionary];
+		TestList *listTest = [[TestList alloc] initWithTest: testDictionary];
+		Test *myTest = [[Test alloc] initWithTest: testDictionary
+										 delegate: listTest];
+		[testArray addObject: myTest];
+		
+		SublevelViewController *controller = [[SublevelViewController alloc] initWithStyle: UITableViewStylePlain];
+		controller.title = myTest.testName;
+		controller.rowImage = self.rowImage;
+		[controlArray addObject: controller];
+		
+		[myTest release];
+		[controller release];
 	}
+	
+	self.tests = testArray;
+	self.controllers = controlArray;
+	
+	[testArray release];
+	[controlArray release];
 	
     [super viewDidLoad];
 }
@@ -100,7 +120,7 @@
 - (NSInteger)tableView:(UITableView *)tableView 
  numberOfRowsInSection:(NSInteger)section 
 {
-    return 1;
+    return [controllers count];
 }
 
 // Customize the appearance of table view cells.
@@ -110,6 +130,8 @@
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	NSUInteger row = [indexPath row];
+	Test *test = [tests objectAtIndex: row];
     if (cell == nil)
 	{
         cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero 
@@ -117,7 +139,10 @@
     }
     
     // Set up the cell...
-	cell.text	= @"Gravity";
+	cell.text	= test.testName;
+	cell.textColor = test.testColor;
+	cell.font = [UIFont fontWithName: @"Helvetica"
+								size: 16];
 
     return cell;
 }
@@ -131,10 +156,30 @@
 - (void)tableView:(UITableView *)tableView 
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController];
-	// [anotherViewController release];
+	NSUInteger row = [indexPath row];
+	Test *test = [tests objectAtIndex: row];
+	[test runTest];
+	UITableViewCell *cell = [tableView cellForRowAtIndexPath: indexPath];
+	cell.textColor = test.testColor;
+}
+
+- (void)tableView: (UITableView *)tableView
+accessoryButtonTappedForRowWithIndexPath: (NSIndexPath *)indexPath
+{
+	NSUInteger row = [indexPath row];
+	SublevelViewController *controller = [controllers objectAtIndex: row];
+	Test *test = [tests objectAtIndex: row];
+	controller.title = test.testName;
+	controller.detailedAction = test.testDetails;
+	TestList *testList = test.delegate;
+	if (testList.testArray != nil)
+	{
+		controller.tests = testList.testArray;
+	}
+	
+	imSimRealAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navigationController pushViewController: controller
+											 animated: YES];
 }
 
 /*

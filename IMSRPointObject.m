@@ -87,7 +87,9 @@
 	return self;
 }
 
-- (id)initWithPositionX: (double)positionX positionY: (double)positionY positionZ: (double)positionZ
+- (id)initWithPositionX: (double)positionX 
+			  positionY: (double)positionY 
+			  positionZ: (double)positionZ
 {
 	if (![super init])
 	{
