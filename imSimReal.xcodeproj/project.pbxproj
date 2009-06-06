@@ -26,8 +26,12 @@
 		52D0EAE70FD889E100F1C8B9 /* IMSRPointObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0EAB30FD8836500F1C8B9 /* IMSRPointObject.m */; };
 		52D0EB110FD88D9D00F1C8B9 /* Gravity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D0EB100FD88D9D00F1C8B9 /* Gravity.plist */; };
 		52D0EB120FD88D9D00F1C8B9 /* Gravity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D0EB100FD88D9D00F1C8B9 /* Gravity.plist */; };
-		52D0EB330FD8925A00F1C8B9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D0EB320FD8925A00F1C8B9 /* MainWindow.xib */; };
-		52D0EB360FD8948D00F1C8B9 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D0EB350FD8948D00F1C8B9 /* RootViewController.xib */; };
+		52D0EB820FD9A04000F1C8B9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D0EB800FD9A04000F1C8B9 /* MainWindow.xib */; };
+		52D0EB830FD9A04000F1C8B9 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D0EB810FD9A04000F1C8B9 /* RootViewController.xib */; };
+		52D0EC070FD9B9B000F1C8B9 /* disclosureButtonControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D0EC060FD9B9B000F1C8B9 /* disclosureButtonControllerIcon.png */; };
+		52D0EC630FD9F2F900F1C8B9 /* RootTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D0EC620FD9F2F900F1C8B9 /* RootTests.plist */; };
+		52D0EC660FD9F5BB00F1C8B9 /* SublevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0EC650FD9F5BB00F1C8B9 /* SublevelViewController.m */; };
+		52D0EC690FD9F6AA00F1C8B9 /* TestList.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0EC680FD9F6AA00F1C8B9 /* TestList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,8 +63,14 @@
 		52D0EADC0FD8867800F1C8B9 /* IMSRPointObjectTestCases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSRPointObjectTestCases.m; sourceTree = SOURCE_ROOT; };
 		52D0EADF0FD8869A00F1C8B9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		52D0EB100FD88D9D00F1C8B9 /* Gravity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Gravity.plist; sourceTree = SOURCE_ROOT; };
-		52D0EB320FD8925A00F1C8B9 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../../../PointInside/ClientAPI/MainWindow.xib; sourceTree = SOURCE_ROOT; };
-		52D0EB350FD8948D00F1C8B9 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RootViewController.xib; path = ../../../PointInside/ClientAPI/RootViewController.xib; sourceTree = SOURCE_ROOT; };
+		52D0EB800FD9A04000F1C8B9 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = SOURCE_ROOT; };
+		52D0EB810FD9A04000F1C8B9 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = SOURCE_ROOT; };
+		52D0EC060FD9B9B000F1C8B9 /* disclosureButtonControllerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosureButtonControllerIcon.png; sourceTree = SOURCE_ROOT; };
+		52D0EC620FD9F2F900F1C8B9 /* RootTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RootTests.plist; sourceTree = "<group>"; };
+		52D0EC640FD9F5BB00F1C8B9 /* SublevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SublevelViewController.h; sourceTree = "<group>"; };
+		52D0EC650FD9F5BB00F1C8B9 /* SublevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SublevelViewController.m; sourceTree = "<group>"; };
+		52D0EC670FD9F6AA00F1C8B9 /* TestList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestList.h; sourceTree = "<group>"; };
+		52D0EC680FD9F6AA00F1C8B9 /* TestList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestList.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +106,10 @@
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* imSimRealAppDelegate.h */,
 				1D3623250D0F684500981E51 /* imSimRealAppDelegate.m */,
+				52D0EC640FD9F5BB00F1C8B9 /* SublevelViewController.h */,
+				52D0EC650FD9F5BB00F1C8B9 /* SublevelViewController.m */,
+				52D0EC670FD9F6AA00F1C8B9 /* TestList.h */,
+				52D0EC680FD9F6AA00F1C8B9 /* TestList.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -135,11 +149,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				52D0EB350FD8948D00F1C8B9 /* RootViewController.xib */,
-				52D0EB320FD8925A00F1C8B9 /* MainWindow.xib */,
+				52D0EC060FD9B9B000F1C8B9 /* disclosureButtonControllerIcon.png */,
+				52D0EB800FD9A04000F1C8B9 /* MainWindow.xib */,
 				52D0EB100FD88D9D00F1C8B9 /* Gravity.plist */,
+				52D0EB810FD9A04000F1C8B9 /* RootViewController.xib */,
 				52D0EADF0FD8869A00F1C8B9 /* LICENSE */,
 				8D1107310486CEB800E47090 /* Info.plist */,
+				52D0EC620FD9F2F900F1C8B9 /* RootTests.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -241,8 +257,10 @@
 			files = (
 				52D0EAE10FD8869A00F1C8B9 /* LICENSE in Resources */,
 				52D0EB120FD88D9D00F1C8B9 /* Gravity.plist in Resources */,
-				52D0EB330FD8925A00F1C8B9 /* MainWindow.xib in Resources */,
-				52D0EB360FD8948D00F1C8B9 /* RootViewController.xib in Resources */,
+				52D0EB820FD9A04000F1C8B9 /* MainWindow.xib in Resources */,
+				52D0EB830FD9A04000F1C8B9 /* RootViewController.xib in Resources */,
+				52D0EC070FD9B9B000F1C8B9 /* disclosureButtonControllerIcon.png in Resources */,
+				52D0EC630FD9F2F900F1C8B9 /* RootTests.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +301,8 @@
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				52D0EAB40FD8836500F1C8B9 /* IMSRGravity.m in Sources */,
 				52D0EAB50FD8836500F1C8B9 /* IMSRPointObject.m in Sources */,
+				52D0EC660FD9F5BB00F1C8B9 /* SublevelViewController.m in Sources */,
+				52D0EC690FD9F6AA00F1C8B9 /* TestList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

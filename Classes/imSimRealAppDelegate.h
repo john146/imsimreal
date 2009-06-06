@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface imSimRealAppDelegate : NSObject <UIApplicationDelegate> {
-    
+@interface imSimRealAppDelegate : NSObject <UIApplicationDelegate> 
+{
     UIWindow *window;
     UINavigationController *navigationController;
 }
