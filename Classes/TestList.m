@@ -8,6 +8,7 @@
 
 #import "TestList.h"
 #import "TestGravity.h"
+#import "TestPointObject.h"
 
 @implementation TestList
 
@@ -33,6 +34,13 @@
 					TestGravity *testGravity = [[TestGravity alloc] initWithTest: testDictionary];
 					Test *myTest = [[Test alloc] initWithTest: testDictionary
 													 delegate: testGravity];
+					[myTests addObject: myTest];
+				}
+				else if ([[testDictionary objectForKey: @"class"] isEqualToString: @"IMSRPointObject"])
+				{
+					TestPointObject *testPointObject = [[TestPointObject alloc] initWithTest: testDictionary]; 
+					Test *myTest = [[Test alloc] initWithTest: testDictionary
+													 delegate: testPointObject];
 					[myTests addObject: myTest];
 				}
 			}

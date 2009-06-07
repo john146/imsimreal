@@ -12,5 +12,15 @@
 		<key>execute</key>
 		<false/>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>PointObject</string>
+		<key>action</key>
+		<string>executeTests</string>
+		<key>detailedAction</key>
+		<string>PointObjectTests</string>
+		<key>execute</key>
+		<false/>
+	</dict>
 </array>
 </plist>

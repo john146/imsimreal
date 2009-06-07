@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Initialize PointObject</string>
+		<key>action</key>
+		<string>-init</string>
+		<key>detailedAction</key>
+		<string>Call -init on PointObject</string>
+		<key>class</key>
+		<string>IMSRPointObject</string>
+		<key>method</key>
+		<string>init</string>
+		<key>inputPositionX</key>
+		<integer>0</integer>
+		<key>inputPositionY</key>
+		<integer>0</integer>
+		<key>inputPositionZ</key>
+		<integer>0</integer>
+		<key>inputVelocityX</key>
+		<integer>0</integer>
+		<key>inputVelocityY</key>
+		<integer>0</integer>
+		<key>inputVelocityZ</key>
+		<integer>0</integer>
+		<key>inputAccelerationX</key>
+		<integer>0</integer>
+		<key>inputAccelerationY</key>
+		<integer>0</integer>
+		<key>inputAccelerationZ</key>
+		<integer>0</integer>
+		<key>deltaTime</key>
+		<integer>0</integer>
+		<key>resultPositionX</key>
+		<integer>0</integer>
+		<key>resultPositionY</key>
+		<integer>0</integer>
+		<key>resultPositionZ</key>
+		<integer>0</integer>
+		<key>resultVelocityX</key>
+		<integer>0</integer>
+		<key>resultVelocityY</key>
+		<integer>0</integer>
+		<key>resultVelocityZ</key>
+		<integer>0</integer>
+		<key>resultAccelerationX</key>
+		<integer>0</integer>
+		<key>resultAccelerationY</key>
+		<integer>0</integer>
+		<key>resultAccelerationZ</key>
+		<integer>0</integer>
+		<key>execute</key>
+		<true/>
+		<key>nilReturn</key>
+		<false/>
+	</dict>
+</array>
+</plist>

@@ -10,238 +10,158 @@
 
 @implementation IMSRPointObject
 
-@synthesize pointObject;
+@synthesize positionX;
+@synthesize positionY;
+@synthesize positionZ;
+@synthesize velocityX;
+@synthesize velocityY;
+@synthesize velocityZ;
+@synthesize accelerationX;
+@synthesize accelerationY;
+@synthesize accelerationZ;
 
-- (NSMutableDictionary *)setPointObjectWithPositionX: (double)positionX 
-										   positionY: (double)positionY 
-										   positionZ: (double)positionZ 
-										   velocityX: (double)velocityX 
-										   velocityY: (double)velocityY 
-										   velocityZ: (double)velocityZ
-									   accelerationX: (double)accelerationX 
-									   accelerationY: (double)accelerationY
-									   accelerationZ: (double)accelerationZ
+- (id)initWithPositionX: (double)myPositionX 
+			  positionY: (double)myPositionY 
+			  positionZ: (double)myPositionZ
+			  velocityX: (double)myVelocityX
+			  velocityY: (double)myVelocityY
+			  velocityZ: (double)myVelocityZ
+		  accelerationX: (double)myAccelerationX
+		  accelerationY: (double)myAccelerationY 
+		  accelerationZ: (double)myAccelerationZ
 {
-	NSArray *keys = [[NSArray alloc] initWithObjects: @"positionX", @"positionY", @"positionZ",
-					 @"velocityX", @"velocityY", @"velocityZ", 
-					 @"accelerationX", @"accelerationY", @"accelerationZ", nil];
-	NSArray *values	= [[NSArray alloc] initWithObjects: [NSNumber numberWithDouble: positionX],
-					   [NSNumber numberWithDouble: positionY], [NSNumber numberWithDouble: positionZ],
-					   [NSNumber numberWithDouble: velocityX], [NSNumber numberWithDouble: velocityY],
-					   [NSNumber numberWithDouble: velocityZ], [NSNumber numberWithDouble: accelerationX],
-					   [NSNumber numberWithDouble: accelerationY], [NSNumber numberWithDouble: accelerationZ], nil];
-	
-	return [NSMutableDictionary dictionaryWithObjects: values forKeys: keys];
-}
-
-- (id)initWithPositionX: (double)positionX 
-			  positionY: (double)positionY 
-			  positionZ: (double)positionZ
-			  velocityX: (double)velocityX
-			  velocityY: (double)velocityY
-			  velocityZ: (double)velocityZ
-		  accelerationX: (double)accelerationX
-		  accelerationY: (double)accelerationY 
-		  accelerationZ: (double)accelerationZ
-{
-	if (![super init])
+	if (self = [super init])
 	{
-		return nil;
+		self.positionX		= myPositionX;
+		self.positionY		= myPositionY;
+		self.positionZ		= myPositionZ;
+		self.velocityX		= myVelocityX;
+		self.velocityY		= myVelocityY;
+		self.velocityZ		= myVelocityZ;
+		self.accelerationX	= myAccelerationX;
+		self.accelerationY	= myAccelerationY;
+		self.accelerationZ	= myAccelerationZ;
 	}
-	
-	pointObject = [self setPointObjectWithPositionX: positionX 
-										  positionY: positionY 
-										  positionZ: positionZ
-										  velocityX: velocityX
-										  velocityY: velocityY 
-										  velocityZ: velocityZ
-									  accelerationX: accelerationX
-									  accelerationY: accelerationY
-									  accelerationZ: accelerationZ];
 	
 	return self;
 }
 
-- (id)initWithPositionX: (double)positionX
-			  positionY: (double)positionY
-			  positionZ: (double)positionZ
-			  velocityX: (double)velocityX
-			  velocityY: (double)velocityY
-			  velocityZ: (double)velocityZ
+- (id)initWithPositionX: (double)myPositionX
+			  positionY: (double)myPositionY
+			  positionZ: (double)myPositionZ
+			  velocityX: (double)myVelocityX
+			  velocityY: (double)myVelocityY
+			  velocityZ: (double)myVelocityZ
 {
-	if (![super init])
+	if (self = [super init])
 	{
-		return nil;
+		self.positionX		= myPositionX;
+		self.positionY		= myPositionY;
+		self.positionZ		= myPositionZ;
+		self.velocityX		= myVelocityX;
+		self.velocityY		= myVelocityY;
+		self.velocityZ		= myVelocityZ;
+		self.accelerationX	= 0.0;
+		self.accelerationY	= 0.0;
+		self.accelerationZ	= 0.0;
 	}
-	
-	pointObject = [self setPointObjectWithPositionX: positionX
-										  positionY: positionY 
-										  positionZ: positionZ
-										  velocityX: velocityX
-										  velocityY: velocityY
-										  velocityZ: velocityZ
-									  accelerationX: 0.0
-									  accelerationY: 0.0 
-									  accelerationZ: 0.0];
 	
 	return self;
 }
 
-- (id)initWithPositionX: (double)positionX 
-			  positionY: (double)positionY 
-			  positionZ: (double)positionZ
+- (id)initWithPositionX: (double)myPositionX 
+			  positionY: (double)myPositionY 
+			  positionZ: (double)myPositionZ
 {
-	if (![super init])
+	if (self = [super init])
 	{
-		return nil;
+		self.positionX		= myPositionX;
+		self.positionY		= myPositionY;
+		self.positionZ		= myPositionZ;
+		self.velocityX		= 0.0;
+		self.velocityY		= 0.0;
+		self.velocityZ		= 0.0;
+		self.accelerationX	= 0.0;
+		self.accelerationY	= 0.0;
+		self.accelerationZ	= 0.0;
 	}
-	
-	pointObject = [self setPointObjectWithPositionX: positionX
-										  positionY: positionY
-										  positionZ: positionZ
-										  velocityX: 0.0
-										  velocityY: 0.0
-										  velocityZ: 0.0
-									  accelerationX: 0.0
-									  accelerationY: 0.0
-									  accelerationZ: 0.0];
 	
 	return self;
 }
 
 - (id)init
 {
-	if (![super init])
+	if (self = [super init])
 	{
-		return nil;
+		self.positionX		= 0.0;
+		self.positionY		= 0.0;
+		self.positionZ		= 0.0;
+		self.velocityX		= 0.0;
+		self.velocityY		= 0.0;
+		self.velocityZ		= 0.0;
+		self.accelerationX	= 0.0;
+		self.accelerationY	= 0.0;
+		self.accelerationZ	= 0.0;
 	}
-	
-	pointObject = [self setPointObjectWithPositionX: 0.0
-										  positionY: 0.0
-										  positionZ: 0.0
-										  velocityX: 0.0
-										  velocityY: 0.0
-										  velocityZ: 0.0
-									  accelerationX: 0.0
-									  accelerationY: 0.0 
-									  accelerationZ: 0.0];
 	
 	return self;
 }
 
-- (double)positionX
+- (void)updatePosition: (NSNumber *)pos
+			  velocity: (NSNumber *)vel
+		  acceleration: (NSNumber *)accel
+		  forDeltaTime: (NSTimeInterval)deltaTime
 {
-	NSNumber *value = [pointObject objectForKey: @"positionX"];
-	return [value doubleValue];
-}
-
-- (double)positionY
-{
-	NSNumber *value = [pointObject objectForKey: @"positionY"];
-	return [value doubleValue];
-}
-
-- (double)positionZ
-{
-	NSNumber *value = [pointObject objectForKey: @"positionZ"];
-	return [value doubleValue];
-}
-
-- (double)velocityX
-{
-	NSNumber *value = [pointObject objectForKey: @"velocityX"];
-	return [value doubleValue];
-}
-
-- (double)velocityY
-{
-	NSNumber *value = [pointObject objectForKey: @"velocityY"];
-	return [value doubleValue];
-}
-
-- (double)velocityZ
-{
-	NSNumber *value = [pointObject objectForKey: @"velocityZ"];
-	return [value doubleValue];
-}
-
-- (double)accelerationX
-{
-	NSNumber *value = [pointObject objectForKey: @"accelerationX"];
-	return [value doubleValue];
-}
-
-- (double)accelerationY
-{
-	NSNumber *value = [pointObject objectForKey: @"accelerationY"];
-	return [value doubleValue];
-}
-
-- (double)accelerationZ
-{
-	NSNumber *value = [pointObject objectForKey: @"accelerationZ"];
-	return [value doubleValue];
-}
-
-- (void)updatePositionX: (double)positionX 
-			  positionY: (double)positionY 
-			  positionZ: (double)positionZ
-{
-	[pointObject setObject: [NSNumber numberWithDouble: positionX] forKey: @"positionX"];
-	[pointObject setObject: [NSNumber numberWithDouble: positionY] forKey: @"positionY"];
-	[pointObject setObject: [NSNumber numberWithDouble: positionZ] forKey: @"positionZ"];
-}
-
-- (void)updateVelocityX: (double)velocityX
-			  velocityY: (double)velocityY
-			  velocityZ: (double)velocityZ
-{
-	[pointObject setObject: [NSNumber numberWithDouble: velocityX] forKey: @"velocityX"];
-	[pointObject setObject: [NSNumber numberWithDouble: velocityY] forKey: @"velocityY"];
-	[pointObject setObject: [NSNumber numberWithDouble: velocityZ] forKey: @"velocityZ"];
-}
-- (void)updateAccelerationX: (double)accelerationX
-			  accelerationY: (double)accelerationY
-			  accelerationZ: (double)accelerationZ
-{
-	[pointObject setObject: [NSNumber numberWithDouble: accelerationX] forKey: @"accelerationX"];
-	[pointObject setObject: [NSNumber numberWithDouble: accelerationY] forKey: @"accelerationY"];
-	[pointObject setObject: [NSNumber numberWithDouble: accelerationZ] forKey: @"accelerationZ"];
-}
-
-- (void)updateCoordinate: (NSString *)coordinate forDeltaTime: (NSTimeInterval)deltaTime
-{
-	NSNumber	*newNumber;
-	double		position;
-	double		velocity;
-	double		acceleration;
+	NSLog(@"Entering updatePosition: %@ velocity:%@ acceleration: %@ forDeltaTime: %d",
+		  pos, vel, accel, deltaTime);
 	
-	NSString	*pos	= [[NSString alloc] initWithFormat: @"position%@", coordinate];
-	NSString	*vel	= [[NSString alloc] initWithFormat: @"velocity%@", coordinate];
-	NSString	*accel	= [[NSString alloc] initWithFormat: @"acceleration%@", coordinate];
+	double		position		= [pos doubleValue];
+	double		velocity		= [vel doubleValue];
+	double		acceleration	= [accel doubleValue];
 	
-	newNumber		= [pointObject objectForKey: pos];
-	position		= [newNumber doubleValue];
-	newNumber		= [pointObject objectForKey: vel];
-	velocity		= [newNumber doubleValue];
-	newNumber		= [pointObject objectForKey: accel];
-	acceleration	= [newNumber doubleValue];
-
 	position		= position + (velocity * deltaTime) + ((acceleration * deltaTime * deltaTime) / 2.0);
-	[pointObject setObject: [NSNumber numberWithDouble: position] forKey: pos];
+	pos				= [NSNumber numberWithDouble: position];
 	velocity		= velocity + (acceleration * deltaTime);
-	[pointObject setObject: [NSNumber numberWithDouble: velocity] forKey: vel];
+	vel				= [NSNumber numberWithDouble: velocity];
 	
-	[pos release];
-	[vel release];
-	[accel release];
+	NSLog(@"Position: %@ velocity: %@", pos, vel);
 }
 
 - (void)computeStateForDeltaTime: (NSTimeInterval)deltaTime
 {
-	[self updateCoordinate: @"X" forDeltaTime: deltaTime];
-	[self updateCoordinate: @"Y" forDeltaTime: deltaTime];
-	[self updateCoordinate: @"Z" forDeltaTime: deltaTime];
+	NSNumber *position;
+	NSNumber *velocity;
+	NSNumber *acceleration;
+	
+	position = [NSNumber numberWithDouble: self.positionX];
+	velocity = [NSNumber numberWithDouble: self.velocityX];
+	acceleration = [NSNumber numberWithDouble: self.accelerationX];
+	[self updatePosition: position 
+				velocity: velocity
+			acceleration: acceleration
+			forDeltaTime: deltaTime];
+	self.positionX		= [position doubleValue];
+	self.velocityX		= [velocity doubleValue];
+	
+	position			= [NSNumber numberWithDouble: self.positionY];
+	velocity			= [NSNumber numberWithDouble: self.velocityY];
+	acceleration		= [NSNumber numberWithDouble: self.accelerationY];
+	[self updatePosition: position 
+				velocity: velocity
+			acceleration: acceleration
+			forDeltaTime: deltaTime];
+	self.positionY		= [position doubleValue];
+	self.velocityY		= [velocity doubleValue];
+	
+	position			= [NSNumber numberWithDouble: self.positionZ];
+	velocity			= [NSNumber numberWithDouble: self.velocityZ];
+	acceleration		= [NSNumber numberWithDouble: self.accelerationZ];
+	[self updatePosition: position 
+				velocity: velocity
+			acceleration: acceleration
+			forDeltaTime: deltaTime];
+	self.positionZ		= [position doubleValue];
+	self.velocityZ		= [velocity doubleValue];
 }
 
 @end

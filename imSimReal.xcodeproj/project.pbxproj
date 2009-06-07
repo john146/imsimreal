@@ -35,6 +35,8 @@
 		52D0EC880FDAC6C700F1C8B9 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0EC870FDAC6C700F1C8B9 /* Test.m */; };
 		52D0ECD90FDAF87100F1C8B9 /* GravityTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D0ECD80FDAF87100F1C8B9 /* GravityTests.plist */; };
 		52D0ECE30FDB075200F1C8B9 /* TestGravity.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ECE20FDB075200F1C8B9 /* TestGravity.m */; };
+		52E67FC70FDC304700AA7CB7 /* PointObjectTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52E67FC60FDC304700AA7CB7 /* PointObjectTests.plist */; };
+		52E680370FDC54AB00AA7CB7 /* TestPointObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E680360FDC54AB00AA7CB7 /* TestPointObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,9 @@
 		52D0ECD80FDAF87100F1C8B9 /* GravityTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GravityTests.plist; sourceTree = "<group>"; };
 		52D0ECE10FDB075200F1C8B9 /* TestGravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGravity.h; sourceTree = "<group>"; };
 		52D0ECE20FDB075200F1C8B9 /* TestGravity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGravity.m; sourceTree = "<group>"; };
+		52E67FC60FDC304700AA7CB7 /* PointObjectTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PointObjectTests.plist; sourceTree = "<group>"; };
+		52E680350FDC54AB00AA7CB7 /* TestPointObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPointObject.h; sourceTree = "<group>"; };
+		52E680360FDC54AB00AA7CB7 /* TestPointObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPointObject.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +127,8 @@
 				52D0EC870FDAC6C700F1C8B9 /* Test.m */,
 				52D0ECE10FDB075200F1C8B9 /* TestGravity.h */,
 				52D0ECE20FDB075200F1C8B9 /* TestGravity.m */,
+				52E680350FDC54AB00AA7CB7 /* TestPointObject.h */,
+				52E680360FDC54AB00AA7CB7 /* TestPointObject.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -169,6 +176,7 @@
 				8D1107310486CEB800E47090 /* Info.plist */,
 				52D0EC620FD9F2F900F1C8B9 /* RootTests.plist */,
 				52D0ECD80FDAF87100F1C8B9 /* GravityTests.plist */,
+				52E67FC60FDC304700AA7CB7 /* PointObjectTests.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -275,6 +283,7 @@
 				52D0EC070FD9B9B000F1C8B9 /* disclosureButtonControllerIcon.png in Resources */,
 				52D0EC630FD9F2F900F1C8B9 /* RootTests.plist in Resources */,
 				52D0ECD90FDAF87100F1C8B9 /* GravityTests.plist in Resources */,
+				52E67FC70FDC304700AA7CB7 /* PointObjectTests.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +328,7 @@
 				52D0EC690FD9F6AA00F1C8B9 /* TestList.m in Sources */,
 				52D0EC880FDAC6C700F1C8B9 /* Test.m in Sources */,
 				52D0ECE30FDB075200F1C8B9 /* TestGravity.m in Sources */,
+				52E680370FDC54AB00AA7CB7 /* TestPointObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

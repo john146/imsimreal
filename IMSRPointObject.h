@@ -20,10 +20,26 @@
 
 @interface IMSRPointObject : NSObject 
 {
-	NSMutableDictionary	*pointObject;
+	double positionX;
+	double positionY;
+	double positionZ;
+	double velocityX;
+	double velocityY;
+	double velocityZ;
+	double accelerationX;
+	double accelerationY;
+	double accelerationZ;
 }
 
-@property (nonatomic, retain) NSMutableDictionary *pointObject;
+@property (nonatomic, assign)double positionX;
+@property (nonatomic, assign)double positionY;
+@property (nonatomic, assign)double positionZ;
+@property (nonatomic, assign)double velocityX;
+@property (nonatomic, assign)double velocityY;
+@property (nonatomic, assign)double velocityZ;
+@property (nonatomic, assign)double accelerationX;
+@property (nonatomic, assign)double accelerationY;
+@property (nonatomic, assign)double accelerationZ;
 
 /**
  * Initializer allowing the user to set all values for initial state of the object
@@ -40,15 +56,15 @@
  *
  * @return self
  */
-- (id)initWithPositionX: (double)positionX		
-			  positionY: (double)positionY		 
-			  positionZ: (double)positionZ		
-			  velocityX: (double)velocityX		
-			  velocityY: (double)velocityY		
-			  velocityZ: (double)velocityZ		 
-		  accelerationX: (double)accelerationX	
-		  accelerationY: (double)accelerationY	  
-		  accelerationZ: (double)accelerationZ;	 
+- (id)initWithPositionX: (double)myPositionX		
+			  positionY: (double)myPositionY		 
+			  positionZ: (double)myPositionZ		
+			  velocityX: (double)myVelocityX		
+			  velocityY: (double)myVelocityY		
+			  velocityZ: (double)myVelocityZ		 
+		  accelerationX: (double)myAccelerationX	
+		  accelerationY: (double)myAccelerationY	  
+		  accelerationZ: (double)myAccelerationZ;	 
 
 /**
  * Initializer allowing the user to set all values for initial position and velocity. 
@@ -63,12 +79,12 @@
  
  * @return self
  */
-- (id)initWithPositionX: (double)positionX
-			  positionY: (double)positionY 
-			  positionZ: (double)positionZ 
-			  velocityX: (double)velocityX 
-			  velocityY: (double)velocityY 
-			  velocityZ: (double)velocityZ; 
+- (id)initWithPositionX: (double)myPositionX
+			  positionY: (double)myPositionY 
+			  positionZ: (double)myPositionZ 
+			  velocityX: (double)myVelocityX 
+			  velocityY: (double)myVelocityY 
+			  velocityZ: (double)myVelocityZ; 
 
 /**
  * Initializer allowing the user to set values for the initial position. The 
@@ -80,64 +96,9 @@
  *
  * @return self
  */
-- (id)initWithPositionX: (double)positionX	
-			  positionY: (double)positionY	 
-			  positionZ: (double)positionZ;	 
-
-- (double)positionX;
-- (double)positionY;
-- (double)positionZ;
-- (double)velocityX;
-- (double)velocityY;
-- (double)velocityZ;
-- (double)accelerationX;
-- (double)accelerationY;
-- (double)accelerationZ;
-
-/**
- * Update the point's position in the coordinate system. Normally the position
- * will get updated by computeStateForDeltaTime: but there may be times when this 
- * method is needed.
- * 
- * @see computeStateForDeltaTime:
- * 
- * @param positionX The new X coordinate, in meters.
- * @param positionY The new Y coordinate, in meters.
- * @param positionZ The new Z coordinate, in meters.
- */
-- (void)updatePositionX: (double)positionX 
-			  positionY: (double)positionY 
-			  positionZ: (double)positionZ;
-
-/**
- * Update the point's velocity in the coordinate system. Normally the velocity
- * will get updated by computeStateForDeltaTime: but there may be times when this
- * method is needed.
- *
- * @see computeStateForDeltaTime:
- *
- * @param velocityX The new velocity along the X coordinate, in meters/second.
- * @param velocityY The new velocity along the Y coordinate, in meters/second.
- * @param velocityZ The new velocithy along the Z coordinate, in meters/second.
- */
-- (void)updateVelocityX: (double)velocityX
-			  velocityY: (double)velocityY
-			  velocityZ: (double)velocityZ;
-
-/**
- * Update the acceleration in the coordinate system. Acceleration does not get 
- * updated by computeStateForDeltatime: so this is the only way that acceleration
- * changes.
- *
- * @see computeStateForDeltaTime:
- *
- * @param accelerationX The acceleration along the X coordinate, in meters/second<sup>2</sup>
- * @param accelerationY The acceleration along the Y coordinate, in meters/second<sup>2</sup>
- * @param accelerationZ The acceleration along the Z coordinate, in meters/second<sup>2</sup>
- */
-- (void)updateAccelerationX: (double)accelerationX
-			  accelerationY: (double)accelerationY
-			  accelerationZ: (double)accelerationZ;
+- (id)initWithPositionX: (double)myPositionX	
+			  positionY: (double)myPositionY	 
+			  positionZ: (double)myPositionZ;	 
 
 /**
  * Comutes a new state for the point deltaTime into the future.  Updates position

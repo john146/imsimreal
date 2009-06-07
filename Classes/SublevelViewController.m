@@ -11,6 +11,7 @@
 #import "Test.h"
 #import "TestList.h"
 #import "TestGravity.h"
+#import "TestPointObject.h"
 
 @implementation SublevelViewController
 
@@ -52,13 +53,20 @@
 				
 				[controller release];
 			}
-			else if ([myTest.delegate isMemberOfClass: [TestGravity class]])
+			else // if ([myTest.delegate isMemberOfClass: [TestGravity class]])
 			{
 //				TestGravity *test = (TestGravity *)myTest.delegate;
 				SublevelViewController *controller = [[SublevelViewController alloc] initWithStyle: UITableViewStylePlain];
 				controller.title = myTest.testName;
 //				[controllerArray addObject: controller];
 			}
+			/*
+			else if ([myTest.delegate isMemberOfClass: [TestPointObject class]])
+			{
+				SublevelViewController *controller = [[SublevelViewController alloc] initWithStyle: UITableViewStylePlain];
+				controller.title = myTest.testName;
+			}
+			 */
 		}
 		
 		self.controllers = controllerArray;
@@ -185,7 +193,7 @@ accesoryButtonTappedForRowWithIndexPath: (NSIndexPath *)indexPath
 			controller.detailedAction = myTest.testDetails;
 		}
 	}
-	else if ([myTest.delegate isMemberOfClass: [TestGravity class]])
+	else //if ([myTest.delegate isMemberOfClass: [TestGravity class]])
 	{
 //		TestGravity *test = (TestGravity *)myTest.delegate;
 		controller.title = myTest.testName;

@@ -23,12 +23,18 @@
 	NSString		*selectedBody;
 }
 
+/// A list of the bodies available with the gravity value. Form if NSDictionary:<br />
+///	NSString *body<br />
+/// NSNumber *gravity as double.
 @property (nonatomic, retain)NSDictionary	*bodyGravity;
+
+/// The body that this object was initialized with
 @property (nonatomic, retain)NSString		*selectedBody;
 
 /**
  * An initializer for selecting the body to use when initializing. If no body is 
- * selected, the default init: method sets body to Earth
+ * selected, the default init: method sets body to Earth. If the selected body 
+ * is not part of the bodyGravity dictionary, nil is returned.
  *
  * @param body	The body to set selectedBody to
  *
