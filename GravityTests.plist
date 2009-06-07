@@ -5,6 +5,10 @@
 	<dict>
 		<key>name</key>
 		<string>Initialize Gravity</string>
+		<key>action</key>
+		<string>-init</string>
+		<key>detailedAction</key>
+		<string>Call -init on Gravity</string>
 		<key>class</key>
 		<string>Gravity</string>
 		<key>method</key>

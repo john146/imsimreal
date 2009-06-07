@@ -5,8 +5,6 @@
 	<dict>
 		<key>name</key>
 		<string>Gravity</string>
-		<key>Color</key>
-		<data></data>
 		<key>action</key>
 		<string>executeTests</string>
 		<key>detailedAction</key>

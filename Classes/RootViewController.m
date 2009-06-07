@@ -134,8 +134,8 @@
 	Test *test = [tests objectAtIndex: row];
     if (cell == nil)
 	{
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero 
-									   reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithFrame:CGRectZero 
+									   reuseIdentifier:CellIdentifier];
     }
     
     // Set up the cell...

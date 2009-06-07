@@ -30,7 +30,7 @@
 
 - (void)viewDidLoad
 {
-	if (controllers == nil)
+	if (self.controllers == nil)
 	{
 		NSMutableArray *controllerArray = [[NSMutableArray alloc] init];
 		NSEnumerator *enumerator = [tests objectEnumerator];
@@ -57,10 +57,12 @@
 //				TestGravity *test = (TestGravity *)myTest.delegate;
 				SublevelViewController *controller = [[SublevelViewController alloc] initWithStyle: UITableViewStylePlain];
 				controller.title = myTest.testName;
+//				[controllerArray addObject: controller];
 			}
 		}
 		
 		self.controllers = controllerArray;
+		
 		[controllerArray release];
 	}
 	
@@ -138,7 +140,7 @@
 	NSUInteger row = [indexPath row];
     if (cell == nil) 
 	{
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier];
     }
     
     // Set up the cell...

@@ -20,35 +20,21 @@
 		NSMutableArray *myTests = [[NSMutableArray alloc] init];
 		NSString *testPath = [[NSBundle mainBundle] pathForResource: [test objectForKey: @"detailedAction"]
 															ofType: @"plist"];
-		NSArray *tests = [NSArray arrayWithContentsOfFile: testPath];
-		NSEnumerator *enumerator = [tests objectEnumerator];
+		NSArray *testDictionaries = [NSArray arrayWithContentsOfFile: testPath];
+		NSEnumerator *enumerator = [testDictionaries objectEnumerator];
 		NSMutableDictionary *testDictionary;
 		while (testDictionary = [enumerator nextObject])
 		{
 			if ([test objectForKey: @"execute"])
 			{
 				// TODO: This is where we handle the execution type
-				NSMutableArray *tests = [[NSMutableArray alloc] init];
-				if ([[test objectForKey: @"class"] isEqualToString: @"Gravity"])
+				if ([[testDictionary objectForKey: @"class"] isEqualToString: @"Gravity"])
 				{
-					NSString *path = [[NSBundle mainBundle] pathForResource: @"Gravity"
-																	 ofType: @"plist"];
-					NSArray *array = [NSArray arrayWithContentsOfFile: path];
-					NSEnumerator *enumerator = [array objectEnumerator];
-					NSDictionary *testDictionary;
-					while (testDictionary = [enumerator nextObject])
-					{
-						TestGravity *testGravity = [[TestGravity alloc] initWithTest: testDictionary];
-						Test *test = [[Test alloc] initWithTest: testDictionary
-													   delegate: testGravity];
-						[tests addObject: test];
-						[testGravity release];
-						[test release];
-					}
+					TestGravity *testGravity = [[TestGravity alloc] initWithTest: testDictionary];
+					Test *myTest = [[Test alloc] initWithTest: testDictionary
+													 delegate: testGravity];
+					[myTests addObject: myTest];
 				}
-				
-				self.testArray = tests;
-				[tests release];
 			}
 			else
 			{
@@ -57,12 +43,11 @@
 				Test *myTest = [[Test alloc] initWithTest: testDictionary
 												 delegate: testList];
 				[myTests addObject: myTest];
-				[myTest release];
-				[testList release];
 			}
 		}
 		
 		self.testArray = myTests;
+		[myTests release];
 	}
 	
 	return self;
