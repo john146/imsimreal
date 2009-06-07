@@ -28,6 +28,12 @@
 	NSBundle *bundle	= [NSBundle mainBundle];
 	NSString *file		= [bundle pathForResource: @"Gravity" ofType: @"plist"];
 	bodyGravity			= [[NSDictionary alloc] initWithContentsOfFile: file];
+	if ([bodyGravity objectForKey: body] == nil)
+	{
+		// Invalid body value
+		return nil;
+	}
+	
 	selectedBody		= body;
 	
 	NSLog(@"Gravity of %@: %f", [self selectedBody], [self gravityForSelectedBody]);

@@ -27,7 +27,7 @@
 		{
 			if ([test objectForKey: @"execute"])
 			{
-				// TODO: This is where we handle the execution type
+				// This is where we handle the execution type
 				if ([[testDictionary objectForKey: @"class"] isEqualToString: @"Gravity"])
 				{
 					TestGravity *testGravity = [[TestGravity alloc] initWithTest: testDictionary];

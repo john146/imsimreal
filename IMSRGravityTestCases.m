@@ -41,7 +41,7 @@
 	[gravity release];
 }
 
-- (void)testCreateIMSRGRavityWithBody
+- (void)testCreateIMSRGravityWithBody
 {
 	NSString	*expectedResult	= @"Moon";
 	IMSRGravity *gravity		= [[IMSRGravity alloc] initWithBody: expectedResult];
@@ -51,6 +51,14 @@
 	STAssertEqualObjects(result, expectedResult, @"Expected %@. Got %@", expectedResult, result);
 	
 	[expectedResult release];
+	[gravity release];
+}
+
+- (void)testCreateIMSRGRavityWithInvalidBody
+{
+	IMSRGravity *gravity = [[IMSRGravity alloc] initWithBody: @"Penny"];
+	STAssertNil(gravity, @"IMSRGravity not nil with invalid body");
+	
 	[gravity release];
 }
 

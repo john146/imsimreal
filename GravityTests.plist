@@ -13,11 +13,81 @@
 		<string>Gravity</string>
 		<key>method</key>
 		<string>init</string>
+		<key>body</key>
+		<string></string>
 		<key>returnSelectedBody</key>
 		<string>Earth</string>
 		<key>returnGravity</key>
 		<real>-9.81</real>
 		<key>execute</key>
+		<true/>
+		<key>nilReturn</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Initialize Gravity With Moon</string>
+		<key>action</key>
+		<string>-initWithBody: Moon</string>
+		<key>detailedAction</key>
+		<string>Call - initWithBody using Moon</string>
+		<key>class</key>
+		<string>Gravity</string>
+		<key>method</key>
+		<string>initWithBody</string>
+		<key>body</key>
+		<string>Moon</string>
+		<key>returnSelectedBody</key>
+		<string>Moon</string>
+		<key>returnGravity</key>
+		<real>-1.624</real>
+		<key>execute</key>
+		<true/>
+		<key>nilReturn</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Initialize Gravity With Jupiter</string>
+		<key>action</key>
+		<string>-initWithBody: Jupiter</string>
+		<key>detailedAction</key>
+		<string>Call -initWithBody using Jupiter</string>
+		<key>class</key>
+		<string>Gravity</string>
+		<key>method</key>
+		<string>initWithBody</string>
+		<key>body</key>
+		<string>Jupiter</string>
+		<key>returnSelectedBody</key>
+		<string>Jupiter</string>
+		<key>returnGravity</key>
+		<real>-24.8</real>
+		<key>execute</key>
+		<true/>
+		<key>nilReturn</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Initialize Gravity With Penny</string>
+		<key>action</key>
+		<string>-initWithBody: Penny</string>
+		<key>detailedAction</key>
+		<string>Call -initWithBody using Penny</string>
+		<key>class</key>
+		<string>Gravity</string>
+		<key>method</key>
+		<string>initWithBody</string>
+		<key>body</key>
+		<string>Penny</string>
+		<key>returnSelectedBody</key>
+		<string></string>
+		<key>returnGravity</key>
+		<integer>0</integer>
+		<key>execute</key>
+		<true/>
+		<key>nilReturn</key>
 		<true/>
 	</dict>
 </array>

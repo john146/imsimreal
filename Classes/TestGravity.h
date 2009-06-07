@@ -14,12 +14,16 @@
 {
 	NSString *testMethod;
 	NSString *selectedBody;
+	NSString *body;
 	double	gravity;
+	BOOL nilReturn;
 }
 
-@property (nonatomic, assign)NSString *testMethod;
-@property (nonatomic, assign)NSString *selectedBody;
+@property (nonatomic, retain)NSString *testMethod;
+@property (nonatomic, retain)NSString *selectedBody;
+@property (nonatomic, retain)NSString *body;
 @property (nonatomic, assign)double gravity;
+@property (nonatomic, assign)BOOL nilReturn;
 
 - (id)initWithTest: (NSDictionary *)test;
 
