@@ -218,5 +218,59 @@
 		<key>nilReturn</key>
 		<false/>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>Compute new time state no velocity or acceleration</string>
+		<key>action</key>
+		<string>-computeStateForDeltaTime: </string>
+		<key>detailedAction</key>
+		<string>Call -computeStateForDeltaTime: with no velocity or acceleration</string>
+		<key>class</key>
+		<string>IMSRPointObject</string>
+		<key>method</key>
+		<string>-computeStateForDeltaTime:</string>
+		<key>inputPositionX</key>
+		<real>1.1</real>
+		<key>inputPositionY</key>
+		<real>-2.2</real>
+		<key>inputPositionZ</key>
+		<real>3.3</real>
+		<key>inputVelocityX</key>
+		<integer>0</integer>
+		<key>inputVelocityY</key>
+		<integer>0</integer>
+		<key>inputVelocityZ</key>
+		<integer>0</integer>
+		<key>inputAccelerationX</key>
+		<integer>0</integer>
+		<key>inputAccelerationY</key>
+		<integer>0</integer>
+		<key>inputAccelerationZ</key>
+		<integer>0</integer>
+		<key>deltaTime</key>
+		<integer>1</integer>
+		<key>resultPositionX</key>
+		<real>1.1</real>
+		<key>resultPositionY</key>
+		<real>-2.2</real>
+		<key>resultPositionZ</key>
+		<real>3.3</real>
+		<key>resultVelocityX</key>
+		<integer>0</integer>
+		<key>resultVelocityY</key>
+		<integer>0</integer>
+		<key>resultVelocityZ</key>
+		<integer>0</integer>
+		<key>resultAccelerationX</key>
+		<integer>0</integer>
+		<key>resultAccelerationY</key>
+		<integer>0</integer>
+		<key>resultAccelerationZ</key>
+		<integer>0</integer>
+		<key>execute</key>
+		<true/>
+		<key>nilReturn</key>
+		<false/>
+	</dict>
 </array>
 </plist>

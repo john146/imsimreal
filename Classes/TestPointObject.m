@@ -231,6 +231,22 @@
 									usingPoint: point];
 		[point release];
 	}
+	else if ([self.testMethod isEqualToString: @"-computeStateForDeltaTime:"])
+	{
+		IMSRPointObject *point = [[IMSRPointObject alloc] initWithPositionX: self.inputPositionX
+																  positionY: self.inputPositionY
+																  positionZ: self.inputPositionZ
+																  velocityX: self.inputVelocityX
+																  velocityY: self.inputVelocityY
+																  velocityZ: self.inputVelocityZ
+															  accelerationX: self.inputAccelerationX
+															  accelerationY: self.inputAccelerationY
+															  accelerationZ: self.inputAccelerationZ];
+		[point computeStateForDeltaTime: self.deltaTime];
+		failedTests = [self testResultsForTest: test
+									usingPoint: point];
+		[point release];
+	}
 }
 
 @end

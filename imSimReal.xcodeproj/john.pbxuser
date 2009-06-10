@@ -50,8 +50,6 @@
 			1D6058900D05DD3D006BFB54 /* imSimReal */,
 		);
 		breakpoints = (
-			522427820FE0499C0038ECD7 /* TestPointObject.m:230 */,
-			522427860FE04ADA0038ECD7 /* TestPointObject.m:61 */,
 		);
 		codeSenseManager = 52D0EAA10FD882CE00F1C8B9 /* Code sense */;
 		executables = (
@@ -202,40 +200,6 @@
 		rType = 0;
 		vrLen = 1378;
 		vrLoc = 4882;
-	};
-	522427820FE0499C0038ECD7 /* TestPointObject.m:230 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 52E680360FDC54AB00AA7CB7 /* TestPointObject.m */;
-		functionName = "-executeTest:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 230;
-		location = imSimReal;
-		modificationTime = 266357689.553101;
-		state = 2;
-	};
-	522427860FE04ADA0038ECD7 /* TestPointObject.m:61 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 52E680360FDC54AB00AA7CB7 /* TestPointObject.m */;
-		functionName = "-initWithTest:";
-		hitCount = 1;
-		ignoreCount = 0;
-		lineNumber = 61;
-		location = imSimReal;
-		modificationTime = 266357693.985156;
-		state = 1;
 	};
 	5271D09F0FDC86A500F798B2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -600,8 +564,8 @@
 	52D0EAB00FD8835100F1C8B9 /* IMSRPointObject.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {684, 1624}}";
-			sepNavSelRange = "{1001, 0}";
-			sepNavVisRange = "{2673, 1428}";
+			sepNavSelRange = "{4042, 24}";
+			sepNavVisRange = "{2599, 1497}";
 			sepNavWindowFrame = "{{37, 55}, {750, 558}}";
 		};
 	};
@@ -1155,9 +1119,9 @@
 	};
 	52E680360FDC54AB00AA7CB7 /* TestPointObject.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 3262}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 3626}}";
 			sepNavSelRange = "{2425, 0}";
-			sepNavVisRange = "{1617, 1005}";
+			sepNavVisRange = "{1703, 920}";
 		};
 	};
 	52E6805E0FDC5F1800AA7CB7 /* PlistBookmark */ = {
