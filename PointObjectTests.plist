@@ -110,5 +110,59 @@
 		<key>nilReturn</key>
 		<false/>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>Initialize With Position &amp; Velocity</string>
+		<key>action</key>
+		<string>-initWithPosition:Velocity</string>
+		<key>detailedAction</key>
+		<string>Call -initWithPosition:Velocity</string>
+		<key>class</key>
+		<string>IMSRPointObject</string>
+		<key>method</key>
+		<string>initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:</string>
+		<key>inputPositionX</key>
+		<real>1.1</real>
+		<key>inputPositionY</key>
+		<real>-2.2</real>
+		<key>inputPositionZ</key>
+		<real>3.3</real>
+		<key>inputVelocityX</key>
+		<real>-0.1</real>
+		<key>inputVelocityY</key>
+		<real>0.2</real>
+		<key>inputVelocityZ</key>
+		<real>-0.3</real>
+		<key>inputAccelerationX</key>
+		<integer>0</integer>
+		<key>inputAccelerationY</key>
+		<integer>0</integer>
+		<key>inputAccelerationZ</key>
+		<integer>0</integer>
+		<key>deltaTime</key>
+		<integer>0</integer>
+		<key>resultPositionX</key>
+		<real>1.1</real>
+		<key>resultPositionY</key>
+		<real>-2.2</real>
+		<key>resultPositionZ</key>
+		<real>3.3</real>
+		<key>resultVelocityX</key>
+		<real>-0.1</real>
+		<key>resultVelocityY</key>
+		<real>0.2</real>
+		<key>resultVelocityZ</key>
+		<real>-0.3</real>
+		<key>resultAccelerationX</key>
+		<integer>0</integer>
+		<key>resultAccelerationY</key>
+		<integer>0</integer>
+		<key>resultAccelerationZ</key>
+		<integer>0</integer>
+		<key>execute</key>
+		<true/>
+		<key>nilReturn</key>
+		<false/>
+	</dict>
 </array>
 </plist>
