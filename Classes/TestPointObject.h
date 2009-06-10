@@ -12,6 +12,7 @@
 
 @interface TestPointObject : NSObject <TestDelegate>
 {
+	NSArray *failedTests;
 	NSString *testClass;
 	NSString *testMethod;
 	double inputPositionX;
@@ -36,8 +37,11 @@
 	BOOL nilReturn;
 }
 
+@property (readonly)NSArray *failedTests;
+
 @property (nonatomic, retain)NSString *testClass;
 @property (nonatomic, retain)NSString *testMethod;
+
 @property (nonatomic, assign)double inputPositionX;
 @property (nonatomic, assign)double inputPositionY;
 @property (nonatomic, assign)double inputPositionZ;

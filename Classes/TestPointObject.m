@@ -11,6 +11,7 @@
 
 @implementation TestPointObject
 
+@synthesize failedTests;
 @synthesize testClass;
 @synthesize testMethod;
 @synthesize inputPositionX;
@@ -72,11 +73,120 @@
 	[super dealloc];
 }
 
+- (NSDictionary *)updateFailureTest: (Test *) test
+						  forObject: (id)obj 
+						   forValue: (NSString *)actualValue
+					 expectedObject: (id)expObj
+					  expectedValue: (NSString *)expectedValue
+{
+	test.testColor = [UIColor redColor];
+	NSMutableDictionary *failedTest = [[[NSMutableArray alloc] init] autorelease];
+	[failedTest setObject: obj forKey: actualValue];
+	[failedTest setObject: expObj forKey: expectedValue];
+	return failedTest;
+}
+
 #pragma mark Test Delegate Method
 
 - (void)executeTest: (Test *)test
 {
+	test.testColor = [UIColor greenColor];
+	NSMutableArray *failure = [[NSMutableArray alloc] init];
+	if ([self.testMethod isEqualToString: @"init"])
+	{
+		IMSRPointObject *point = [[IMSRPointObject alloc] init];
+		if (point == nil)
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: nil
+											   forValue: @"IMSRPointObject"
+										 expectedObject: @"notNil"
+										  expectedValue: @"expectedIMSRPointObject"]];
+		}
+		
+		if (point.positionX != self.resultPositionX)
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject:[NSNumber numberWithDouble: point.positionX]
+											   forValue: @"actualPositionX"
+										 expectedObject: [NSNumber numberWithDouble: self.resultPositionX]
+										  expectedValue: @"expectedPositionX"]];
+		}
+		
+		if (point.positionY != self.resultPositionY)
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.positionY]
+											   forValue: @"actualPositionY"
+										 expectedObject: [NSNumber numberWithDouble: self.resultPositionY]
+										  expectedValue: @"expectedPositionY"]];
+		}
+		
+		if (point.positionZ != self.resultPositionZ)
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.positionZ]
+											   forValue: @"actualPositionZ"
+										 expectedObject: [NSNumber numberWithDouble: self.resultPositionZ]
+										  expectedValue: @"expectedPositionZ"]];
+		}
+		
+		if (point.velocityX != self.resultVelocityX)
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.velocityX]
+											   forValue: @"actualVelocityX"
+										 expectedObject: [NSNumber numberWithDouble: self.resultVelocityX]
+										  expectedValue: @"expectedVelocityX"]];
+		}
+		
+		if (point.velocityY != self.resultVelocityZ)
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.velocityY]
+											   forValue: @"actualVelocityY"
+										 expectedObject: [NSNumber numberWithDouble: self.resultVelocityY]
+										  expectedValue: @"expectedVelocityY"]];
+		}
+		
+		if (point.velocityZ != self.resultVelocityZ)
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.velocityZ]
+											   forValue: @"actualVelocityZ"
+										 expectedObject: [NSNumber numberWithDouble: self.resultVelocityZ]
+										  expectedValue: @"expectedVelocityZ"]];
+		}
+		
+		if (point.accelerationX != self.resultAccelerationX)
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.accelerationX]
+											   forValue: @"actualAccelerationX"
+										 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationX]
+										  expectedValue: @"expectedAccelerationX"]];
+		}
+		
+		if (point.accelerationY != self.resultAccelerationY)
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.accelerationY]
+											   forValue: @"actualAccelerationY"
+										 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationY]
+										  expectedValue: @"expectedAccelerationY"]];
+		}
+		
+		if (point.accelerationZ != self.resultAccelerationZ)
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.accelerationZ]
+											   forValue: @"actualAccelerationZ"
+										 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationZ]
+										  expectedValue: @"expectedAccelerationZ"]];
+		}
+	}
 	
+	failedTests = failure;
 }
 
 @end

@@ -331,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>5271D0A20FDC86A500F798B2</string>
+										<string>520DF58B0FDEF2C500B91C46</string>
 										<key>history</key>
 										<array>
 											<string>52D0EC560FD9CA6800F1C8B9</string>
@@ -364,7 +364,7 @@
 											<string>52E680640FDC5F1800AA7CB7</string>
 											<string>52E680A00FDC863200AA7CB7</string>
 											<string>5271D09F0FDC86A500F798B2</string>
-											<string>5271D0A00FDC86A500F798B2</string>
+											<string>5271D0A70FDC91AD00F798B2</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -399,7 +399,6 @@
 											<string>52E680250FDC52E900AA7CB7</string>
 											<string>52E680690FDC5F1800AA7CB7</string>
 											<string>52E680740FDC5F1800AA7CB7</string>
-											<string>5271D0A10FDC86A500F798B2</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -457,9 +456,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>5271D0930FDC868F00F798B2</string>
+				<string>520DF58C0FDEF2C500B91C46</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>5271D0940FDC868F00F798B2</string>
+				<string>520DF58D0FDEF2C500B91C46</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -593,12 +592,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>5271D0A30FDC86A500F798B2</string>
-		<string>5271D0A40FDC86A500F798B2</string>
-		<string>5271D09D0FDC868F00F798B2</string>
-		<string>5271D09E0FDC868F00F798B2</string>
-		<string>52D0EB060FD889E600F1C8B9</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>52D0EB060FD889E600F1C8B9</string>
 		<string>/Users/john/Documents/Projects/imSimReal/imSimReal.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
 	</array>
@@ -680,7 +675,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>52D0EB060FD889E600F1C8B9</string>
-				<string>5271D0950FDC868F00F798B2</string>
+				<string>520DF58E0FDEF2C500B91C46</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -800,13 +795,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>5271D0960FDC868F00F798B2</string>
+				<string>520DF58F0FDEF2C500B91C46</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>5271D0970FDC868F00F798B2</string>
-				<string>5271D0980FDC868F00F798B2</string>
-				<string>5271D0990FDC868F00F798B2</string>
-				<string>5271D09A0FDC868F00F798B2</string>
-				<string>5271D09B0FDC868F00F798B2</string>
+				<string>520DF5900FDEF2C500B91C46</string>
+				<string>520DF5910FDEF2C500B91C46</string>
+				<string>520DF5920FDEF2C500B91C46</string>
+				<string>520DF5930FDEF2C500B91C46</string>
+				<string>520DF5940FDEF2C500B91C46</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -970,7 +965,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>5271D09C0FDC868F00F798B2</string>
+				<string>520DF5950FDEF2C500B91C46</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
