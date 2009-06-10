@@ -58,7 +58,7 @@
 		self.resultVelocityY = [[test objectForKey: @"resultVelocityY"] doubleValue];
 		self.resultVelocityZ = [[test objectForKey: @"resultVelocityZ"] doubleValue];
 		self.resultAccelerationX = [[test objectForKey: @"resultAccelerationX"] doubleValue];
-		self.resultAccelerationY = [[test objectForKey: @"resultAcclelerationY"] doubleValue];
+		self.resultAccelerationY = [[test objectForKey: @"resultAccelerationY"] doubleValue];
 		self.resultAccelerationZ = [[test objectForKey: @"resultAccelerationZ"] doubleValue];
 	}
 	
@@ -81,8 +81,8 @@
 {
 	test.testColor = [UIColor redColor];
 	NSMutableDictionary *failedTest = [[[NSMutableArray alloc] init] autorelease];
-	[failedTest setObject: obj forKey: actualValue];
-	[failedTest setObject: expObj forKey: expectedValue];
+	[failedTest setValue: obj forKey: actualValue];
+	[failedTest setValue: expObj forKey: expectedValue];
 	return failedTest;
 }
 
@@ -92,120 +92,92 @@
 	NSMutableArray *failure = [[NSMutableArray alloc] init];
 	if (point == nil)
 	{
-		test.testColor = [UIColor redColor];
-		NSMutableDictionary *failedTest = [[NSMutableArray alloc] init];
-		[failedTest setValue: [NSNull null] forKey: @"IMSRPointObject"];
-		[failedTest setValue: @"notNil" forKey: @"IMSRPointObject"];
-		[failure addObject: failedTest];
-		[failedTest release];
+		[failure addObject: [self updateFailureTest: test
+										  forObject: [NSNull null]
+										   forValue: @"IMSRPointObject"
+									 expectedObject: @"NotNil"
+									  expectedValue: @"IMSRPointObject"]];
 	}
 	
 	if (point.positionX != self.resultPositionX)
 	{
-		test.testColor = [UIColor redColor];
-		NSMutableDictionary *failedTest = [[NSMutableArray alloc] init];
-		[failedTest setValue: [NSNumber numberWithDouble: point.positionX]
-					   forKey: @"actualPositionX"];
-		[failedTest setValue: [NSNumber numberWithDouble: self.resultPositionX]
-					   forKey: @"expectedPositionX"];
-		[failure addObject: failedTest];
-		[failedTest release];
+		[failure addObject: [self updateFailureTest: test
+										  forObject:[NSNumber numberWithDouble: point.positionX]
+										   forValue: @"actualPositionX"
+									 expectedObject: [NSNumber numberWithDouble: self.resultPositionX]
+									  expectedValue: @"expectedPositionX"]];
 	}
 	
 	if (point.positionY != self.resultPositionY)
 	{
-		test.testColor = [UIColor redColor];
-		NSMutableDictionary *failedTest = [[NSMutableArray alloc] init];
-		[failedTest setValue: [NSNumber numberWithDouble: point.positionY]
-					   forKey: @"actualPositionY"];
-		[failedTest setValue: [NSNumber numberWithDouble: self.resultPositionY]
-					   forKey: @"expectedPositionY"];
-		[failure addObject: failedTest];
-		[failedTest release];
+		[failure addObject: [self updateFailureTest: test
+										  forObject: [NSNumber numberWithDouble: point.positionY]
+										   forValue: @"actualPositionY"
+									 expectedObject: [NSNumber numberWithDouble: self.resultPositionY]
+									  expectedValue: @"expectedPositionY"]];
 	}
 	
 	if (point.positionZ != self.resultPositionZ)
 	{
-		test.testColor = [UIColor redColor];
-		NSMutableDictionary *failedTest = [[NSMutableArray alloc] init];
-		[failedTest setValue: [NSNumber numberWithDouble: point.positionZ]
-					   forKey: @"actualPositionZ"];
-		[failedTest setValue: [NSNumber numberWithDouble: self.resultPositionZ]
-					   forKey: @"expectedPositionZ"];
-		[failure addObject: failedTest];
-		[failedTest release];
+		[failure addObject: [self updateFailureTest: test
+										  forObject: [NSNumber numberWithDouble: point.positionZ]
+										   forValue: @"actualPositionZ"
+									 expectedObject: [NSNumber numberWithDouble: self.resultPositionZ]
+									  expectedValue: @"expectedPositionZ"]];
 	}
 	
 	if (point.velocityX != self.resultVelocityX)
 	{
-		test.testColor = [UIColor redColor];
-		NSMutableDictionary *failedTest = [[NSMutableArray alloc] init];
-		[failedTest setValue: [NSNumber numberWithDouble: point.velocityX]
-					   forKey: @"actualVelocityX"];
-		[failedTest setValue: [NSNumber numberWithDouble: self.resultVelocityX]
-					   forKey: @"expectedVelocityX"];
-		[failure addObject: failedTest];
-		[failedTest release];
+		[failure addObject: [self updateFailureTest: test
+										  forObject: [NSNumber numberWithDouble: point.velocityX]
+										   forValue:@"actualVelocityX"
+									 expectedObject: [NSNumber numberWithDouble: self.resultVelocityX]
+									  expectedValue: @"expectedVelocityY"]];
 	}
 	
 	if (point.velocityY != self.resultVelocityY)
 	{
-		test.testColor = [UIColor redColor];
-		NSMutableDictionary *failedTest = [[NSMutableArray alloc] init];
-		[failedTest setValue: [NSNumber numberWithDouble: point.velocityY]
-					   forKey: @"actualVelocityY"];
-		[failedTest setValue: [NSNumber numberWithDouble: self.resultVelocityY]
-					   forKey: @"expectedVelocityY"];
-		[failure addObject: failedTest];
-		[failedTest release];
+		[failure addObject: [self updateFailureTest: test
+										  forObject: [NSNumber numberWithDouble: point.velocityY]
+										   forValue: @"actualVelocityY"
+									 expectedObject: [NSNumber numberWithDouble: self.resultVelocityY]
+									  expectedValue: @"expectedVelocityY"]];
 	}
 	
 	if (point.velocityZ != self.resultVelocityZ)
 	{
-		test.testColor = [UIColor redColor];
-		NSMutableDictionary *failedTest = [[NSMutableArray alloc] init];
-		[failedTest setValue: [NSNumber numberWithDouble: point.velocityZ]
-					   forKey: @"actualVelocityZ"];
-		[failedTest setValue: [NSNumber numberWithDouble: self.resultVelocityZ]
-					   forKey: @"expectedVelocityZ"];
-		[failure addObject: failedTest];
-		[failedTest release];
+		[failure addObject: [self updateFailureTest: test
+										  forObject: [NSNumber numberWithDouble: point.velocityZ]
+										   forValue: @"actualVelocityZ"
+									 expectedObject: [NSNumber numberWithDouble: self.resultVelocityZ]
+									  expectedValue: @"expectedVelocityZ"]];
 	}
 	
 	if (point.accelerationX != self.resultAccelerationX)
 	{
-		test.testColor = [UIColor redColor];
-		NSMutableDictionary *failedTest = [[NSMutableArray alloc] init];
-		[failedTest setValue: [NSNumber numberWithDouble: point.accelerationX]
-					   forKey: @"actualAccelerationX"];
-		[failedTest setValue: [NSNumber numberWithDouble: self.resultAccelerationX]
-					   forKey: @"expectedAccelerationX"];
-		[failure addObject: failedTest];
-		[failedTest release];
+		[failure addObject: [self updateFailureTest: test
+										  forObject: [NSNumber numberWithDouble: point.accelerationX]
+										   forValue: @"actualAccelerationX"
+									 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationX]
+									  expectedValue: @"expectedAcceleratonX"]];
 	}
 	
 	if (point.accelerationY != self.resultAccelerationY)
 	{
-		test.testColor = [UIColor redColor];
-		NSMutableDictionary *failedTest = [[NSMutableArray alloc] init];
-		[failedTest setValue: [NSNumber numberWithDouble: point.accelerationY]
-					   forKey: @"actualAccelerationY"];
-		[failedTest setValue: [NSNumber numberWithDouble: self.resultAccelerationY]
-					   forKey: @"expectedAccelerationY"];
-		[failure addObject: failedTest];
-		[failedTest release];
+		[failure addObject: [self updateFailureTest: test
+										  forObject: [NSNumber numberWithDouble: point.accelerationY]
+										   forValue: @"actualAccelerationY"
+									 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationY]
+									  expectedValue: @"expectedAccelerationY"]];
 	}
 	
 	if (point.accelerationZ != self.resultAccelerationZ)
 	{
-		test.testColor = [UIColor redColor];
-		NSMutableDictionary *failedTest = [[NSMutableArray alloc] init];
-		[failedTest setValue: [NSNumber numberWithDouble: point.accelerationZ]
-					   forKey: @"actualAccelerationZ"];
-		[failedTest setValue: [NSNumber numberWithDouble: self.resultAccelerationZ]
-					   forKey: @"expectedAccelerationZ"];
-		[failure addObject: failedTest];
-		[failedTest release];
+		[failure addObject: [self updateFailureTest: test
+										  forObject: [NSNumber numberWithDouble: point.accelerationZ]
+										   forValue: @"actualAccelerationZ"
+									 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationZ]
+									  expectedValue: @"expectedAccelerationZ"]];
 	}
 	
 	return failure;
@@ -221,6 +193,7 @@
 		IMSRPointObject *point = [[IMSRPointObject alloc] init];
 		failedTests = [self testResultsForTest: test
 									usingPoint: point];
+		[point release];
 	}
 	else if ([self.testMethod isEqualToString: @"initWithPositionX:positionY:positionZ:"])
 	{
@@ -229,6 +202,7 @@
 																  positionZ: self.inputPositionZ];
 		failedTests = [self testResultsForTest: test
 									usingPoint: point];
+		[point release];
 	}
 	else if ([self.testMethod isEqualToString: @"initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:"])
 	{
@@ -240,6 +214,22 @@
 																  velocityZ: self.inputVelocityZ];
 		failedTests = [self testResultsForTest: test
 									usingPoint: point];
+		[point release];
+	}
+	else if ([self.testMethod isEqualToString: @"initWithPositionX:positionY:positionZ:velocityX:velocityY:velocityZ:accelerationX:accelerationY:accelerationZ"])
+	{
+		IMSRPointObject *point = [[IMSRPointObject alloc] initWithPositionX: self.inputPositionX
+																  positionY: self.inputPositionY
+																  positionZ: self.inputPositionZ
+																  velocityX: self.inputVelocityX
+																  velocityY: self.inputVelocityY
+																  velocityZ: self.inputVelocityZ
+															  accelerationX: self.inputAccelerationX
+															  accelerationY: self.inputAccelerationY
+															  accelerationZ: self.inputAccelerationZ];
+		failedTests = [self testResultsForTest: test
+									usingPoint: point];
+		[point release];
 	}
 }
 
