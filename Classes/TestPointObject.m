@@ -86,6 +86,16 @@
 	return failedTest;
 }
 
+- (BOOL)acceptableDifferenceWith: (double)value1
+					   withValue: (double)value2
+{
+	static double allowableDifference = 0.0000001;  // Allowable variance for values
+	if (fabs(value2 - value1) < allowableDifference)
+		return YES;
+	
+	return NO;
+}
+
 - (NSArray *)testResultsForTest: (Test *)test
 					 usingPoint: (IMSRPointObject *)point
 {
@@ -101,83 +111,119 @@
 	
 	if (point.positionX != self.resultPositionX)
 	{
-		[failure addObject: [self updateFailureTest: test
-										  forObject:[NSNumber numberWithDouble: point.positionX]
-										   forValue: @"actualPositionX"
-									 expectedObject: [NSNumber numberWithDouble: self.resultPositionX]
-									  expectedValue: @"expectedPositionX"]];
+		if (![self acceptableDifferenceWith: point.positionX
+								  withValue: self.resultPositionX])
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject:[NSNumber numberWithDouble: point.positionX]
+											   forValue: @"actualPositionX"
+										 expectedObject: [NSNumber numberWithDouble: self.resultPositionX]
+										  expectedValue: @"expectedPositionX"]];
+		}
 	}
 	
 	if (point.positionY != self.resultPositionY)
 	{
-		[failure addObject: [self updateFailureTest: test
-										  forObject: [NSNumber numberWithDouble: point.positionY]
-										   forValue: @"actualPositionY"
-									 expectedObject: [NSNumber numberWithDouble: self.resultPositionY]
-									  expectedValue: @"expectedPositionY"]];
+		if (![self acceptableDifferenceWith: point.positionY
+								  withValue: self.resultPositionY])
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.positionY]
+											   forValue: @"actualPositionY"
+										 expectedObject: [NSNumber numberWithDouble: self.resultPositionY]
+										  expectedValue: @"expectedPositionY"]];
+		}
 	}
 	
 	if (point.positionZ != self.resultPositionZ)
 	{
-		[failure addObject: [self updateFailureTest: test
-										  forObject: [NSNumber numberWithDouble: point.positionZ]
-										   forValue: @"actualPositionZ"
-									 expectedObject: [NSNumber numberWithDouble: self.resultPositionZ]
-									  expectedValue: @"expectedPositionZ"]];
+		if (![self acceptableDifferenceWith: point.positionZ
+			withValue: self.resultPositionZ])
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.positionZ]
+											   forValue: @"actualPositionZ"
+										 expectedObject: [NSNumber numberWithDouble: self.resultPositionZ]
+										  expectedValue: @"expectedPositionZ"]];
+		}
 	}
 	
 	if (point.velocityX != self.resultVelocityX)
 	{
-		[failure addObject: [self updateFailureTest: test
-										  forObject: [NSNumber numberWithDouble: point.velocityX]
-										   forValue:@"actualVelocityX"
-									 expectedObject: [NSNumber numberWithDouble: self.resultVelocityX]
-									  expectedValue: @"expectedVelocityY"]];
+		if (![self acceptableDifferenceWith: point.velocityX
+								  withValue: self.resultVelocityX])
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.velocityX]
+											   forValue:@"actualVelocityX"
+										 expectedObject: [NSNumber numberWithDouble: self.resultVelocityX]
+										  expectedValue: @"expectedVelocityY"]];
+		}
 	}
 	
 	if (point.velocityY != self.resultVelocityY)
 	{
-		[failure addObject: [self updateFailureTest: test
-										  forObject: [NSNumber numberWithDouble: point.velocityY]
-										   forValue: @"actualVelocityY"
-									 expectedObject: [NSNumber numberWithDouble: self.resultVelocityY]
-									  expectedValue: @"expectedVelocityY"]];
+		if (![self acceptableDifferenceWith: point.velocityY
+								  withValue: self.resultVelocityY])
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.velocityY]
+											   forValue: @"actualVelocityY"
+										 expectedObject: [NSNumber numberWithDouble: self.resultVelocityY]
+										  expectedValue: @"expectedVelocityY"]];
+		}
 	}
 	
 	if (point.velocityZ != self.resultVelocityZ)
 	{
-		[failure addObject: [self updateFailureTest: test
-										  forObject: [NSNumber numberWithDouble: point.velocityZ]
-										   forValue: @"actualVelocityZ"
-									 expectedObject: [NSNumber numberWithDouble: self.resultVelocityZ]
-									  expectedValue: @"expectedVelocityZ"]];
+		if (![self acceptableDifferenceWith: point.velocityZ
+								  withValue: self.resultVelocityZ])
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.velocityZ]
+											   forValue: @"actualVelocityZ"
+										 expectedObject: [NSNumber numberWithDouble: self.resultVelocityZ]
+										  expectedValue: @"expectedVelocityZ"]];
+		}
 	}
 	
 	if (point.accelerationX != self.resultAccelerationX)
 	{
-		[failure addObject: [self updateFailureTest: test
-										  forObject: [NSNumber numberWithDouble: point.accelerationX]
-										   forValue: @"actualAccelerationX"
-									 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationX]
-									  expectedValue: @"expectedAcceleratonX"]];
+		if (![self acceptableDifferenceWith: point.accelerationX
+								  withValue: self.resultAccelerationX])
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.accelerationX]
+											   forValue: @"actualAccelerationX"
+										 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationX]
+										  expectedValue: @"expectedAcceleratonX"]];
+		}
 	}
 	
 	if (point.accelerationY != self.resultAccelerationY)
 	{
-		[failure addObject: [self updateFailureTest: test
-										  forObject: [NSNumber numberWithDouble: point.accelerationY]
-										   forValue: @"actualAccelerationY"
-									 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationY]
-									  expectedValue: @"expectedAccelerationY"]];
+		if (![self acceptableDifferenceWith: point.accelerationY
+			withValue: self.resultAccelerationY])
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.accelerationY]
+											   forValue: @"actualAccelerationY"
+										 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationY]
+										  expectedValue: @"expectedAccelerationY"]];
+		}
 	}
 	
 	if (point.accelerationZ != self.resultAccelerationZ)
 	{
-		[failure addObject: [self updateFailureTest: test
-										  forObject: [NSNumber numberWithDouble: point.accelerationZ]
-										   forValue: @"actualAccelerationZ"
-									 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationZ]
-									  expectedValue: @"expectedAccelerationZ"]];
+		if (![self acceptableDifferenceWith: point.accelerationZ
+								  withValue: self.resultAccelerationZ])
+		{
+			[failure addObject: [self updateFailureTest: test
+											  forObject: [NSNumber numberWithDouble: point.accelerationZ]
+											   forValue: @"actualAccelerationZ"
+										 expectedObject: [NSNumber numberWithDouble: self.resultAccelerationZ]
+										  expectedValue: @"expectedAccelerationZ"]];
+		}
 	}
 	
 	return failure;

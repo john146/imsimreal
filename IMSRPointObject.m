@@ -107,61 +107,46 @@
 	return self;
 }
 
-- (void)updatePosition: (NSNumber *)pos
-			  velocity: (NSNumber *)vel
-		  acceleration: (NSNumber *)accel
-		  forDeltaTime: (NSTimeInterval)deltaTime
+- (double)updatePosition: (double)position
+			withVelocity: (double)velocity
+		withAcceleration: (double)acceleration
+			forDeltaTime: (NSTimeInterval)deltaTime
 {
-	NSLog(@"Entering updatePosition: %@ velocity:%@ acceleration: %@ forDeltaTime: %d",
-		  pos, vel, accel, deltaTime);
-	
-	double		position		= [pos doubleValue];
-	double		velocity		= [vel doubleValue];
-	double		acceleration	= [accel doubleValue];
-	
-	position		= position + (velocity * deltaTime) + ((acceleration * deltaTime * deltaTime) / 2.0);
-	pos				= [NSNumber numberWithDouble: position];
-	velocity		= velocity + (acceleration * deltaTime);
-	vel				= [NSNumber numberWithDouble: velocity];
-	
-	NSLog(@"Position: %@ velocity: %@", pos, vel);
+	return (position + (velocity * deltaTime) + ((acceleration * deltaTime * deltaTime) / 2.0));
+}
+
+- (double)updateVelocity: (double)velocity
+		withAcceleration: (double)acceleration
+			forDeltaTime: (NSTimeInterval)deltaTime
+{
+	return (velocity + (acceleration * deltaTime));
 }
 
 - (void)computeStateForDeltaTime: (NSTimeInterval)deltaTime
 {
-	NSNumber *position;
-	NSNumber *velocity;
-	NSNumber *acceleration;
+	self.positionX = [self updatePosition: self.positionX
+							 withVelocity: self.velocityX
+						 withAcceleration: self.accelerationX
+							 forDeltaTime: deltaTime];
+	self.velocityX	= [self updateVelocity: self.velocityX
+						  withAcceleration: self.accelerationX
+							  forDeltaTime: deltaTime];
 	
-	position = [NSNumber numberWithDouble: self.positionX];
-	velocity = [NSNumber numberWithDouble: self.velocityX];
-	acceleration = [NSNumber numberWithDouble: self.accelerationX];
-	[self updatePosition: position 
-				velocity: velocity
-			acceleration: acceleration
-			forDeltaTime: deltaTime];
-	self.positionX		= [position doubleValue];
-	self.velocityX		= [velocity doubleValue];
+	self.positionY = [self updatePosition: self.positionY
+							 withVelocity: self.velocityY
+						 withAcceleration: self.accelerationY
+							 forDeltaTime: deltaTime];
+	self.velocityY	= [self updateVelocity: self.velocityY
+						  withAcceleration: self.accelerationY
+						 	  forDeltaTime: deltaTime];
 	
-	position			= [NSNumber numberWithDouble: self.positionY];
-	velocity			= [NSNumber numberWithDouble: self.velocityY];
-	acceleration		= [NSNumber numberWithDouble: self.accelerationY];
-	[self updatePosition: position 
-				velocity: velocity
-			acceleration: acceleration
-			forDeltaTime: deltaTime];
-	self.positionY		= [position doubleValue];
-	self.velocityY		= [velocity doubleValue];
-	
-	position			= [NSNumber numberWithDouble: self.positionZ];
-	velocity			= [NSNumber numberWithDouble: self.velocityZ];
-	acceleration		= [NSNumber numberWithDouble: self.accelerationZ];
-	[self updatePosition: position 
-				velocity: velocity
-			acceleration: acceleration
-			forDeltaTime: deltaTime];
-	self.positionZ		= [position doubleValue];
-	self.velocityZ		= [velocity doubleValue];
+	self.positionZ = [self updatePosition: self.positionZ
+							 withVelocity: self.velocityZ
+						 withAcceleration: self.accelerationZ
+							 forDeltaTime: deltaTime];
+	self.velocityZ	= [self updateVelocity: self.velocityZ
+						  withAcceleration: self.accelerationZ
+							  forDeltaTime: deltaTime];
 }
 
 @end
