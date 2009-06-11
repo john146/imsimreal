@@ -312,12 +312,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PointObjectTests.plist</string>
+								<string>IMSRPointObjectTestCases.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,17 +327,18 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PointObjectTests.plist</string>
+										<string>IMSRPointObjectTestCases.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>522427CE0FE08F8E0038ECD7</string>
+										<string>522427E80FE0968B0038ECD7</string>
 										<key>history</key>
 										<array>
 											<string>5224279E0FE07C8C0038ECD7</string>
-											<string>522427C70FE08F8E0038ECD7</string>
 											<string>522427C80FE08F8E0038ECD7</string>
-											<string>522427C90FE08F8E0038ECD7</string>
+											<string>522427DB0FE095D00038ECD7</string>
+											<string>522427E50FE0968B0038ECD7</string>
+											<string>522427E60FE0968B0038ECD7</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -369,6 +372,10 @@
 											<string>522427CB0FE08F8E0038ECD7</string>
 											<string>522427CC0FE08F8E0038ECD7</string>
 											<string>522427CD0FE08F8E0038ECD7</string>
+											<string>522427DD0FE095D00038ECD7</string>
+											<string>522427DE0FE095D00038ECD7</string>
+											<string>522427DF0FE095D00038ECD7</string>
+											<string>522427E70FE0968B0038ECD7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -562,13 +569,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>522427CF0FE08F8E0038ECD7</string>
-		<string>522427D00FE08F8E0038ECD7</string>
+		<string>522427E90FE0968B0038ECD7</string>
 		<string>5224277F0FE049020038ECD7</string>
 		<string>522427BA0FE07C8C0038ECD7</string>
 		<string>522427BB0FE07C8C0038ECD7</string>
-		<string>52D0EB060FD889E600F1C8B9</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>52D0EB060FD889E600F1C8B9</string>
 		<string>/Users/john/Documents/Projects/imSimReal/imSimReal.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
 	</array>
@@ -589,12 +595,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>IMSRPointObjectTestCases.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -661,7 +669,7 @@
 			<key>WindowToolGUID</key>
 			<string>52D0EB060FD889E600F1C8B9</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

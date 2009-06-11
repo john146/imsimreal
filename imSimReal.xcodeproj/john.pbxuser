@@ -44,7 +44,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 52D0EA940FD882C700F1C8B9 /* imSimReal */;
-		activeSDKPreference = iphoneos2.2.1;
+		activeSDKPreference = iphonesimulator2.2.1;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* imSimReal */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* imSimReal */,
@@ -167,6 +167,16 @@
 			522427CC0FE08F8E0038ECD7 /* PBXTextBookmark */ = 522427CC0FE08F8E0038ECD7 /* PBXTextBookmark */;
 			522427CD0FE08F8E0038ECD7 /* PBXTextBookmark */ = 522427CD0FE08F8E0038ECD7 /* PBXTextBookmark */;
 			522427CE0FE08F8E0038ECD7 /* PlistBookmark */ = 522427CE0FE08F8E0038ECD7 /* PlistBookmark */;
+			522427DB0FE095D00038ECD7 /* PlistBookmark */ = 522427DB0FE095D00038ECD7 /* PlistBookmark */;
+			522427DC0FE095D00038ECD7 /* PBXTextBookmark */ = 522427DC0FE095D00038ECD7 /* PBXTextBookmark */;
+			522427DD0FE095D00038ECD7 /* PlistBookmark */ = 522427DD0FE095D00038ECD7 /* PlistBookmark */;
+			522427DE0FE095D00038ECD7 /* PBXTextBookmark */ = 522427DE0FE095D00038ECD7 /* PBXTextBookmark */;
+			522427DF0FE095D00038ECD7 /* PlistBookmark */ = 522427DF0FE095D00038ECD7 /* PlistBookmark */;
+			522427E00FE095D00038ECD7 /* PBXTextBookmark */ = 522427E00FE095D00038ECD7 /* PBXTextBookmark */;
+			522427E50FE0968B0038ECD7 /* PBXTextBookmark */ = 522427E50FE0968B0038ECD7 /* PBXTextBookmark */;
+			522427E60FE0968B0038ECD7 /* PBXTextBookmark */ = 522427E60FE0968B0038ECD7 /* PBXTextBookmark */;
+			522427E70FE0968B0038ECD7 /* PBXTextBookmark */ = 522427E70FE0968B0038ECD7 /* PBXTextBookmark */;
+			522427E80FE0968B0038ECD7 /* PBXTextBookmark */ = 522427E80FE0968B0038ECD7 /* PBXTextBookmark */;
 			5271D09F0FDC86A500F798B2 = 5271D09F0FDC86A500F798B2 /* PBXTextBookmark */;
 			52754BB20FDB453600668BC1 = 52754BB20FDB453600668BC1 /* PBXTextBookmark */;
 			52754BB30FDB453600668BC1 = 52754BB30FDB453600668BC1 /* PBXTextBookmark */;
@@ -664,6 +674,110 @@
 		rLen = 0;
 		rLoc = 2147483647;
 	};
+	522427DB0FE095D00038ECD7 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52E67FC60FDC304700AA7CB7 /* PointObjectTests.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			7,
+			resultVelocityZ,
+		);
+		name = /Users/john/Documents/Projects/imSimReal/PointObjectTests.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	522427DC0FE095D00038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52E680360FDC54AB00AA7CB7 /* TestPointObject.m */;
+		rLen = 0;
+		rLoc = 291;
+		rType = 1;
+	};
+	522427DD0FE095D00038ECD7 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52E67FC60FDC304700AA7CB7 /* PointObjectTests.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			7,
+			resultPositionY,
+		);
+		name = /Users/john/Documents/Projects/imSimReal/PointObjectTests.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	522427DE0FE095D00038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52E680360FDC54AB00AA7CB7 /* TestPointObject.m */;
+		name = "TestPointObject.m: 292";
+		rLen = 0;
+		rLoc = 10642;
+		rType = 0;
+		vrLen = 1560;
+		vrLoc = 9188;
+	};
+	522427DF0FE095D00038ECD7 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52E67FC60FDC304700AA7CB7 /* PointObjectTests.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			7,
+			resultVelocityZ,
+		);
+		name = /Users/john/Documents/Projects/imSimReal/PointObjectTests.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	522427E00FE095D00038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52E680360FDC54AB00AA7CB7 /* TestPointObject.m */;
+		name = "TestPointObject.m: 292";
+		rLen = 0;
+		rLoc = 10642;
+		rType = 0;
+		vrLen = 1658;
+		vrLoc = 9090;
+	};
+	522427E50FE0968B0038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52E680360FDC54AB00AA7CB7 /* TestPointObject.m */;
+		name = "TestPointObject.m: 292";
+		rLen = 0;
+		rLoc = 10642;
+		rType = 0;
+		vrLen = 1658;
+		vrLoc = 9090;
+	};
+	522427E60FE0968B0038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: failure in raise (point.positionX) == ([[expectedValues objectForKey: @\"positionZ\"] doubleValue]) (/Users/john/Documents/Projects/imSimReal/IMSRPointObjectTestCases.m:235: error: <00000000 0000f03f> != <66666666 6666e63f> with accuracy (null) : Position Z should be 1717986918 but is 1072064102) : Position Z should be 1717986918 but is 1072064102";
+		fRef = 52D0EADC0FD8867800F1C8B9 /* IMSRPointObjectTestCases.m */;
+		rLen = 1;
+		rLoc = 234;
+		rType = 1;
+	};
+	522427E70FE0968B0038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52E680360FDC54AB00AA7CB7 /* TestPointObject.m */;
+		name = "TestPointObject.m: 292";
+		rLen = 0;
+		rLoc = 10642;
+		rType = 0;
+		vrLen = 1658;
+		vrLoc = 9090;
+	};
+	522427E80FE0968B0038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52D0EADC0FD8867800F1C8B9 /* IMSRPointObjectTestCases.m */;
+		name = "IMSRPointObjectTestCases.m: 231";
+		rLen = 0;
+		rLoc = 11159;
+		rType = 0;
+		vrLen = 1102;
+		vrLoc = 0;
+	};
 	5271D09F0FDC86A500F798B2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 52D0EAB00FD8835100F1C8B9 /* IMSRPointObject.h */;
@@ -1151,9 +1265,9 @@
 	};
 	52D0EADC0FD8867800F1C8B9 /* IMSRPointObjectTestCases.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {810, 5362}}";
-			sepNavSelRange = "{16118, 68}";
-			sepNavVisRange = "{15732, 814}";
+			sepNavIntBoundsRect = "{{0, 0}, {810, 5124}}";
+			sepNavSelRange = "{11159, 0}";
+			sepNavVisRange = "{0, 1102}";
 		};
 	};
 	52D0EADF0FD8869A00F1C8B9 /* LICENSE */ = {
@@ -1582,9 +1696,9 @@
 	};
 	52E680360FDC54AB00AA7CB7 /* TestPointObject.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 4326}}";
-			sepNavSelRange = "{10532, 0}";
-			sepNavVisRange = "{9590, 732}";
+			sepNavIntBoundsRect = "{{0, 0}, {978, 4130}}";
+			sepNavSelRange = "{10642, 0}";
+			sepNavVisRange = "{9090, 1658}";
 		};
 	};
 	52E6805E0FDC5F1800AA7CB7 /* PlistBookmark */ = {

@@ -157,7 +157,7 @@
 				   @"Position Y should be %i but is %i", 
 				   [[expectedValues objectForKey: @"positionY"] doubleValue],
 				   point.positionY);
-	STAssertEquals(point.positionX,
+	STAssertEquals(point.positionZ,
 				   [[expectedValues objectForKey: @"positionZ"] doubleValue], 
 				   @"Position Z should be %i but is %i", 
 				   [[expectedValues objectForKey: @"positionZ"] doubleValue],
@@ -228,7 +228,7 @@
 				   @"Position Y should be %i but is %i", 
 				   [[expectedValues objectForKey: @"positionY"] doubleValue],
 				   point.positionY);
-	STAssertEquals(point.positionX,
+	STAssertEquals(point.positionZ,
 				   [[expectedValues objectForKey: @"positionZ"] doubleValue], 
 				   @"Position Z should be %i but is %i", 
 				   [[expectedValues objectForKey: @"positionZ"] doubleValue],
