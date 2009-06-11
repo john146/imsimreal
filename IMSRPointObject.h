@@ -31,14 +31,31 @@
 	double accelerationZ;
 }
 
+/// The X position in meters
 @property (nonatomic, assign)double positionX;
+
+/// The Y position in meters
 @property (nonatomic, assign)double positionY;
+
+/// The Z (vertical) position in meters
 @property (nonatomic, assign)double positionZ;
+
+/// Velocity along the X coordinate in meters/second
 @property (nonatomic, assign)double velocityX;
+
+/// Velocity along the Y coordinate in meters/second
 @property (nonatomic, assign)double velocityY;
+
+/// Velocity along the Z (vertical) coordinate in meters/second
 @property (nonatomic, assign)double velocityZ;
+
+/// Acceleration along the X coordinate in meters/second<sup>2</sup>
 @property (nonatomic, assign)double accelerationX;
+
+/// Acceleration along the Y coordinate in meters/second<sup>2</sup>
 @property (nonatomic, assign)double accelerationY;
+
+/// Acceleration along the Z (vertical) coordinate in meters/second<sup>2</sup>
 @property (nonatomic, assign)double accelerationZ;
 
 /**

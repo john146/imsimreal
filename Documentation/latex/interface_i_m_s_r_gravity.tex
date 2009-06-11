@@ -7,23 +7,20 @@
 \subsection*{Public Member Functions}
 \begin{CompactItemize}
 \item 
-(id) - \hyperlink{interface_i_m_s_r_gravity_8b103c80cb67a994c8bcaefe0aca3b4f}{initWithBody:}
+(id) - \hyperlink{interface_i_m_s_r_gravity_aae51c34df822f8f522828f802a3a80d}{initWithBody:}
 \item 
-(double) - \hyperlink{interface_i_m_s_r_gravity_98e01aca71f1f3c91a769b2bb8571ff5}{gravityForSelectedBody}
+(double) - \hyperlink{interface_i_m_s_r_gravity_12e427cd2462057b15f1ef74b6c5a535}{gravityForSelectedBody}
 \end{CompactItemize}
 \subsection*{Properties}
 \begin{CompactItemize}
 \item 
-\hypertarget{interface_i_m_s_r_gravity_c80d0693a2a846db750fae929866d1a4}{
-NSDictionary $\ast$ \textbf{bodyGravity}}
-\label{interface_i_m_s_r_gravity_c80d0693a2a846db750fae929866d1a4}
-
+NSDictionary $\ast$ \hyperlink{interface_i_m_s_r_gravity_10084c6f12251d97bf8238a05990a9d6}{bodyGravity}
 \item 
-\hypertarget{interface_i_m_s_r_gravity_f77d4563a9e7c7b7389391ec9043d98c}{
-NSString $\ast$ \textbf{selectedBody}}
-\label{interface_i_m_s_r_gravity_f77d4563a9e7c7b7389391ec9043d98c}
+\hypertarget{interface_i_m_s_r_gravity_cac09b23a211629dc639543b1b34f545}{
+NSString $\ast$ \hyperlink{interface_i_m_s_r_gravity_cac09b23a211629dc639543b1b34f545}{selectedBody}}
+\label{interface_i_m_s_r_gravity_cac09b23a211629dc639543b1b34f545}
 
-\end{CompactItemize}
+\begin{CompactList}\small\item\em The body that this object was initialized with. \item\end{CompactList}\end{CompactItemize}
 
 
 \subsection{Detailed Description}
@@ -31,30 +28,26 @@ NSString $\ast$ \textbf{selectedBody}}
 
 Gravity is always negative. The units are meters/sec$^{\mbox{2}}$ . 
 
-Definition at line 20 of file IMSRGravity.h.
-
 \subsection{Member Function Documentation}
-\hypertarget{interface_i_m_s_r_gravity_98e01aca71f1f3c91a769b2bb8571ff5}{
+\hypertarget{interface_i_m_s_r_gravity_12e427cd2462057b15f1ef74b6c5a535}{
 \index{IMSRGravity@{IMSRGravity}!gravityForSelectedBody@{gravityForSelectedBody}}
 \index{gravityForSelectedBody@{gravityForSelectedBody}!IMSRGravity@{IMSRGravity}}
 \subsubsection[{gravityForSelectedBody}]{\setlength{\rightskip}{0pt plus 5cm}- (double) gravityForSelectedBody }}
-\label{interface_i_m_s_r_gravity_98e01aca71f1f3c91a769b2bb8571ff5}
+\label{interface_i_m_s_r_gravity_12e427cd2462057b15f1ef74b6c5a535}
 
 
 Get the gravity value for the selectedBody.
 
 \begin{Desc}
 \item[Returns:]gravity for the selectedBody variable, in meters/second. \end{Desc}
-
-
-Definition at line 34 of file IMSRGravity.m.\hypertarget{interface_i_m_s_r_gravity_8b103c80cb67a994c8bcaefe0aca3b4f}{
+\hypertarget{interface_i_m_s_r_gravity_aae51c34df822f8f522828f802a3a80d}{
 \index{IMSRGravity@{IMSRGravity}!initWithBody:@{initWithBody:}}
 \index{initWithBody:@{initWithBody:}!IMSRGravity@{IMSRGravity}}
 \subsubsection[{initWithBody:}]{\setlength{\rightskip}{0pt plus 5cm}- (id) initWithBody: (NSString $\ast$) {\em body}}}
-\label{interface_i_m_s_r_gravity_8b103c80cb67a994c8bcaefe0aca3b4f}
+\label{interface_i_m_s_r_gravity_aae51c34df822f8f522828f802a3a80d}
 
 
-An initializer for selecting the body to use when initializing. If no body is selected, the default init: method sets body to Earth
+An initializer for selecting the body to use when initializing. If no body is selected, the default init: method sets body to Earth. If the selected body is not part of the bodyGravity dictionary, nil is returned.
 
 \begin{Desc}
 \item[Parameters:]
@@ -65,7 +58,17 @@ An initializer for selecting the body to use when initializing. If no body is se
 \item[Returns:]a newly initialized \hyperlink{interface_i_m_s_r_gravity}{IMSRGravity} object \end{Desc}
 
 
-Definition at line 21 of file IMSRGravity.m.
+\subsection{Property Documentation}
+\hypertarget{interface_i_m_s_r_gravity_10084c6f12251d97bf8238a05990a9d6}{
+\index{IMSRGravity@{IMSRGravity}!bodyGravity@{bodyGravity}}
+\index{bodyGravity@{bodyGravity}!IMSRGravity@{IMSRGravity}}
+\subsubsection[{bodyGravity}]{\setlength{\rightskip}{0pt plus 5cm}- (NSDictionary $\ast$) bodyGravity\hspace{0.3cm}{\tt  \mbox{[}read, write, retain\mbox{]}}}}
+\label{interface_i_m_s_r_gravity_10084c6f12251d97bf8238a05990a9d6}
+
+
+A list of the bodies available with the gravity value. Form if NSDictionary:\par
+ NSString $\ast$body\par
+ NSNumber $\ast$gravity as double. 
 
 The documentation for this class was generated from the following files:\begin{CompactItemize}
 \item 
