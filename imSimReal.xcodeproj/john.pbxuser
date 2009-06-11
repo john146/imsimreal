@@ -159,6 +159,14 @@
 			522427B70FE07C8C0038ECD7 /* PBXTextBookmark */ = 522427B70FE07C8C0038ECD7 /* PBXTextBookmark */;
 			522427B80FE07C8C0038ECD7 /* PBXTextBookmark */ = 522427B80FE07C8C0038ECD7 /* PBXTextBookmark */;
 			522427B90FE07C8C0038ECD7 /* PBXTextBookmark */ = 522427B90FE07C8C0038ECD7 /* PBXTextBookmark */;
+			522427C70FE08F8E0038ECD7 /* PBXTextBookmark */ = 522427C70FE08F8E0038ECD7 /* PBXTextBookmark */;
+			522427C80FE08F8E0038ECD7 /* PBXTextBookmark */ = 522427C80FE08F8E0038ECD7 /* PBXTextBookmark */;
+			522427C90FE08F8E0038ECD7 /* PlistBookmark */ = 522427C90FE08F8E0038ECD7 /* PlistBookmark */;
+			522427CA0FE08F8E0038ECD7 /* PBXTextBookmark */ = 522427CA0FE08F8E0038ECD7 /* PBXTextBookmark */;
+			522427CB0FE08F8E0038ECD7 /* PlistBookmark */ = 522427CB0FE08F8E0038ECD7 /* PlistBookmark */;
+			522427CC0FE08F8E0038ECD7 /* PBXTextBookmark */ = 522427CC0FE08F8E0038ECD7 /* PBXTextBookmark */;
+			522427CD0FE08F8E0038ECD7 /* PBXTextBookmark */ = 522427CD0FE08F8E0038ECD7 /* PBXTextBookmark */;
+			522427CE0FE08F8E0038ECD7 /* PlistBookmark */ = 522427CE0FE08F8E0038ECD7 /* PlistBookmark */;
 			5271D09F0FDC86A500F798B2 = 5271D09F0FDC86A500F798B2 /* PBXTextBookmark */;
 			52754BB20FDB453600668BC1 = 52754BB20FDB453600668BC1 /* PBXTextBookmark */;
 			52754BB30FDB453600668BC1 = 52754BB30FDB453600668BC1 /* PBXTextBookmark */;
@@ -567,6 +575,95 @@
 		vrLen = 1658;
 		vrLoc = 9090;
 	};
+	522427C70FE08F8E0038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52E680360FDC54AB00AA7CB7 /* TestPointObject.m */;
+		name = "TestPointObject.m: 234";
+		rLen = 33;
+		rLoc = 8017;
+		rType = 0;
+		vrLen = 957;
+		vrLoc = 2620;
+	};
+	522427C80FE08F8E0038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52D0EAB30FD8836500F1C8B9 /* IMSRPointObject.m */;
+		name = "IMSRPointObject.m: 129";
+		rLen = 0;
+		rLoc = 3080;
+		rType = 0;
+		vrLen = 821;
+		vrLoc = 2122;
+	};
+	522427C90FE08F8E0038ECD7 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52E67FC60FDC304700AA7CB7 /* PointObjectTests.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			6,
+			resultAccelerationX,
+		);
+		name = /Users/john/Documents/Projects/imSimReal/PointObjectTests.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	522427CA0FE08F8E0038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52E680360FDC54AB00AA7CB7 /* TestPointObject.m */;
+		name = "TestPointObject.m: 228";
+		rLen = 0;
+		rLoc = 7960;
+		rType = 0;
+		vrLen = 1189;
+		vrLoc = 2760;
+	};
+	522427CB0FE08F8E0038ECD7 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52E67FC60FDC304700AA7CB7 /* PointObjectTests.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			6,
+			resultAccelerationX,
+		);
+		name = /Users/john/Documents/Projects/imSimReal/PointObjectTests.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	522427CC0FE08F8E0038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52E680360FDC54AB00AA7CB7 /* TestPointObject.m */;
+		name = "TestPointObject.m: 234";
+		rLen = 33;
+		rLoc = 8017;
+		rType = 0;
+		vrLen = 957;
+		vrLoc = 2620;
+	};
+	522427CD0FE08F8E0038ECD7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52D0EAB30FD8836500F1C8B9 /* IMSRPointObject.m */;
+		name = "IMSRPointObject.m: 129";
+		rLen = 0;
+		rLoc = 3080;
+		rType = 0;
+		vrLen = 821;
+		vrLoc = 2122;
+	};
+	522427CE0FE08F8E0038ECD7 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52E67FC60FDC304700AA7CB7 /* PointObjectTests.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			6,
+			resultVelocityX,
+		);
+		name = /Users/john/Documents/Projects/imSimReal/PointObjectTests.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
 	5271D09F0FDC86A500F798B2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 52D0EAB00FD8835100F1C8B9 /* IMSRPointObject.h */;
@@ -952,9 +1049,9 @@
 	};
 	52D0EAB30FD8836500F1C8B9 /* IMSRPointObject.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 2100}}";
-			sepNavSelRange = "{2945, 0}";
-			sepNavVisRange = "{3422, 451}";
+			sepNavIntBoundsRect = "{{0, 0}, {588, 2142}}";
+			sepNavSelRange = "{3080, 0}";
+			sepNavVisRange = "{2122, 821}";
 		};
 	};
 	52D0EABA0FD883F300F1C8B9 /* Unit Test */ = {
@@ -1485,9 +1582,9 @@
 	};
 	52E680360FDC54AB00AA7CB7 /* TestPointObject.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {978, 4060}}";
-			sepNavSelRange = "{7960, 0}";
-			sepNavVisRange = "{9090, 1658}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 4326}}";
+			sepNavSelRange = "{10532, 0}";
+			sepNavVisRange = "{9590, 732}";
 		};
 	};
 	52E6805E0FDC5F1800AA7CB7 /* PlistBookmark */ = {
