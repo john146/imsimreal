@@ -1,6 +1,9 @@
 build/
 imSimReal.xcodeproj.save/
-imSimReal.xcodeproj/john.pbxuser
-imSimReal.xcodeproj/john.mode1v3
+imSimReal.xcodeproj/john.*
+imSimReal/imSimReal.xcodeproj/john.*
+imSimReal/build
+imGravityGame/build
+imGravityGame/imGravityGame.xcodeproj/john.*
 
 

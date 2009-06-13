@@ -50,6 +50,7 @@
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5224281A0FE17E920038ECD7 /* imSimReal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imSimReal.h; sourceTree = "<group>"; };
 		52D0EAB00FD8835100F1C8B9 /* IMSRPointObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSRPointObject.h; sourceTree = SOURCE_ROOT; };
 		52D0EAB10FD8836500F1C8B9 /* IMSRGravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSRGravity.h; sourceTree = SOURCE_ROOT; };
 		52D0EAB20FD8836500F1C8B9 /* IMSRGravity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSRGravity.m; sourceTree = SOURCE_ROOT; };
@@ -161,6 +162,7 @@
 			children = (
 				28A0AAE50D9B0CCF005BE974 /* imSimReal_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				5224281A0FE17E920038ECD7 /* imSimReal.h */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
