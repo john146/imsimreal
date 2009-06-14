@@ -20,19 +20,16 @@
 	if (self = [super init])
 	{
 		IMSRGravity *g = [[IMSRGravity alloc] init];
-		NSMutableArray *bodyArray = [[NSMutableArray alloc] init];
+/*		NSMutableArray *bodyArray = [[NSMutableArray alloc] init];
 		for (id key in g.bodyGravity)
 		{
-			NSString *name = key;
-			double gAccel = [[g.bodyGravity objectForKey: key] doubleValue];
-			IMSRBody *body = [[IMSRBody alloc] initWithName: name 
-													gravity: gAccel];
+			IMSRBody *body = [[IMSRBody alloc] initWithName: key 
+													gravity: [[g.bodyGravity objectForKey: key] doubleValue]];
 			[bodyArray addObject: body];
 		}
 		
-		self.bodies = bodyArray;
-//		[planets addItemsWithTitles: [g.bodyGravity allKeys]];
-//		[planets selectItemWithTitle: g.selectedBody];
+		self.bodies = bodyArray;*/
+		self.bodies = g.bodyGravity;
 	}
 	
 	return self;
