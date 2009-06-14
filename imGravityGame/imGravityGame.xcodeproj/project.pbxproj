@@ -12,6 +12,7 @@
 		52180D4D0FE34F2100F00198 /* imSimReal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52180D4C0FE34F2100F00198 /* imSimReal.framework */; };
 		522428EF0FE2EC460038ECD7 /* GravityGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 522428EE0FE2EC460038ECD7 /* GravityGame.m */; };
 		522429AD0FE2F6520038ECD7 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 522429AC0FE2F6520038ECD7 /* GameView.m */; };
+		52AE14710FE42CEC00FBB676 /* Gravity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52AE14700FE42CEC00FBB676 /* Gravity.plist */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -32,6 +33,7 @@
 		522428EE0FE2EC460038ECD7 /* GravityGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityGame.m; sourceTree = "<group>"; };
 		522429AB0FE2F6520038ECD7 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		522429AC0FE2F6520038ECD7 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		52AE14700FE42CEC00FBB676 /* Gravity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Gravity.plist; path = ../Gravity.plist; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* imGravityGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imGravityGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				52AE14700FE42CEC00FBB676 /* Gravity.plist */,
 				52180B8F0FE32A4000F00198 /* LICENSE */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -174,6 +177,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				52180B900FE32A4000F00198 /* LICENSE in Resources */,
+				52AE14710FE42CEC00FBB676 /* Gravity.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

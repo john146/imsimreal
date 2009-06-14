@@ -13,6 +13,9 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		52AE13CC0FE41ADA00FBB676 /* IMSRBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE13CB0FE41ADA00FBB676 /* IMSRBody.m */; };
+		52AE13CD0FE41ADA00FBB676 /* IMSRBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE13CB0FE41ADA00FBB676 /* IMSRBody.m */; };
+		52AE13DF0FE41B7D00FBB676 /* IMSRBodyTestCases.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE13DD0FE41B7D00FBB676 /* IMSRBodyTestCases.m */; };
 		52D0EAB40FD8836500F1C8B9 /* IMSRGravity.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0EAB20FD8836500F1C8B9 /* IMSRGravity.m */; };
 		52D0EAB50FD8836500F1C8B9 /* IMSRPointObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0EAB30FD8836500F1C8B9 /* IMSRPointObject.m */; };
 		52D0EAC60FD8847E00F1C8B9 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0EAC20FD8847E00F1C8B9 /* GTMIPhoneUnitTestDelegate.m */; };
@@ -31,7 +34,6 @@
 		52D0EC070FD9B9B000F1C8B9 /* disclosureButtonControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D0EC060FD9B9B000F1C8B9 /* disclosureButtonControllerIcon.png */; };
 		52D0EC630FD9F2F900F1C8B9 /* RootTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D0EC620FD9F2F900F1C8B9 /* RootTests.plist */; };
 		52D0EC660FD9F5BB00F1C8B9 /* SublevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0EC650FD9F5BB00F1C8B9 /* SublevelViewController.m */; };
-		52D0EC690FD9F6AA00F1C8B9 /* TestList.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0EC680FD9F6AA00F1C8B9 /* TestList.m */; };
 		52D0EC880FDAC6C700F1C8B9 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0EC870FDAC6C700F1C8B9 /* Test.m */; };
 		52D0ECD90FDAF87100F1C8B9 /* GravityTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D0ECD80FDAF87100F1C8B9 /* GravityTests.plist */; };
 		52D0ECE30FDB075200F1C8B9 /* TestGravity.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ECE20FDB075200F1C8B9 /* TestGravity.m */; };
@@ -51,6 +53,10 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5224281A0FE17E920038ECD7 /* imSimReal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imSimReal.h; sourceTree = "<group>"; };
+		52AE13CA0FE41ADA00FBB676 /* IMSRBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMSRBody.h; path = ../IMSRBody.h; sourceTree = "<group>"; };
+		52AE13CB0FE41ADA00FBB676 /* IMSRBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMSRBody.m; path = ../IMSRBody.m; sourceTree = "<group>"; };
+		52AE13DC0FE41B7D00FBB676 /* IMSRBodyTestCases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSRBodyTestCases.h; sourceTree = "<group>"; };
+		52AE13DD0FE41B7D00FBB676 /* IMSRBodyTestCases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSRBodyTestCases.m; sourceTree = "<group>"; };
 		52D0EAB00FD8835100F1C8B9 /* IMSRPointObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSRPointObject.h; sourceTree = SOURCE_ROOT; };
 		52D0EAB10FD8836500F1C8B9 /* IMSRGravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSRGravity.h; sourceTree = SOURCE_ROOT; };
 		52D0EAB20FD8836500F1C8B9 /* IMSRGravity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSRGravity.m; sourceTree = SOURCE_ROOT; };
@@ -75,8 +81,6 @@
 		52D0EC620FD9F2F900F1C8B9 /* RootTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RootTests.plist; sourceTree = "<group>"; };
 		52D0EC640FD9F5BB00F1C8B9 /* SublevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SublevelViewController.h; sourceTree = "<group>"; };
 		52D0EC650FD9F5BB00F1C8B9 /* SublevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SublevelViewController.m; sourceTree = "<group>"; };
-		52D0EC670FD9F6AA00F1C8B9 /* TestList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestList.h; sourceTree = "<group>"; };
-		52D0EC680FD9F6AA00F1C8B9 /* TestList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestList.m; sourceTree = "<group>"; };
 		52D0EC860FDAC6C700F1C8B9 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		52D0EC870FDAC6C700F1C8B9 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		52D0ECD80FDAF87100F1C8B9 /* GravityTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GravityTests.plist; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				52AE13CA0FE41ADA00FBB676 /* IMSRBody.h */,
+				52AE13CB0FE41ADA00FBB676 /* IMSRBody.m */,
 				52D0EAB10FD8836500F1C8B9 /* IMSRGravity.h */,
 				52D0EAB20FD8836500F1C8B9 /* IMSRGravity.m */,
 				52D0EAB30FD8836500F1C8B9 /* IMSRPointObject.m */,
@@ -122,8 +128,6 @@
 				1D3623250D0F684500981E51 /* imSimRealAppDelegate.m */,
 				52D0EC640FD9F5BB00F1C8B9 /* SublevelViewController.h */,
 				52D0EC650FD9F5BB00F1C8B9 /* SublevelViewController.m */,
-				52D0EC670FD9F6AA00F1C8B9 /* TestList.h */,
-				52D0EC680FD9F6AA00F1C8B9 /* TestList.m */,
 				52D0EC860FDAC6C700F1C8B9 /* Test.h */,
 				52D0EC870FDAC6C700F1C8B9 /* Test.m */,
 				52D0ECE10FDB075200F1C8B9 /* TestGravity.h */,
@@ -196,6 +200,8 @@
 		52D0EAB60FD8837200F1C8B9 /* UnitTest */ = {
 			isa = PBXGroup;
 			children = (
+				52AE13DC0FE41B7D00FBB676 /* IMSRBodyTestCases.h */,
+				52AE13DD0FE41B7D00FBB676 /* IMSRBodyTestCases.m */,
 				52D0EAD90FD8867800F1C8B9 /* IMSRGravityTestCases.h */,
 				52D0EADA0FD8867800F1C8B9 /* IMSRGravityTestCases.m */,
 				52D0EADB0FD8867800F1C8B9 /* IMSRPointObjectTestCases.h */,
@@ -327,10 +333,10 @@
 				52D0EAB40FD8836500F1C8B9 /* IMSRGravity.m in Sources */,
 				52D0EAB50FD8836500F1C8B9 /* IMSRPointObject.m in Sources */,
 				52D0EC660FD9F5BB00F1C8B9 /* SublevelViewController.m in Sources */,
-				52D0EC690FD9F6AA00F1C8B9 /* TestList.m in Sources */,
 				52D0EC880FDAC6C700F1C8B9 /* Test.m in Sources */,
 				52D0ECE30FDB075200F1C8B9 /* TestGravity.m in Sources */,
 				52E680370FDC54AB00AA7CB7 /* TestPointObject.m in Sources */,
+				52AE13CC0FE41ADA00FBB676 /* IMSRBody.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +351,8 @@
 				52D0EADE0FD8867800F1C8B9 /* IMSRPointObjectTestCases.m in Sources */,
 				52D0EAE60FD889D200F1C8B9 /* IMSRGravity.m in Sources */,
 				52D0EAE70FD889E100F1C8B9 /* IMSRPointObject.m in Sources */,
+				52AE13CD0FE41ADA00FBB676 /* IMSRBody.m in Sources */,
+				52AE13DF0FE41B7D00FBB676 /* IMSRBodyTestCases.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

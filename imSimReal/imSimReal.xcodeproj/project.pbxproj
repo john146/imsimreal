@@ -14,6 +14,8 @@
 		522428610FE18C210038ECD7 /* IMSRPointObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5224285D0FE18C210038ECD7 /* IMSRPointObject.m */; };
 		522428630FE18C3A0038ECD7 /* Gravity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522428620FE18C3A0038ECD7 /* Gravity.plist */; };
 		522428650FE18C5B0038ECD7 /* imSimReal.h in Headers */ = {isa = PBXBuildFile; fileRef = 522428640FE18C5B0038ECD7 /* imSimReal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52B718F70FE4451D00E7E50C /* IMSRBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B718F50FE4451D00E7E50C /* IMSRBody.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52B718F80FE4451D00E7E50C /* IMSRBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B718F60FE4451D00E7E50C /* IMSRBody.m */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,8 @@
 		5224285D0FE18C210038ECD7 /* IMSRPointObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMSRPointObject.m; path = ../IMSRPointObject.m; sourceTree = SOURCE_ROOT; };
 		522428620FE18C3A0038ECD7 /* Gravity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Gravity.plist; path = ../Gravity.plist; sourceTree = SOURCE_ROOT; };
 		522428640FE18C5B0038ECD7 /* imSimReal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imSimReal.h; sourceTree = "<group>"; };
+		52B718F50FE4451D00E7E50C /* IMSRBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMSRBody.h; path = ../IMSRBody.h; sourceTree = SOURCE_ROOT; };
+		52B718F60FE4451D00E7E50C /* IMSRBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMSRBody.m; path = ../IMSRBody.m; sourceTree = SOURCE_ROOT; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* imSimReal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = imSimReal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -92,6 +96,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				52B718F50FE4451D00E7E50C /* IMSRBody.h */,
+				52B718F60FE4451D00E7E50C /* IMSRBody.m */,
 				5224285A0FE18C210038ECD7 /* IMSRGravity.h */,
 				522428640FE18C5B0038ECD7 /* imSimReal.h */,
 				5224285B0FE18C210038ECD7 /* IMSRGravity.m */,
@@ -144,6 +150,7 @@
 				5224285E0FE18C210038ECD7 /* IMSRGravity.h in Headers */,
 				522428600FE18C210038ECD7 /* IMSRPointObject.h in Headers */,
 				522428650FE18C5B0038ECD7 /* imSimReal.h in Headers */,
+				52B718F70FE4451D00E7E50C /* IMSRBody.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +214,7 @@
 			files = (
 				5224285F0FE18C210038ECD7 /* IMSRGravity.m in Sources */,
 				522428610FE18C210038ECD7 /* IMSRPointObject.m in Sources */,
+				52B718F80FE4451D00E7E50C /* IMSRBody.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

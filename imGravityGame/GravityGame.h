@@ -18,10 +18,12 @@
 	
 	IMSRPointObject *box;
 	IMSRPointObject *ball;
+	NSArray *bodies;
 }
 
 @property (assign)IMSRPointObject *box;
 @property (assign)IMSRPointObject *ball;
+@property (assign)NSArray *bodies;
 
 - (IBAction)boxVelocity: (id)sender;
 - (IBAction)gravity: (id)sender;

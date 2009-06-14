@@ -7,10 +7,12 @@
 //
 
 #import "IMSRGravity.h"
+#import "IMSRBody.h"
 
 @implementation IMSRGravity
 
 @synthesize bodyGravity;
+@synthesize selectedBodyName;
 @synthesize selectedBody;
 
 - (id)init
@@ -27,16 +29,18 @@
 
 	NSBundle *bundle	= [NSBundle mainBundle];
 	NSString *file		= [bundle pathForResource: @"Gravity" ofType: @"plist"];
-	bodyGravity			= [[NSDictionary alloc] initWithContentsOfFile: file];
-	if ([bodyGravity objectForKey: body] == nil)
+	bodyGravity = [[NSDictionary alloc] initWithContentsOfFile: file];
+	NSNumber *gravity = [bodyGravity objectForKey: body];
+	if (gravity == nil)
 	{
 		// Invalid body value
 		return nil;
 	}
 	
-	selectedBody		= body;
+	selectedBodyName	= body;
+	selectedBody = [[IMSRBody alloc] initWithName: body gravity: [gravity doubleValue]];
 	
-	NSLog(@"Gravity of %@: %f", [self selectedBody], [self gravityForSelectedBody]);
+	NSLog(@"Gravity of %@: %f", selectedBody.bodyName, selectedBody.bodyGravity);
 	
 	return self;
 }
@@ -47,9 +51,8 @@
 	{
 		return 0.0;
 	}
-	
-	NSNumber *gravity = [bodyGravity valueForKey: selectedBody];
-	return [gravity doubleValue];
+
+	return selectedBody.bodyGravity;
 }
 
 - (void)dealloc

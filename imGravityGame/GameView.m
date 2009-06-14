@@ -24,6 +24,9 @@
 - (void)drawRect:(NSRect)rect 
 {
     // Drawing code here.
+	NSRect bounds = [self bounds];
+	[[NSColor grayColor] set];
+	[NSBezierPath fillRect: bounds];
 }
 
 @end

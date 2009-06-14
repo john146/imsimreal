@@ -9,3 +9,4 @@
 
 #import "IMSRGravity.h"
 #import "IMSRPointObject.h"
+#import "IMSRBody.h"

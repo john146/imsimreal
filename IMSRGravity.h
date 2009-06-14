@@ -17,10 +17,13 @@
  * Gravity is always negative. The units are meters/sec<sup>2</sup>.
  */
 
+@class IMSRBody;
+
 @interface IMSRGravity : NSObject 
 {
 	NSDictionary	*bodyGravity;
-	NSString		*selectedBody;
+	NSString		*selectedBodyName;
+	IMSRBody		*selectedBody;
 }
 
 /// A list of the bodies available with the gravity value. Form if NSDictionary:<br />
@@ -28,8 +31,11 @@
 /// NSNumber *gravity as double.
 @property (nonatomic, retain)NSDictionary	*bodyGravity;
 
-/// The body that this object was initialized with
-@property (nonatomic, retain)NSString		*selectedBody;
+/// The name of the body that this object was initialized with
+@property (nonatomic, assign)NSString		*selectedBodyName;
+
+/// The IMSRBody object that this object was initialized with
+@property (nonatomic, assign)IMSRBody *selectedBody;
 
 /**
  * An initializer for selecting the body to use when initializing. If no body is 
