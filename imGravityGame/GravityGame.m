@@ -9,38 +9,30 @@
 
 #import "GravityGame.h"
 #import "GameView.h"
+#import "GameController.h"
 
 @implementation GravityGame
 
-@synthesize box;
-@synthesize ball;
+//@synthesize box;
+//@synthesize ball;
 @synthesize bodies;
 @synthesize start;
 @synthesize drop;
 @synthesize reset;
 @synthesize playField;
 
-- (void)initializeBall
-{
-	IMSRGravity *g = [[IMSRGravity alloc] initWithBody: [planets titleOfSelectedItem]];
-	ball = [[IMSRPointObject alloc] init];
-	ball.accelerationZ = g.selectedBody.bodyGravity;
-}
-
-- (void)initializeBox
-{
-	box = [[IMSRPointObject alloc] init];
-	box.velocityX = [result doubleValue];
-}
+@synthesize boxVelocity;
+@synthesize ballAcceleration;
 
 - (id)init
 {
 	if (self = [super init])
 	{
+		isDropping = NO;
+		isRunning = NO;
+		[[GameController alloc] initWithGravityGame: self];
 		IMSRGravity *g = [[IMSRGravity alloc] init];
 		self.bodies = g.bodyGravity;
-		[self initializeBall];
-		[self initializeBox];
 	}
 	
 	return self;
@@ -50,7 +42,8 @@
 {
 	NSLog(@"Box velocity changed: %f", [sender doubleValue]);
 	
-	box.velocityX = [result doubleValue];
+//	box.velocityX = [result doubleValue];
+	boxVelocity = [result doubleValue];
 }
 
 - (IBAction)gravity: (id)sender
@@ -59,7 +52,8 @@
 	NSLog(@"Planet changed to %@", name);
 	
 	IMSRGravity *g = [[IMSRGravity alloc] initWithBody: name];
-	ball.velocityZ = g.selectedBody.bodyGravity;
+//	ball.velocityZ = g.selectedBody.bodyGravity;
+	ballAcceleration = g.selectedBody.bodyGravity;
 }
 
 - (IBAction)buttonPressed: (id)sender
@@ -71,6 +65,7 @@
 		[start setEnabled: NO];
 		[reset setEnabled: YES];
 		[drop setEnabled: YES];
+		isRunning = YES;
 	}
 	else if ([[sender title] isEqualToString: @"Drop"])
 	{

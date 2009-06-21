@@ -11,10 +11,12 @@
 
 @implementation GameView
 
-@synthesize isPlaying;
-@synthesize isDropping;
+@synthesize delegate;
 
 const NSTimeInterval deltaTime = 0.05;
+const double ballRadius = 20.0;
+const double boxWidth = 40.0;
+const double boxHeight = 15.0;
 
 - (id)initWithFrame:(NSRect)frame 
 {
@@ -23,8 +25,11 @@ const NSTimeInterval deltaTime = 0.05;
 	{
         // Initialization code here.
 		timeNow = 0.0;
-		box = [NSBezierPath bezierPathWithRect: NSRectFromCGRect(CGRectMake(0.0, 0.0, 40.0, 15.0))];
-		ball = [NSBezierPath bezierPathWithOvalInRect: NSRectFromCGRect(CGRectMake(450.0, 220.0, 20.0, 20.0))];
+		boxRect = CGRectMake(0.0, 0.0, boxWidth, boxHeight);
+		ballRect = CGRectMake(450.0, 220.0, ballRadius, ballRadius);
+		
+		box = [NSBezierPath bezierPathWithRect: NSRectFromCGRect(boxRect)];
+		ball = [NSBezierPath bezierPathWithOvalInRect: NSRectFromCGRect(ballRect)];
     }
 	
     return self;
@@ -47,9 +52,16 @@ const NSTimeInterval deltaTime = 0.05;
 	[ball fill];
 }
 
-- (void)playGame
+- (void)updateBallPosition: (CGPoint)ballPosition
+			   boxPosition: (CGPoint)boxPosition
 {
-//	while (
+	CGPoint origin = boxRect.origin;
+	origin.x = boxPosition.x;
+	origin.y = boxPosition.y;
+	ballRect.origin.x = ballPosition.x;
+	ballRect.origin.y = ballPosition.y;
+	box = [NSBezierPath bezierPathWithRect: NSRectFromCGRect(boxRect)];
+	ball = [NSBezierPath bezierPathWithRect: NSRectFromCGRect(ballRect)];
 }
 
 @end

@@ -8,20 +8,32 @@
 
 #import <Cocoa/Cocoa.h>
 
+@protocol GameViewDelegate;
 
 @interface GameView : NSView 
 {
-	BOOL isPlaying;
-	BOOL isDropping;
-	
 	double timeNow;
+	CGRect boxRect;
+	CGRect ballRect;
 	NSBezierPath *box;
 	NSBezierPath *ball;
+	
+	id<GameViewDelegate>delegate;
 }
 
-@property (readwrite)BOOL isPlaying;
-@property (readwrite)BOOL isDropping;
+@property (nonatomic, assign)id delegate;
 
-- (void)playGame;
+- (void)updateBallPosition: (CGPoint)ballPosition
+			   boxPosition: (CGPoint)boxPosition;
+
+@end
+
+@protocol GameViewDelegate<NSObject>
+
+- (NSBezierPath *)gameView: (GameView *)gameView
+	  updateBoxAtDeltaTime: (NSTimeInterval)deltaTime;
+
+- (NSBezierPath *)gameView: (GameView *)gameView
+	 updateBallAtDeltaTime: (NSTimeInterval)deltaTime;
 
 @end
