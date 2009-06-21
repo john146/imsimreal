@@ -9,23 +9,29 @@
 #import <Cocoa/Cocoa.h>
 
 @class IMSRPointObject;
-//@class IMSRGravity;
+@class GameView;
 
 @interface GravityGame : NSObject 
 {
 	IBOutlet NSTextField *result;
 	IBOutlet NSPopUpButton *planets;
+	IBOutlet NSButton *start;
+	IBOutlet NSButton *drop;
+	IBOutlet NSButton *reset;
+	IBOutlet GameView *playField;
 	
 	IMSRPointObject *box;
 	IMSRPointObject *ball;
-//	NSArray *bodies;
 	NSDictionary *bodies;
 }
 
 @property (assign)IMSRPointObject *box;
 @property (assign)IMSRPointObject *ball;
-//@property (assign)NSArray *bodies;
 @property (assign)NSDictionary *bodies;
+@property (assign)NSButton *start;
+@property (assign)NSButton *drop;
+@property (assign)NSButton *reset;
+@property (assign)GameView *playField;
 
 - (IBAction)boxVelocity: (id)sender;
 - (IBAction)gravity: (id)sender;

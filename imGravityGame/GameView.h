@@ -11,7 +11,17 @@
 
 @interface GameView : NSView 
 {
-
+	BOOL isPlaying;
+	BOOL isDropping;
+	
+	double timeNow;
+	NSBezierPath *box;
+	NSBezierPath *ball;
 }
+
+@property (readwrite)BOOL isPlaying;
+@property (readwrite)BOOL isDropping;
+
+- (void)playGame;
 
 @end
