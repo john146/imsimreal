@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5220481C13E8A8B300BF23D6 /* imsimreal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5220481B13E8A8B300BF23D6 /* imsimreal.h */; };
+		5220481F13E8A8B300BF23D6 /* imsimreal.cp in Sources */ = {isa = PBXBuildFile; fileRef = 5220481E13E8A8B300BF23D6 /* imsimreal.cp */; };
+		5220482D13E8A8D600BF23D6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5220482C13E8A8D600BF23D6 /* main.cpp */; };
+		5220484613E8AD4500BF23D6 /* GravityTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5220484413E8AD4500BF23D6 /* GravityTest.cpp */; };
+		5220486713E8BE4600BF23D6 /* Gravity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5220486513E8BE4600BF23D6 /* Gravity.cpp */; };
+		5220486813E8BE4600BF23D6 /* Gravity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5220486613E8BE4600BF23D6 /* Gravity.h */; };
+		5223033F13EA03FC0006ACC9 /* Gravity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5220486513E8BE4600BF23D6 /* Gravity.cpp */; };
+		5223051F13EC7A150006ACC9 /* libcppunit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223051E13EC7A150006ACC9 /* libcppunit.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5223034213EA10B00006ACC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5220480B13E8A8B300BF23D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5220482813E8A8D500BF23D6;
+			remoteInfo = UnitTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5220482713E8A8D500BF23D6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5220481813E8A8B300BF23D6 /* imsimreal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "imsimreal-Prefix.pch"; sourceTree = "<group>"; };
+		5220481913E8A8B300BF23D6 /* imsimrealProj.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = imsimrealProj.xcconfig; sourceTree = "<group>"; };
+		5220481A13E8A8B300BF23D6 /* imsimrealTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = imsimrealTarget.xcconfig; sourceTree = "<group>"; };
+		5220481B13E8A8B300BF23D6 /* imsimreal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imsimreal.h; sourceTree = "<group>"; };
+		5220481D13E8A8B300BF23D6 /* imsimrealPriv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imsimrealPriv.h; sourceTree = "<group>"; };
+		5220481E13E8A8B300BF23D6 /* imsimreal.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imsimreal.cp; sourceTree = "<group>"; };
+		5220482913E8A8D600BF23D6 /* UnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		5220482C13E8A8D600BF23D6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5220482E13E8A8D600BF23D6 /* UnitTests.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = UnitTests.1; sourceTree = "<group>"; };
+		5220484413E8AD4500BF23D6 /* GravityTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GravityTest.cpp; path = ../imsimreal/GravityTest.cpp; sourceTree = "<group>"; };
+		5220484513E8AD4500BF23D6 /* GravityTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravityTest.h; path = ../imsimreal/GravityTest.h; sourceTree = "<group>"; };
+		5220486513E8BE4600BF23D6 /* Gravity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gravity.cpp; sourceTree = "<group>"; };
+		5220486613E8BE4600BF23D6 /* Gravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gravity.h; sourceTree = "<group>"; };
+		5223033E13EA03C00006ACC9 /* imsimreal.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = imsimreal.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5223051E13EC7A150006ACC9 /* libcppunit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcppunit.dylib; path = usr/local/lib/libcppunit.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5220481113E8A8B300BF23D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5220482613E8A8D500BF23D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5223051F13EC7A150006ACC9 /* libcppunit.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5220480913E8A8B300BF23D6 = {
+			isa = PBXGroup;
+			children = (
+				5220487013E8CE2500BF23D6 /* Frameworks */,
+				5220481613E8A8B300BF23D6 /* imsimreal */,
+				5220482B13E8A8D600BF23D6 /* UnitTests */,
+				5220481513E8A8B300BF23D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5220481513E8A8B300BF23D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5220482913E8A8D600BF23D6 /* UnitTests */,
+				5223033E13EA03C00006ACC9 /* imsimreal.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5220481613E8A8B300BF23D6 /* imsimreal */ = {
+			isa = PBXGroup;
+			children = (
+				5220481913E8A8B300BF23D6 /* imsimrealProj.xcconfig */,
+				5220481A13E8A8B300BF23D6 /* imsimrealTarget.xcconfig */,
+				5220481B13E8A8B300BF23D6 /* imsimreal.h */,
+				5220481D13E8A8B300BF23D6 /* imsimrealPriv.h */,
+				5220481E13E8A8B300BF23D6 /* imsimreal.cp */,
+				5220481713E8A8B300BF23D6 /* Supporting Files */,
+				5220486513E8BE4600BF23D6 /* Gravity.cpp */,
+				5220486613E8BE4600BF23D6 /* Gravity.h */,
+			);
+			path = imsimreal;
+			sourceTree = "<group>";
+		};
+		5220481713E8A8B300BF23D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5220481813E8A8B300BF23D6 /* imsimreal-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5220482B13E8A8D600BF23D6 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				5220484413E8AD4500BF23D6 /* GravityTest.cpp */,
+				5220484513E8AD4500BF23D6 /* GravityTest.h */,
+				5220482C13E8A8D600BF23D6 /* main.cpp */,
+				5220482E13E8A8D600BF23D6 /* UnitTests.1 */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		5220487013E8CE2500BF23D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5223051E13EC7A150006ACC9 /* libcppunit.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5220481213E8A8B300BF23D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5220481C13E8A8B300BF23D6 /* imsimreal.h in Headers */,
+				5220486813E8BE4600BF23D6 /* Gravity.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5220481313E8A8B300BF23D6 /* imsimreal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5220482213E8A8B300BF23D6 /* Build configuration list for PBXNativeTarget "imsimreal" */;
+			buildPhases = (
+				5220481013E8A8B300BF23D6 /* Sources */,
+				5220481113E8A8B300BF23D6 /* Frameworks */,
+				5220481213E8A8B300BF23D6 /* Headers */,
+				5223052013EC85890006ACC9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5223034313EA10B00006ACC9 /* PBXTargetDependency */,
+			);
+			name = imsimreal;
+			productName = imsimreal;
+			productReference = 5223033E13EA03C00006ACC9 /* imsimreal.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		5220482813E8A8D500BF23D6 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5220482F13E8A8D600BF23D6 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				5220482513E8A8D500BF23D6 /* Sources */,
+				5220482613E8A8D500BF23D6 /* Frameworks */,
+				5220482713E8A8D500BF23D6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 5220482913E8A8D600BF23D6 /* UnitTests */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5220480B13E8A8B300BF23D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "John Ahrens, LLC";
+			};
+			buildConfigurationList = 5220480E13E8A8B300BF23D6 /* Build configuration list for PBXProject "imsimreal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5220480913E8A8B300BF23D6;
+			productRefGroup = 5220481513E8A8B300BF23D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5220481313E8A8B300BF23D6 /* imsimreal */,
+				5220482813E8A8D500BF23D6 /* UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5223052013EC85890006ACC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd /Users/john/Library/Developer/Xcode/DerivedData/imsimreal-dpydbvwdtbxriscczbcrorkfljtw/Build/Products/Debug\n\"./UnitTests\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5220481013E8A8B300BF23D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5220481F13E8A8B300BF23D6 /* imsimreal.cp in Sources */,
+				5220486713E8BE4600BF23D6 /* Gravity.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5220482513E8A8D500BF23D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5220482D13E8A8D600BF23D6 /* main.cpp in Sources */,
+				5220484613E8AD4500BF23D6 /* GravityTest.cpp in Sources */,
+				5223033F13EA03FC0006ACC9 /* Gravity.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5223034313EA10B00006ACC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5220482813E8A8D500BF23D6 /* UnitTests */;
+			targetProxy = 5223034213EA10B00006ACC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5220482013E8A8B300BF23D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5220482113E8A8B300BF23D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5220482313E8A8B300BF23D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				TEST_RIG = UnitTests;
+			};
+			name = Debug;
+		};
+		5220482413E8A8B300BF23D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				TEST_RIG = UnitTests;
+			};
+			name = Release;
+		};
+		5220483013E8A8D600BF23D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5220483113E8A8D600BF23D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5220480E13E8A8B300BF23D6 /* Build configuration list for PBXProject "imsimreal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5220482013E8A8B300BF23D6 /* Debug */,
+				5220482113E8A8B300BF23D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5220482213E8A8B300BF23D6 /* Build configuration list for PBXNativeTarget "imsimreal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5220482313E8A8B300BF23D6 /* Debug */,
+				5220482413E8A8B300BF23D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5220482F13E8A8D600BF23D6 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5220483013E8A8D600BF23D6 /* Debug */,
+				5220483113E8A8D600BF23D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5220480B13E8A8B300BF23D6 /* Project object */;
+}
