@@ -26,12 +26,28 @@ void imsimreal :: GravityTest :: tearDown()
 
 void imsimreal :: GravityTest :: testDefaultConstructor() 
 {
-    std::auto_ptr<Gravity>myGravity (new Gravity());
-    CPPUNIT_ASSERT(myGravity.get());
-    CPPUNIT_ASSERT_DOUBLES_EQUAL(EARTH, myGravity->getGravity(), 0.01);
+    std::auto_ptr<Gravity>thisGravity(new Gravity());
+    CPPUNIT_ASSERT(thisGravity.get());
+    CPPUNIT_ASSERT_DOUBLES_EQUAL(EARTH, thisGravity->getGravity(), 0.01);
 }
 
 void imsimreal :: GravityTest :: testCopyConstructor()
 {
+    std::auto_ptr<Gravity>thisGravity(new Gravity(*myGravity));
+    CPPUNIT_ASSERT(&thisGravity);
+    CPPUNIT_ASSERT_DOUBLES_EQUAL(EARTH, thisGravity->getGravity(), 0.01);
+}
 
+void imsimreal :: GravityTest :: testAssignmentOperator()
+{
+    const Gravity &thisGravity = *myGravity;
+    CPPUNIT_ASSERT(&thisGravity);
+    CPPUNIT_ASSERT_DOUBLES_EQUAL(EARTH, thisGravity.getGravity(), 0.01);
+}
+
+void imsimreal :: GravityTest :: testSingleParameterConstructor()
+{
+    std::auto_ptr<Gravity>thisGravity(new Gravity(MOON));
+    CPPUNIT_ASSERT(thisGravity.get());
+    CPPUNIT_ASSERT_DOUBLES_EQUAL(MOON, thisGravity->getGravity(), 0.01);
 }

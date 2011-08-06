@@ -13,3 +13,8 @@
 imsimreal :: Gravity :: Gravity(): gravity(EARTH)
 {
 }
+
+imsimreal :: Gravity :: Gravity(double g): gravity(g)
+{
+    
+}

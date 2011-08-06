@@ -9,8 +9,6 @@
 #ifndef Gravity_
 #define Gravity_
 
-#include "map"
-
 const double EARTH = -9.81;
 const double MOON = -1.624;
 const double JUPITER = 24.8;
@@ -21,14 +19,18 @@ namespace imsimreal
     {
     public:
         Gravity();
-        //Gravity(Gravity &);
-        //Gravity &operator=(Gravity &);
+        explicit Gravity(double g);
         
-        double getGravity() {return gravity;}
+        const double getGravity() const {return gravity;}
         
     protected:
         
     private:
+        // Not needed
+        //Gravity(Gravity &);
+        //Gravity &operator=(Gravity &);
+        //~Gravity();
+
         double gravity;
     };
 }
