@@ -10,11 +10,18 @@
 		5220481C13E8A8B300BF23D6 /* imsimreal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5220481B13E8A8B300BF23D6 /* imsimreal.h */; };
 		5220481F13E8A8B300BF23D6 /* imsimreal.cp in Sources */ = {isa = PBXBuildFile; fileRef = 5220481E13E8A8B300BF23D6 /* imsimreal.cp */; };
 		5220482D13E8A8D600BF23D6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5220482C13E8A8D600BF23D6 /* main.cpp */; };
-		5220484613E8AD4500BF23D6 /* GravityTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5220484413E8AD4500BF23D6 /* GravityTest.cpp */; };
 		5220486713E8BE4600BF23D6 /* Gravity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5220486513E8BE4600BF23D6 /* Gravity.cpp */; };
 		5220486813E8BE4600BF23D6 /* Gravity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5220486613E8BE4600BF23D6 /* Gravity.h */; };
 		5223033F13EA03FC0006ACC9 /* Gravity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5220486513E8BE4600BF23D6 /* Gravity.cpp */; };
 		5223051F13EC7A150006ACC9 /* libcppunit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223051E13EC7A150006ACC9 /* libcppunit.dylib */; };
+		526AC9FB13F1CF4300E0F7D6 /* Friction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 526AC9F913F1CF4300E0F7D6 /* Friction.cpp */; };
+		526AC9FC13F1CF4300E0F7D6 /* Friction.h in Headers */ = {isa = PBXBuildFile; fileRef = 526AC9FA13F1CF4300E0F7D6 /* Friction.h */; };
+		526ACA0213F1D3B500E0F7D6 /* FrictionTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 526AC9FE13F1D3B500E0F7D6 /* FrictionTests.h */; };
+		526ACA0413F1D3B500E0F7D6 /* GravityTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 526ACA0013F1D3B500E0F7D6 /* GravityTest.h */; };
+		526ACA0513F1D3C700E0F7D6 /* FrictionTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 526AC9FD13F1D3B500E0F7D6 /* FrictionTests.cpp */; };
+		526ACA0613F1D3D600E0F7D6 /* GravityTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 526AC9FF13F1D3B500E0F7D6 /* GravityTest.cpp */; };
+		526ACA0713F1D40000E0F7D6 /* Friction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 526AC9F913F1CF4300E0F7D6 /* Friction.cpp */; };
+		526ACA0813F1D40F00E0F7D6 /* imsimreal.cp in Sources */ = {isa = PBXBuildFile; fileRef = 5220481E13E8A8B300BF23D6 /* imsimreal.cp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,12 +56,16 @@
 		5220482913E8A8D600BF23D6 /* UnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		5220482C13E8A8D600BF23D6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5220482E13E8A8D600BF23D6 /* UnitTests.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = UnitTests.1; sourceTree = "<group>"; };
-		5220484413E8AD4500BF23D6 /* GravityTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GravityTest.cpp; path = ../imsimreal/GravityTest.cpp; sourceTree = "<group>"; };
-		5220484513E8AD4500BF23D6 /* GravityTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravityTest.h; path = ../imsimreal/GravityTest.h; sourceTree = "<group>"; };
 		5220486513E8BE4600BF23D6 /* Gravity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gravity.cpp; sourceTree = "<group>"; };
 		5220486613E8BE4600BF23D6 /* Gravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gravity.h; sourceTree = "<group>"; };
 		5223033E13EA03C00006ACC9 /* imsimreal.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = imsimreal.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		5223051E13EC7A150006ACC9 /* libcppunit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcppunit.dylib; path = usr/local/lib/libcppunit.dylib; sourceTree = SDKROOT; };
+		526AC9F913F1CF4300E0F7D6 /* Friction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Friction.cpp; sourceTree = "<group>"; };
+		526AC9FA13F1CF4300E0F7D6 /* Friction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friction.h; sourceTree = "<group>"; };
+		526AC9FD13F1D3B500E0F7D6 /* FrictionTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrictionTests.cpp; sourceTree = "<group>"; };
+		526AC9FE13F1D3B500E0F7D6 /* FrictionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrictionTests.h; sourceTree = "<group>"; };
+		526AC9FF13F1D3B500E0F7D6 /* GravityTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GravityTest.cpp; sourceTree = "<group>"; };
+		526ACA0013F1D3B500E0F7D6 /* GravityTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityTest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +117,8 @@
 				5220481713E8A8B300BF23D6 /* Supporting Files */,
 				5220486513E8BE4600BF23D6 /* Gravity.cpp */,
 				5220486613E8BE4600BF23D6 /* Gravity.h */,
+				526AC9F913F1CF4300E0F7D6 /* Friction.cpp */,
+				526AC9FA13F1CF4300E0F7D6 /* Friction.h */,
 			);
 			path = imsimreal;
 			sourceTree = "<group>";
@@ -121,8 +134,10 @@
 		5220482B13E8A8D600BF23D6 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				5220484413E8AD4500BF23D6 /* GravityTest.cpp */,
-				5220484513E8AD4500BF23D6 /* GravityTest.h */,
+				526AC9FD13F1D3B500E0F7D6 /* FrictionTests.cpp */,
+				526AC9FE13F1D3B500E0F7D6 /* FrictionTests.h */,
+				526AC9FF13F1D3B500E0F7D6 /* GravityTest.cpp */,
+				526ACA0013F1D3B500E0F7D6 /* GravityTest.h */,
 				5220482C13E8A8D600BF23D6 /* main.cpp */,
 				5220482E13E8A8D600BF23D6 /* UnitTests.1 */,
 			);
@@ -146,6 +161,9 @@
 			files = (
 				5220481C13E8A8B300BF23D6 /* imsimreal.h in Headers */,
 				5220486813E8BE4600BF23D6 /* Gravity.h in Headers */,
+				526AC9FC13F1CF4300E0F7D6 /* Friction.h in Headers */,
+				526ACA0213F1D3B500E0F7D6 /* FrictionTests.h in Headers */,
+				526ACA0413F1D3B500E0F7D6 /* GravityTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +255,7 @@
 			files = (
 				5220481F13E8A8B300BF23D6 /* imsimreal.cp in Sources */,
 				5220486713E8BE4600BF23D6 /* Gravity.cpp in Sources */,
+				526AC9FB13F1CF4300E0F7D6 /* Friction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,8 +264,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5220482D13E8A8D600BF23D6 /* main.cpp in Sources */,
-				5220484613E8AD4500BF23D6 /* GravityTest.cpp in Sources */,
 				5223033F13EA03FC0006ACC9 /* Gravity.cpp in Sources */,
+				526ACA0513F1D3C700E0F7D6 /* FrictionTests.cpp in Sources */,
+				526ACA0613F1D3D600E0F7D6 /* GravityTest.cpp in Sources */,
+				526ACA0713F1D40000E0F7D6 /* Friction.cpp in Sources */,
+				526ACA0813F1D40F00E0F7D6 /* imsimreal.cp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

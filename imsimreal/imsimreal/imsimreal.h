@@ -11,6 +11,7 @@
 #define imsimreal_
 
 #include "Gravity.h"
+#include "Friction.h"
 
 /* The classes below are exported */
 #pragma GCC visibility push(default)

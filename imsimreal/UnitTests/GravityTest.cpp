@@ -6,7 +6,7 @@
 //  Copyright 2011 John Ahrens, LLC. All rights reserved.
 //
 
-#include </usr/local/include/cppunit/extensions/HelperMacros.h>
+//#include </usr/local/include/cppunit/extensions/HelperMacros.h>
 #include <cppunit/TestAssert.h>
 
 #include "GravityTest.h"
