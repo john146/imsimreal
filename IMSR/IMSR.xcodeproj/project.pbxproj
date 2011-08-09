@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5223053C13ECBD460006ACC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223053B13ECBD460006ACC9 /* Foundation.framework */; };
+		5223054713ECBD470006ACC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223054613ECBD470006ACC9 /* UIKit.framework */; };
+		5223054813ECBD470006ACC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223053B13ECBD460006ACC9 /* Foundation.framework */; };
+		5223054A13ECBD470006ACC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223054913ECBD470006ACC9 /* CoreGraphics.framework */; };
+		5223054D13ECBD470006ACC9 /* libIMSR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223053813ECBD460006ACC9 /* libIMSR.a */; };
+		5223055313ECBD470006ACC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5223055113ECBD470006ACC9 /* InfoPlist.strings */; };
+		5223055613ECBD470006ACC9 /* IMSRTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5223055513ECBD470006ACC9 /* IMSRTests.h */; };
+		5223055813ECBD470006ACC9 /* IMSRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5223055713ECBD470006ACC9 /* IMSRTests.m */; };
+		5223056413ECBD620006ACC9 /* IMSRGravityTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 5223056213ECBD620006ACC9 /* IMSRGravityTests.h */; };
+		5223056B13ECBD910006ACC9 /* Gravity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5223056613ECBD910006ACC9 /* Gravity.plist */; };
+		5223056D13ECBD910006ACC9 /* IMSRGravity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5223056813ECBD910006ACC9 /* IMSRGravity.h */; };
+		5223056E13ECBD910006ACC9 /* IMSRGravity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5223056913ECBD910006ACC9 /* IMSRGravity.mm */; };
+		5223056F13ECBD910006ACC9 /* IMSRGravity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5223056913ECBD910006ACC9 /* IMSRGravity.mm */; };
+		5223058413ECBF370006ACC9 /* imsimreal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223058313ECBF370006ACC9 /* imsimreal.dylib */; };
+		5223058513EDA42A0006ACC9 /* IMSRGravityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5223056313ECBD620006ACC9 /* IMSRGravityTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5223054B13ECBD470006ACC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5223052F13ECBD460006ACC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5223053713ECBD460006ACC9;
+			remoteInfo = IMSR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5223053813ECBD460006ACC9 /* libIMSR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIMSR.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5223053B13ECBD460006ACC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5223053F13ECBD460006ACC9 /* IMSR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMSR-Prefix.pch"; sourceTree = "<group>"; };
+		5223054513ECBD470006ACC9 /* IMSRTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMSRTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5223054613ECBD470006ACC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5223054913ECBD470006ACC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5223055013ECBD470006ACC9 /* IMSRTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IMSRTests-Info.plist"; sourceTree = "<group>"; };
+		5223055213ECBD470006ACC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5223055413ECBD470006ACC9 /* IMSRTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMSRTests-Prefix.pch"; sourceTree = "<group>"; };
+		5223055513ECBD470006ACC9 /* IMSRTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMSRTests.h; sourceTree = "<group>"; };
+		5223055713ECBD470006ACC9 /* IMSRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMSRTests.m; sourceTree = "<group>"; };
+		5223056213ECBD620006ACC9 /* IMSRGravityTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMSRGravityTests.h; path = ../../Tests/IMSRGravityTests.h; sourceTree = "<group>"; };
+		5223056313ECBD620006ACC9 /* IMSRGravityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMSRGravityTests.m; path = ../../Tests/IMSRGravityTests.m; sourceTree = "<group>"; };
+		5223056613ECBD910006ACC9 /* Gravity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Gravity.plist; path = ../../Gravity.plist; sourceTree = "<group>"; };
+		5223056813ECBD910006ACC9 /* IMSRGravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMSRGravity.h; path = ../../IMSRGravity.h; sourceTree = "<group>"; };
+		5223056913ECBD910006ACC9 /* IMSRGravity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = IMSRGravity.mm; path = ../../IMSRGravity.mm; sourceTree = "<group>"; };
+		5223058313ECBF370006ACC9 /* imsimreal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = imsimreal.dylib; path = "../../../Library/Developer/Xcode/DerivedData/imsimreal-dpydbvwdtbxriscczbcrorkfljtw/Build/Products/Debug/imsimreal.dylib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5223053513ECBD460006ACC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5223058413ECBF370006ACC9 /* imsimreal.dylib in Frameworks */,
+				5223053C13ECBD460006ACC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5223054113ECBD470006ACC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5223054713ECBD470006ACC9 /* UIKit.framework in Frameworks */,
+				5223054813ECBD470006ACC9 /* Foundation.framework in Frameworks */,
+				5223054A13ECBD470006ACC9 /* CoreGraphics.framework in Frameworks */,
+				5223054D13ECBD470006ACC9 /* libIMSR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5223052D13ECBD460006ACC9 = {
+			isa = PBXGroup;
+			children = (
+				5223053D13ECBD460006ACC9 /* IMSR */,
+				5223054E13ECBD470006ACC9 /* IMSRTests */,
+				5223053A13ECBD460006ACC9 /* Frameworks */,
+				5223053913ECBD460006ACC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5223053913ECBD460006ACC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5223053813ECBD460006ACC9 /* libIMSR.a */,
+				5223054513ECBD470006ACC9 /* IMSRTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5223053A13ECBD460006ACC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5223058313ECBF370006ACC9 /* imsimreal.dylib */,
+				5223053B13ECBD460006ACC9 /* Foundation.framework */,
+				5223054613ECBD470006ACC9 /* UIKit.framework */,
+				5223054913ECBD470006ACC9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5223053D13ECBD460006ACC9 /* IMSR */ = {
+			isa = PBXGroup;
+			children = (
+				5223056813ECBD910006ACC9 /* IMSRGravity.h */,
+				5223056913ECBD910006ACC9 /* IMSRGravity.mm */,
+				5223053E13ECBD460006ACC9 /* Supporting Files */,
+			);
+			path = IMSR;
+			sourceTree = "<group>";
+		};
+		5223053E13ECBD460006ACC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5223056613ECBD910006ACC9 /* Gravity.plist */,
+				5223053F13ECBD460006ACC9 /* IMSR-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5223054E13ECBD470006ACC9 /* IMSRTests */ = {
+			isa = PBXGroup;
+			children = (
+				5223056213ECBD620006ACC9 /* IMSRGravityTests.h */,
+				5223056313ECBD620006ACC9 /* IMSRGravityTests.m */,
+				5223055513ECBD470006ACC9 /* IMSRTests.h */,
+				5223055713ECBD470006ACC9 /* IMSRTests.m */,
+				5223054F13ECBD470006ACC9 /* Supporting Files */,
+			);
+			path = IMSRTests;
+			sourceTree = "<group>";
+		};
+		5223054F13ECBD470006ACC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5223055013ECBD470006ACC9 /* IMSRTests-Info.plist */,
+				5223055113ECBD470006ACC9 /* InfoPlist.strings */,
+				5223055413ECBD470006ACC9 /* IMSRTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5223053613ECBD460006ACC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5223056413ECBD620006ACC9 /* IMSRGravityTests.h in Headers */,
+				5223056D13ECBD910006ACC9 /* IMSRGravity.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5223053713ECBD460006ACC9 /* IMSR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5223055B13ECBD470006ACC9 /* Build configuration list for PBXNativeTarget "IMSR" */;
+			buildPhases = (
+				5223053413ECBD460006ACC9 /* Sources */,
+				5223053513ECBD460006ACC9 /* Frameworks */,
+				5223053613ECBD460006ACC9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMSR;
+			productName = IMSR;
+			productReference = 5223053813ECBD460006ACC9 /* libIMSR.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5223054413ECBD470006ACC9 /* IMSRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5223055E13ECBD470006ACC9 /* Build configuration list for PBXNativeTarget "IMSRTests" */;
+			buildPhases = (
+				5223054013ECBD470006ACC9 /* Sources */,
+				5223054113ECBD470006ACC9 /* Frameworks */,
+				5223054213ECBD470006ACC9 /* Resources */,
+				5223054313ECBD470006ACC9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5223054C13ECBD470006ACC9 /* PBXTargetDependency */,
+			);
+			name = IMSRTests;
+			productName = IMSRTests;
+			productReference = 5223054513ECBD470006ACC9 /* IMSRTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5223052F13ECBD460006ACC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "John Ahrens, LLC";
+			};
+			buildConfigurationList = 5223053213ECBD460006ACC9 /* Build configuration list for PBXProject "IMSR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5223052D13ECBD460006ACC9;
+			productRefGroup = 5223053913ECBD460006ACC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5223053713ECBD460006ACC9 /* IMSR */,
+				5223054413ECBD470006ACC9 /* IMSRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5223054213ECBD470006ACC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5223055313ECBD470006ACC9 /* InfoPlist.strings in Resources */,
+				5223055613ECBD470006ACC9 /* IMSRTests.h in Resources */,
+				5223056B13ECBD910006ACC9 /* Gravity.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5223054313ECBD470006ACC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5223053413ECBD460006ACC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5223056E13ECBD910006ACC9 /* IMSRGravity.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5223054013ECBD470006ACC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5223055813ECBD470006ACC9 /* IMSRTests.m in Sources */,
+				5223056F13ECBD910006ACC9 /* IMSRGravity.mm in Sources */,
+				5223058513EDA42A0006ACC9 /* IMSRGravityTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5223054C13ECBD470006ACC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5223053713ECBD460006ACC9 /* IMSR */;
+			targetProxy = 5223054B13ECBD470006ACC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5223055113ECBD470006ACC9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5223055213ECBD470006ACC9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5223055913ECBD470006ACC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5223055A13ECBD470006ACC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		5223055C13ECBD470006ACC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/IMSR.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMSR/IMSR-Prefix.pch";
+				HEADER_SEARCH_PATHS = /Users/john/Projects/imsimreal/imsimreal;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/imsimreal-dpydbvwdtbxriscczbcrorkfljtw/Build/Products/Debug\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5223055D13ECBD470006ACC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/IMSR.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMSR/IMSR-Prefix.pch";
+				HEADER_SEARCH_PATHS = /Users/john/Projects/imsimreal/imsimreal;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/imsimreal-dpydbvwdtbxriscczbcrorkfljtw/Build/Products/Debug\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5223055F13ECBD470006ACC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMSRTests/IMSRTests-Prefix.pch";
+				INFOPLIST_FILE = "IMSRTests/IMSRTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5223056013ECBD470006ACC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IMSRTests/IMSRTests-Prefix.pch";
+				INFOPLIST_FILE = "IMSRTests/IMSRTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5223053213ECBD460006ACC9 /* Build configuration list for PBXProject "IMSR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5223055913ECBD470006ACC9 /* Debug */,
+				5223055A13ECBD470006ACC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5223055B13ECBD470006ACC9 /* Build configuration list for PBXNativeTarget "IMSR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5223055C13ECBD470006ACC9 /* Debug */,
+				5223055D13ECBD470006ACC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5223055E13ECBD470006ACC9 /* Build configuration list for PBXNativeTarget "IMSRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5223055F13ECBD470006ACC9 /* Debug */,
+				5223056013ECBD470006ACC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5223052F13ECBD460006ACC9 /* Project object */;
+}

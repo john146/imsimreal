@@ -6,14 +6,18 @@
 //  Copyright 2008 John Ahrens, LLC. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
+struct IMSRGravityImpl;
 
 @interface IMSRGravity : NSObject 
 {
-	NSDictionary	*bodyGravity;
+	NSDictionary *bodyGravity;
+    
+@private
+    struct IMSRGravityImpl *gravity;
 }
 
-@property (nonatomic, retain)NSDictionary	*bodyGravity;
+@property (nonatomic, retain)NSDictionary *bodyGravity;
 
 @end

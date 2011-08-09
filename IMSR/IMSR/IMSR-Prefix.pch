@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'IMSR' target in the 'IMSR' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
