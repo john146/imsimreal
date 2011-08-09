@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>imSimReal.xcscheme</key>
+		<key>IMSR.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>52CDF9C10EFF084800D89741</key>
+		<key>5223053713ECBD460006ACC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8D1107260486CEB800E47090</key>
+		<key>5223054413ECBD470006ACC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

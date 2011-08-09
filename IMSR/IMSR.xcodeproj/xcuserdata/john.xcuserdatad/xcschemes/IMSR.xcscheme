@@ -13,10 +13,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D1107260486CEB800E47090"
-               BuildableName = "imSimReal.app"
-               BlueprintName = "imSimReal"
-               ReferencedContainer = "container:imSimReal.xcodeproj">
+               BlueprintIdentifier = "5223053713ECBD460006ACC9"
+               BuildableName = "libIMSR.a"
+               BlueprintName = "IMSR"
+               ReferencedContainer = "container:IMSR.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,10 +31,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52CDF9C10EFF084800D89741"
-               BuildableName = "Unit Tests.octest"
-               BlueprintName = "Unit Tests"
-               ReferencedContainer = "container:imSimReal.xcodeproj">
+               BlueprintIdentifier = "5223054413ECBD470006ACC9"
+               BuildableName = "IMSRTests.octest"
+               BlueprintName = "IMSRTests"
+               ReferencedContainer = "container:IMSR.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -47,15 +47,6 @@
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D1107260486CEB800E47090"
-            BuildableName = "imSimReal.app"
-            BlueprintName = "imSimReal"
-            ReferencedContainer = "container:imSimReal.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -66,15 +57,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D1107260486CEB800E47090"
-            BuildableName = "imSimReal.app"
-            BlueprintName = "imSimReal"
-            ReferencedContainer = "container:imSimReal.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
