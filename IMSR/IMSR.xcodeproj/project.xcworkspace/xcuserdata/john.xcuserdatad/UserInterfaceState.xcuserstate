@@ -5881,7 +5881,7 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>HideAllIssues</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
-		<real>334614244.73880303</real>
+		<real>334687052.97970802</real>
 		<string>{0, 687}</string>
 		<string>{529, 0}</string>
 		<dict>
@@ -6167,7 +6167,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>334614244.73889202</real>
+		<real>334687052.97980398</real>
 		<string>{0, 387}</string>
 		<dict>
 			<key>$class</key>
@@ -6934,7 +6934,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 10:48 AM</string>
+		<string>Yesterday at 10:48 AM</string>
 		<integer>106</integer>
 		<string>IMSR</string>
 		<dict>
@@ -11605,7 +11605,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>334614244.74030399</real>
+		<real>334687052.98111498</real>
 		<string>{0, 687}</string>
 		<string>{529, 0}</string>
 		<string>-gravity</string>
@@ -13684,7 +13684,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>334614244.73953599</real>
+		<real>334687052.980353</real>
 		<string>{0, 387}</string>
 		<dict>
 			<key>$class</key>

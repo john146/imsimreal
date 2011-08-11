@@ -13,15 +13,15 @@
 
 namespace imsimreal 
 {
-    class FrictionTests : public CppUnit::TestFixture
+    class FrictionTests: public CppUnit::TestFixture
     {
         CPPUNIT_TEST_SUITE(FrictionTests);
-        CPPUNIT_TEST(testDefaultConstructor);
-        CPPUNIT_TEST_END();
+        CPPUNIT_TEST(testSingleParameterConstructor);
+        CPPUNIT_TEST_SUITE_END();
         
     public:
-        void testDefaultConstructor();
+        void testSingleParameterConstructor();
     };
-}
+};
 
 #endif

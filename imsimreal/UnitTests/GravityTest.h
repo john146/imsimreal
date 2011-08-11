@@ -22,6 +22,7 @@ namespace imsimreal
         CPPUNIT_TEST(testCopyConstructor);
         CPPUNIT_TEST(testAssignmentOperator);
         CPPUNIT_TEST(testSingleParameterConstructor);
+        CPPUNIT_TEST(testSingleBodyConstructor);
         CPPUNIT_TEST_SUITE_END();
         
     public:
@@ -32,6 +33,7 @@ namespace imsimreal
         void testCopyConstructor();
         void testAssignmentOperator();
         void testSingleParameterConstructor();
+        void testSingleBodyConstructor();
         
     private:
         Gravity *myGravity;

@@ -40,7 +40,7 @@ void imsimreal :: GravityTest :: testCopyConstructor()
 
 void imsimreal :: GravityTest :: testAssignmentOperator()
 {
-    const Gravity &thisGravity = *myGravity;
+    Gravity &thisGravity = *myGravity;
     CPPUNIT_ASSERT(&thisGravity);
     CPPUNIT_ASSERT_DOUBLES_EQUAL(EARTH, thisGravity.getGravity(), 0.01);
 }
@@ -50,4 +50,15 @@ void imsimreal :: GravityTest :: testSingleParameterConstructor()
     std::auto_ptr<Gravity>thisGravity(new Gravity(MOON));
     CPPUNIT_ASSERT(thisGravity.get());
     CPPUNIT_ASSERT_DOUBLES_EQUAL(MOON, thisGravity->getGravity(), 0.01);
+}
+
+void imsimreal :: GravityTest :: testSingleBodyConstructor()
+{
+    double mass = 5.936e24; // kg mass of the earth
+    double radius = 6356000; //6371000; // meters radius of the earth
+    std::auto_ptr<Gravity>thisGravity(new Gravity(mass, radius));
+    CPPUNIT_ASSERT(thisGravity.get());
+    CPPUNIT_ASSERT_DOUBLES_EQUAL(EARTH, thisGravity->getGravity(), 0.01);
+    
+    
 }
