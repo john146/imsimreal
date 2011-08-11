@@ -55,10 +55,20 @@ void imsimreal :: GravityTest :: testSingleParameterConstructor()
 void imsimreal :: GravityTest :: testSingleBodyConstructor()
 {
     double mass = 5.936e24; // kg mass of the earth
-    double radius = 6356000; //6371000; // meters radius of the earth
+    double radius = 6356000; //6371000; // meters polar radius of the earth
+    std::auto_ptr<Gravity>thisGravity(new Gravity(mass, radius));
+    CPPUNIT_ASSERT(thisGravity.get());
+    CPPUNIT_ASSERT_DOUBLES_EQUAL(EARTH, thisGravity->getGravity(), 0.01);
+}
+
+void imsimreal :: GravityTest :: testSingleBodyConstructorChangingRadius()
+{
+    double mass = 5.936e24;
+    double radius = 6356000;
     std::auto_ptr<Gravity>thisGravity(new Gravity(mass, radius));
     CPPUNIT_ASSERT(thisGravity.get());
     CPPUNIT_ASSERT_DOUBLES_EQUAL(EARTH, thisGravity->getGravity(), 0.01);
     
-    
+    thisGravity->setRadius(6378100); // Equatorial radius of earth, meters
+    CPPUNIT_ASSERT_DOUBLES_EQUAL(-9.74, thisGravity->getGravity(), 0.01);
 }

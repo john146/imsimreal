@@ -64,6 +64,11 @@ namespace imsimreal
          */
         double getGravity();
         
+        /**
+         * @param radius New distance between the two bodies, in meters
+         */
+        void setRadius(double r) {radius = r;}
+        
     protected:
         
     private:
