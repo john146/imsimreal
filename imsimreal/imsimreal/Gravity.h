@@ -60,6 +60,15 @@ namespace imsimreal
         Gravity(double mass, double radius);
         
         /**
+         * Constructor for the general case, where both bodies have significant mass with respect to each other.
+         *
+         * @param mass1 The mass of the first object
+         * @param mass2 The mass of the second object
+         * @param radius the distance between the two masses
+         */
+        Gravity(double mass1, double mass2, double radius);
+        
+        /**
          * @return the value of gravitational acceleration in meters/sec^2.
          */
         double getGravity();
@@ -78,7 +87,8 @@ namespace imsimreal
         //~Gravity();
 
         double gravity; // in meters/sec^2
-        double mass; // in kilograms
+        double mass1; // in kilograms
+        double mass2; // in kilograms
         double radius; // in meters
         bool isConstant; // true if using constant for gravity, false if computing gravity
     };

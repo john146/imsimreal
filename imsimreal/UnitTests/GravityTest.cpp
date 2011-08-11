@@ -72,3 +72,13 @@ void imsimreal :: GravityTest :: testSingleBodyConstructorChangingRadius()
     thisGravity->setRadius(6378100); // Equatorial radius of earth, meters
     CPPUNIT_ASSERT_DOUBLES_EQUAL(-9.74, thisGravity->getGravity(), 0.01);
 }
+
+void :: imsimreal :: GravityTest :: testTwoBodyConstructor()
+{
+    double mass1 = 7.3477e22; // mass of Moon, kg
+    double mass2 = 5.936e24; // mass of Earth, kg
+    double radius = 384405000; // distance from earth center of mass to moon center of mass, meters
+    std::auto_ptr<Gravity>thisGravity(new Gravity(mass1, mass2, radius));
+    CPPUNIT_ASSERT(thisGravity.get());
+    CPPUNIT_ASSERT_DOUBLES_EQUAL(-1.97e20, thisGravity->getGravity(), 0.01e20);
+}
