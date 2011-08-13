@@ -20,4 +20,8 @@ struct IMSRGravityImpl;
 
 @property (nonatomic, retain)NSDictionary *bodyGravity;
 
+- (id)initWithBody: (NSString *)body;
+
+- (double)gravity;
+
 @end

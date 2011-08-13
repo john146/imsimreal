@@ -10,7 +10,12 @@
 
 #include "../imsimreal/imsimreal/imsimreal/imsimreal.h"
 
-struct IMSRGravityImpl: imsimreal::Gravity {};
+struct IMSRGravityImpl: imsimreal::Gravity 
+{
+public:
+    IMSRGravityImpl(): imsimreal::Gravity() {}
+    IMSRGravityImpl(double g): imsimreal::Gravity(g) {}
+};
 
 @implementation IMSRGravity
 
@@ -24,9 +29,22 @@ struct IMSRGravityImpl: imsimreal::Gravity {};
 	}
 	
 	bodyGravity = [[NSDictionary alloc] initWithContentsOfFile: @"Gravity.plist"];
-    gravity = new IMSRGravityImpl;
+    gravity = new IMSRGravityImpl();
 	
 	return self;
+}
+
+- (id)initWithBody:(NSString *)body
+{
+    if (![super init])
+    {
+        return nil;
+    }
+    
+    bodyGravity = [[NSDictionary alloc] initWithContentsOfFile: @"Gravity.plist"];
+    gravity = new IMSRGravityImpl([[bodyGravity valueForKey: body]doubleValue]);
+    
+    return self;
 }
 
 - (double)gravity

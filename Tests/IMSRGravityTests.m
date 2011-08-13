@@ -13,18 +13,27 @@
 
 - (void)testCreateIMSRGravity
 {
-	IMSRGravity *gravity	= [[IMSRGravity alloc] init];
+	IMSRGravity *gravity	= [[[IMSRGravity alloc] init] autorelease];
 	
 	STAssertNotNil(gravity, @"IMSRGravity not created");
 	STAssertNotNil(gravity.bodyGravity, @"Gravity NSDictionary not available");
 	STAssertTrue(gravity.bodyGravity.count == 3, @"Incorrect number of elements in bodyGravity");
 	
-	NSNumber *result			= [gravity.bodyGravity valueForKey: @"Earth"];
-	NSNumber *expectedResult	= [[NSNumber alloc] initWithDouble: -9.81];
-	STAssertTrue([result isEqualToNumber: expectedResult], @"Incorrect gravity value for Earth: %@", result);
-	
-	[gravity release];
-	[expectedResult release];
+	NSNumber *result1			= [gravity.bodyGravity valueForKey: @"Earth"];
+	NSNumber *expectedResult	= [[[NSNumber alloc] initWithDouble: -9.81] autorelease];
+	STAssertTrue([result1 isEqualToNumber: expectedResult], @"Incorrect gravity value for Earth: %@", result1);
+    
+    NSNumber *result2 = [[[NSNumber alloc] initWithDouble: [gravity gravity]] autorelease];
+    STAssertTrue([expectedResult isEqualToNumber: result2], @"Expected %@ but got %@", expectedResult, result2);
+}
+
+- (void)testCreateIMSRGravityWithBody
+{
+    IMSRGravity *gravity = [[[IMSRGravity alloc] initWithBody: @"Moon"] autorelease];
+    STAssertNil(gravity, @"IMSRGravity not created");
+    NSNumber *result = [[[NSNumber alloc] initWithDouble: [gravity gravity]] autorelease];
+    NSNumber *expectedResult = [[gravity.bodyGravity valueForKey: @"Moon"] autorelease];
+    STAssertTrue([expectedResult isEqualToNumber: result], @"Expected %@, but got %@", expectedResult, result);
 }
 
 @end

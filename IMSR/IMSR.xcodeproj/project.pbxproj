@@ -11,7 +11,6 @@
 		5223054713ECBD470006ACC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223054613ECBD470006ACC9 /* UIKit.framework */; };
 		5223054813ECBD470006ACC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223053B13ECBD460006ACC9 /* Foundation.framework */; };
 		5223054A13ECBD470006ACC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223054913ECBD470006ACC9 /* CoreGraphics.framework */; };
-		5223054D13ECBD470006ACC9 /* libIMSR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5223053813ECBD460006ACC9 /* libIMSR.a */; };
 		5223055313ECBD470006ACC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5223055113ECBD470006ACC9 /* InfoPlist.strings */; };
 		5223055613ECBD470006ACC9 /* IMSRTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5223055513ECBD470006ACC9 /* IMSRTests.h */; };
 		5223055813ECBD470006ACC9 /* IMSRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5223055713ECBD470006ACC9 /* IMSRTests.m */; };
@@ -25,12 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5223054B13ECBD470006ACC9 /* PBXContainerItemProxy */ = {
+		522510F813F45509001F178C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5223052F13ECBD460006ACC9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5223053713ECBD460006ACC9;
-			remoteInfo = IMSR;
+			remoteGlobalIDString = 5223054413ECBD470006ACC9;
+			remoteInfo = IMSRTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -71,7 +70,6 @@
 				5223054713ECBD470006ACC9 /* UIKit.framework in Frameworks */,
 				5223054813ECBD470006ACC9 /* Foundation.framework in Frameworks */,
 				5223054A13ECBD470006ACC9 /* CoreGraphics.framework in Frameworks */,
-				5223054D13ECBD470006ACC9 /* libIMSR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +173,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				522510F913F45509001F178C /* PBXTargetDependency */,
 			);
 			name = IMSR;
 			productName = IMSR;
@@ -193,7 +192,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				5223054C13ECBD470006ACC9 /* PBXTargetDependency */,
 			);
 			name = IMSRTests;
 			productName = IMSRTests;
@@ -277,10 +275,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5223054C13ECBD470006ACC9 /* PBXTargetDependency */ = {
+		522510F913F45509001F178C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5223053713ECBD460006ACC9 /* IMSR */;
-			targetProxy = 5223054B13ECBD470006ACC9 /* PBXContainerItemProxy */;
+			target = 5223054413ECBD470006ACC9 /* IMSRTests */;
+			targetProxy = 522510F813F45509001F178C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -418,6 +416,7 @@
 				5223055D13ECBD470006ACC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5223055E13ECBD470006ACC9 /* Build configuration list for PBXNativeTarget "IMSRTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +425,7 @@
 				5223056013ECBD470006ACC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
